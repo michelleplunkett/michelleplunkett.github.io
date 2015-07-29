@@ -11,4 +11,4 @@ github_username:  michelleplunkett
 markdown: redcarpet
 highlighter: pygments
 github: https://github.com/michelleplunkett/michelleplunkett.github.io
-permalink: /blog/:year/:month/:day/:title
+permalink: www.michelle-plunkett.com/blog/:year/:month/:day/:title
