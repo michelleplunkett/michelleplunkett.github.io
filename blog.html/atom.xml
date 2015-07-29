@@ -5,10 +5,10 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>Michelle Plunkett's Blog</title>
-	<link href="http://michelle-plunkett.com/blog/atom.xml" rel="self"/>
-	<link href="http://michelle-plunkett.com/blog"/>
+	<link href="http://michelle-plunkett.com/blog.html/atom.xml" rel="self"/>
+	<link href="http://michelle-plunkett.com/blog.html"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://michelle-plunkett.com/blog</id>
+	<id>http://michelle-plunkett.com/blog.html</id>
 	<author>
 		<name>Michelle Plunkett</name>
 		<email>michellejplunkett@gmail.com</email>
