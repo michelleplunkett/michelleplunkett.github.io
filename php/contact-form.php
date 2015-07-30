@@ -4,12 +4,12 @@
     $myemail = 'michellejplunkett@gmail.com';
 
     $name = $_POST['name']; 
-    $subject = $_POST['subject'];
+    $s = $_POST['subject'];
     $email_address = $_POST['email']; 
     $message = $_POST['message']; 
 
 	$to = $myemail; 
-	$email_subject = "Contact Form: $subject";
+	$email_subject = "Contact Form: $s";
 	$email_body = "\n
     Name: $name \n 
     Email: $email_address \n 
