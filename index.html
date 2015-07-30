@@ -4,7 +4,7 @@ layout: default
 
 <!-- The posts -->
   <div class="col">
-    {% for post in site.posts %}
+    {% for post in site.categories.posts %}
     <article class="box" id="{{ post.title }}">
 			<div class="panel panel-default">
 			  <div class="panel-heading"><h3 class="panel-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3></div>
@@ -21,14 +21,14 @@ layout: default
 
 
   <!-- The agenda -->
-  <div class="col">
+ <!-- <div class="col">
     <div class="box" id="sidebar">
       <div class="panel panel-primary">
 		  <div class="panel-heading"><h3 class="panel-title">Social Media</h3></div>
 		  <div class="panel-body">
-			 <h4><!-- <span style="margin-right:.1em">Social Media:</span> -->
-            <span style="margin-right:.2em"><a href="https://www.facebook.com/michellejane/"><i class="fa fa-facebook-square solo fa-lg"></i></a></span>
-            <span style="margin-right:.2em"><a href="https://twitter.com/michelleisatwin/"><i class="fa fa-twitter-square solo fa-lg"></i></a></span>
+			 <h4>
+            <span style="margin-right:.2em"><a href="https://www.facebook.com/"><i class="fa fa-facebook-square solo fa-lg"></i></a></span>
+            <span style="margin-right:.2em"><a href="https://twitter.com/"><i class="fa fa-twitter-square solo fa-lg"></i></a></span>
             </h4>
 		  </div>
         </div>
@@ -36,6 +36,8 @@ layout: default
     </div>
   </div>
 </div>
+
+-->
 
 <!-- Paginator stuff -->
 <div class="text-center">

@@ -2,46 +2,32 @@
 layout: default
 title: "THEA 452"
 ---
+
+<div class="alert alert-dismissable alert-warning">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <p>This page features all of the blog posts I have compiled for THEA 452: Principles of Arts Management during the Summer of 2015.</p>
+</div>
+
+<!--
 			<div class="panel panel-default">
-				<div class="panel-heading"><h3 class="panel-title">THEA 452 Blogs</h3></div>
-					<div class="panel-body">
-					          <h4>Michelle Plunkett</h4>
-								<blockquote>
-									  <p>This is a page featuring all of the of blog posts I compiled for THEA 452: Principles of Arts Management during the Summer of 2015.</p>
-								</blockquote>
+					<div class="panel-body" style="margin-bottom:-1.25em">
+				            <p class="lead">This page features all of the blog posts I have compiled for THEA 452: Principles of Arts Management during the Summer of 2015.</p>
 					</div>
 			</div>
-			
+
+-->
+
+<!-- The posts -->
+  <div class="col">
+    {% for blog in site.categories.blogs %}
+    <article class="box" id="{{ blog.title }}">
 			<div class="panel panel-default">
-				<div class="panel-heading"><h3 class="panel-title">An Analysis of Krannert Center's Mission & Vision</h3></div>
+			  <div class="panel-heading"><h3 class="panel-title"><a href="{{ blog.url | prepend: site.baseurl }}">{{ blog.title }}</a></h3></div>
 					<div class="panel-body">
-						<h4>June 22, 2015</h4>
-							<b>Krannert Center Mission & Vision:</b>
-							<ul>
-								<li>Krannert Center for the Performing Arts is dedicated to the advancement of education, research, and public engagement through the pursuit of excellence and innovation in the performing arts.</li>
-								<li>Embracing the art of the past as well as the art of our time, the Center supports the belief that creativity is a core human characteristic and that the arts hold uniquely transformativepotential.</li>
-								<li>Through its multiple and integrated roles as classroom, laboratory, and public square, KrannertCenter serves as a touchstone for the exploration and expansion of human experience.</li>
-							</ul>
-							<p>I think Krannert's website presents very clear and concise mission and vision statements. Not only are the statements clear, but the statements are presented on their website in such a way that it is very easy to find. The mission and vision statements are logically located under the "Meet Us" portion of the homepage and then located within the "Mission and Vision" subpage.</p>
-							
-							<p>I find it fitting that Krannert employees put the mission and vision statements within the "Meet Us" section of the website. Because that is what mission and vision statements should do. Consumers should be able to theoretically "meet" the business and learn what the organization is setting out to do through reading these statements.</p>
-							
-							<p>My only suggestion to make this subpage on Krannert's website more effective and visible to a consumer is to hyperlink to the mission subpage through other pages that mention something having to do with working towards the vision/mission. For example, the mission and vision page could behyperlinked within the "Volunteer" subpage in order to increase a potential volunteer's awareness of the true values that Krannert has in their everyday business and to become a more informed consumer. The knowledge gained by a volunteer from understanding Krannert's mission would trickle down the ladder through their conversations with patrons and other community members during their shifts, for example. This could potentially influence attendance by a patron in the future.</p>
-							
-							<p>However, I do not believe that the statements need to be rewritten. I do think there is always room for improvement involving clarity and syntax, but in its current state, I think the statements present a clear and accurate goal set that Krannert has set forth to accomplish.</p>
+					  <span><h4>{{ blog.date | date:'%B %d, %Y' | replace:' 0',' ' }}</h4>
+						  {{ blog.content }}</span>
 					</div>
 			</div>
-			
-			<div class="panel panel-default">
-				<div class="panel-heading"><h3 class="panel-title">RAND Corporations Report (2001): A Response</h3></div>
-					<div class="panel-body">
-						<h4>June 16, 2015</h4>
-							<p>Other developing trends that have occurred in the field since the report was published include the trends in technology and how it affects the online presence of an arts organization. The Internet was still just developing to be the massive system that it is now in the late 1990s and the early 2000s, around when this report was published. The developing Internet trend was discussed briefly in the summary section of the reading but I think it is worth discussing in greater detail since the growth has been so large. I think that since the early 2000s, the development of social media and the availability of technology to consumers has affected the growth of the performing arts and entertainment fields.</p>
-							
-							<p>Marketing for performing arts organizations, through the aid of social media on the Internet, now has an audience of more than just people that live near the arts center or organization. I believe that through social media, new and larger audiences in more than one location have been created. This can especially be seen with Twitter. A consumer can follow the daily doings and happenings at the Lincoln Center for the Performing Arts, or even our very own Krannert Center from the comfort of their own home thousands of miles away from New York City or Urbana.</p>
-							
-							<p>Not only can a consumer follow a performing arts center on Twitter, but they can directly contact the arts center through this medium. This means they potentially have the ability to affect what is performed or things that the consumer would like to see happen at the arts organization. Also, the arts center has the ability now to receive direct, unfiltered, feedback from consumers in real-time. The trends in social media are affecting the performing arts and entertainment field by allowing the consumer to have more control over how they spend their money.</p>
-							
-							<p>I think it would be cool for more arts organizations to have applications on mobile devices. I think the use of mobile technology is limited right now in the arts industry, and I think they are missing out on a opportunity to advertise performances even more to new audiences. For example, the Starbucks app knows when you are near a Starbucks through GPS locating. A performing arts center application could notify someone when they are near the arts center and send them a small list of upcoming performances with a link to buy tickets. Real-time advertising like notifications could affect the audience demographics drastically.</p>
-					</div>
-			</div>		
+    </article>
+    {% endfor %} 
+  </div>

@@ -2,12 +2,31 @@
 layout: default
 title: "THEA 452"
 ---
+
+<div class="alert alert-dismissable alert-warning">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <p>This page features all of the lesson reflection posts I have compiled for THEA 452: Principles of Arts Management during the Summer of 2015.</p>
+</div>
+
+<!--
 			<div class="panel panel-default">
-				<div class="panel-heading"><h3 class="panel-title">THEA 452 Reflection</h3></div>
-					<div class="panel-body">
-					          <h4>Michelle Plunkett</h4>
-								<blockquote>
-									  <p>This is a page featuring all of the of lesson reflection posts I compiled for THEA 452: Principles of Arts Management during the Summer of 2015.</p>
-								</blockquote>
+					<div class="panel-body" style="margin-bottom:-1.25em">
+				            <p class="lead">This page features all of the lesson reflection posts I have compiled for THEA 452: Principles of Arts Management during the Summer of 2015.</p>
 					</div>
 			</div>
+-->
+
+<!-- The posts -->
+  <div class="col">
+    {% for reflection in site.categories.reflections %}
+    <article class="box" id="{{ reflection.title }}">
+			<div class="panel panel-default">
+			  <div class="panel-heading"><h3 class="panel-title"><a href="{{ reflection.url | prepend: site.baseurl }}">{{ reflection.title }}</a></h3></div>
+					<div class="panel-body">
+					  <span><h4>{{ reflection.date | date:'%B %d, %Y' | replace:' 0',' ' }}</h4>
+						  {{ reflection.content }}</span>
+					</div>
+			</div>
+    </article>
+    {% endfor %} 
+  </div>
