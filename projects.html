@@ -1,0 +1,32 @@
+---
+layout: default
+title: "Projects"
+---
+
+<div class="alert alert-dismissable alert-warning">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <p>This page features projects I have completed for various courses at the University of Illinois.</p>
+</div>
+
+<!--
+			<div class="panel panel-default">
+					<div class="panel-body" style="margin-bottom:-1.25em">
+				            <p class="lead">This page features projects I have completed for various courses at the University of Illinois.</p>
+					</div>
+			</div>
+-->
+
+<!-- The posts -->
+  <div class="col">
+    {% for projects in site.categories.projects %}
+    <article class="box" id="{{ projects.title }}">
+			<div class="panel panel-default">
+			  <div class="panel-heading"><h3 class="panel-title"><a href="{{ projects.url | prepend: site.baseurl }}">{{ projects.title }}</a></h3></div>
+					<div class="panel-body">
+					  <span><h4>{{ projects.date | date:'%B %d, %Y' | replace:' 0',' ' }}</h4>
+						  {{ projects.content }}</span>
+					</div>
+			</div>
+    </article>
+    {% endfor %} 
+  </div>
