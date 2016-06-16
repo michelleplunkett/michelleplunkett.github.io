@@ -29,13 +29,18 @@
       <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="">Projects</a></li>
+                <ul class="dropdown-submenu">
+                <a tabindex="-1" href="#">Projects</a>
+                    <li><a href={% post_url /projects/2015-11-24-CS105-Scratch %}>CS 105 Scratch Project</a></li>
+                    <li><a href={% post_url /projects/2015-11-17-THEA453Design %}>THEA 453 Sound Design</a></li>
+                </ul>
             <li><a href="/compositions.html">Compositions</a></li>
           </ul>
       </li>
       <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Writing Samples <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-submenu" role="menu">
             <li><a href={% post_url /writing/2016-06-16-INFO202Final %}>INFO 202 Final Paper</a></li>
             <li><a href={% post_url /writing/2016-06-16-INFO202ArticleReview %}>INFO 202 Article Review</a></li>
             <li><a href={% post_url /writing/2015-12-15-MUS400Final %}>MUS 400 Final Paper</a></li>
