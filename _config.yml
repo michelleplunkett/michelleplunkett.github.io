@@ -9,5 +9,5 @@ github_username:  michelleplunkett
 
 # Build settings
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 github: https://github.com/michelleplunkett/michelleplunkett.github.io
