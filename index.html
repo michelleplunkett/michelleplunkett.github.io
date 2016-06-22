@@ -7,7 +7,7 @@ layout: default
     {% for post in site.categories.posts %}
     <article class="box" id="{{ post.title }}">
 			<div class="panel panel-default">
-			  <div class="panel-heading"><h3 class="panel-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3></div>
+			  <div class="panel-heading"><h4 class="panel-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4></div>
 					<div class="panel-body">
 					  <!--<span><h4>{{ post.date | date:'%B %d, %Y' | replace:' 0',' ' }}</h4>-->
 						  {{ post.content }}</span>
