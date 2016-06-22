@@ -9,5 +9,7 @@ github_username:  michelleplunkett
 
 # Build settings
 markdown: redcarpet
+kramdown:  
+  parse_block_html: true
 highlighter: rouge
 github: https://github.com/michelleplunkett/michelleplunkett.github.io
