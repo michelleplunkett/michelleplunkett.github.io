@@ -1,10 +1,15 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+  <div class="col">
+    {% for post in site.categories.posts %}
+    <article class="box" id="{{ post.title }}">
+			<div class="panel panel-default">
+					<div class="panel-body">
+						  {{ post.content }}</span>
+					</div>
+			</div>
+    </article>
+    {% endfor %} 
+  </div>
