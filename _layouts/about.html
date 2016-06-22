@@ -1,0 +1,16 @@
+---
+layout: default
+---  
+
+<!-- The posts -->
+  <div class="col">
+    {% for post in site.categories.about %}
+    <article class="box" id="{{ post.title }}">
+			<div class="panel panel-default">
+					<div class="panel-body">
+						  {{ post.content }}
+					</div>
+			</div>
+    </article>
+    {% endfor %} 
+  </div>
