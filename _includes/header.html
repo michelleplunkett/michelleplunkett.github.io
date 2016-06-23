@@ -1,23 +1,22 @@
-<div class="page-header">
-  <div class="panel panel-default jumbotron-header jumbotron">
-    <div class="panel-body">
-        <img src="/images/headshot.jpg" alt="Michelle Plunkett" style="width:25%" align="right" />
-      <h1><a href="/" style="text-decoration: none" color: black; >{{ site.title }}</a></h1>
-			<h3>Graduate Student in Public Affairs at UT Austin & Oboist</h3>
-            <h4>
-            <span style="margin-right:.2em"><a href="https://www.facebook.com/michellejane"><i class="fa fa-facebook-square solo fa-lg"></i></a></span>
-            <span style="margin-right:.2em"><a href="https://twitter.com/michelleisatwin"><i class="fa fa-twitter-square solo fa-lg"></i></a></span>
-            <span style="margin-right:.2em"><a href="https://www.linkedin.com/in/michellejane"><i class="fa fa-linkedin-square solo fa-lg"></i></a></span>
-            <span style="margin-right:.2em"><a href=mailto:michellep1994@gmail.com><i class="fa fa-envelope-square solo fa-lg"></i></a></span>
-            </h4>
-    </div>
-  </div>
-</div>
+<header class="site-header">
 
-<!--
-<div class="alert alert-dismissable alert-warning">
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <h4>Pardon the dust</h4>
-    <p>Please pardon the dust, my website is still under construction.</p>
-</div>
--->
+  <div class="wrapper">
+
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <!-- {{ site.title }} instead of blog -->
+        <a class="page-link" href="{{ site.baseurl }}/">home</a>
+
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
