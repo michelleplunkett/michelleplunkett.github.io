@@ -14,6 +14,3 @@ github: https://github.com/michelleplunkett/michelleplunkett.github.io
 
 #Handling Reading
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-# Initializes a Markdown parser
-markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
