@@ -11,3 +11,6 @@ github_username:  michelleplunkett
 markdown: redcarpet
 highlighter: rouge
 github: https://github.com/michelleplunkett/michelleplunkett.github.io
+
+#Handling Reading
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
