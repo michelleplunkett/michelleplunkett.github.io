@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Discussion 1
-description: Cultural and Social Trends and the Affect on Krannert Center
+title: How Cultural & Social Trends Are Affecting the Model Organization
+description: Discussion 1 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-06-18
 ---
 
-In this discussion post, I address the following questions:
-
 * How are cultural and social trends affecting your model organization?
 * Please list specific trends and explain how they are affecting or can potentially affect your organization.
+
+<!--more-->
 
 As found in the Ziff Marketing, Inc. survey mentioned in Chapter 4 of Management and the Arts, I think that Krannert's attendance is largely affected by peer group influence. When I have asked my older coworkers why they attended a certain show at Krannert, many of them will say, "because my friend invited me," or because their friend told them about the show and recommended it to them. I have found in my own experience that people who did not "grow up" in the arts like most music students, like myself, find their way into the arts through being invited to an event.
 

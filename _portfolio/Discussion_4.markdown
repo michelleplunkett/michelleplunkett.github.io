@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Discussion 4
-description: Cultural and Social Trends and the Affect on Krannert Center
+title: Organizational Structure
+description: Discussion 4 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-07-09
 ---
 
-In this blog, I address the following questions:
-
 * Based on this module's reading and what you know about your chosen organization, what type of organizational structure might they have?
+
+<!--more-->
 
 According to the Krannert website's subpage listing of staff member's names and biographies, employees are placed into groups or departments. This means that Krannert's organization structure is based on a "divisional structure" where employees are grouped into separate business units and divisions. Specifically, I believe that Krannert Center functions under the specific, "Product Departmentalization" divisional structure. Meaning that each department is under control of one product that the business creates and is overseen by a manager of that department.
 

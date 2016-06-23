@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Discussion 6
-description: Cultural and Social Trends and the Affect on Krannert Center
+title: Organization Potential Donors/Investors Campaign
+description: Discussion 6 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-07-23
 ---
 
-In this blog, I address the following questions:
-
 * Create an outline for a comprehensive campaign, discussing the types of potential donors/investors who would likely be good prospects for your organization.
+
+<!--more-->
 
 <b>Fundraising Campaign Plan:</b>
 
@@ -19,21 +19,21 @@ In this blog, I address the following questions:
 <li>Through its multiple and integrated roles as classroom, laboratory, and public square, Krannert Center serves as a touchstone for the exploration and expansion of human experience.</li>
 </ul>
 <li>Values</li>
-<ol type="1" > <li>We dig into that past, sift through its meanings, and uncover new truths. </li>
-<li>We survey our planet and record not just its problems but its tangible solutions. </li>
-<li>We embrace all perspectives, drink in images from around the globe, and soak up voices in every language. </li>
-<li>We forge deep collaborations. </li>
-<li>We envision a future of sustainability, health, inclusivity, equity, and beauty. </li>
-<li>We send messages of hope down through time to future generations. </li>
-<li>We are art makers. </li>
-<li>We are knowledge builders and explorers of our unrealized human potential. </li>
+<ol type="1" > <li>We dig into that past, sift through its meanings, and uncover new truths.</li>
+<li>We survey our planet and record not just its problems but its tangible solutions.</li>
+<li>We embrace all perspectives, drink in images from around the globe, and soak up voices in every language.</li>
+<li>We forge deep collaborations.</li>
+<li>We envision a future of sustainability, health, inclusivity, equity, and beauty.</li>
+<li>We send messages of hope down through time to future generations.</li>
+<li>We are art makers.</li>
+<li>We are knowledge builders and explorers of our unrealized human potential.</li>
 <li>We see a world of promise.</li>
 </ol>
 </ol>
 </ol>
 <ol type="1" ><li>Establish Fundraising Committee</li></ol>
 <ol type="1" ><li>Determine Activities of the Committee</li>
-<ol type="i" ><li>Review current fundraising </li>
+<ol type="i" ><li>Review current fundraising</li>
 <ul>
 <li>Types of fundraising activity already in place at Krannert:</li>
 <ul>
@@ -73,7 +73,7 @@ In this blog, I address the following questions:
 </ul>
 <li>Develop a timeline</li>
 <li>Develop a budget</li>
-</ol><li>Set-up a benefit fund </li>
+</ol><li>Set-up a benefit fund</li>
 <li>Develop a "call-to-action" letter</li>
 <ol type="i" ><li>Develop letter content</li>
 <li>Develop donation form</li>

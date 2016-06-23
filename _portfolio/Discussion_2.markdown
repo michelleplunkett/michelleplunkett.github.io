@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Discussion 2
-description: Cultural and Social Trends and the Affect on Krannert Center
+title: Analysis of the RAND Corporation Report
+description: Discussion 2 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-06-22
 ---
-
-In this discussion post, I address the following questions:
 
 * The RAND Corporation Report states that in the early 20th Century, there was a split between audiences who wanted to attend the recorded "popular" arts (movies, music, etc.) and the live "high" arts, and that prices increased for the high arts.
 * Can you explain why prices increased?
 * How does this split affect your organization?
 * Does your organization present popular arts or high arts or a combination?
+
+<!--more-->
 
 The prices increased because the people who chose to continue to support the "high" arts had to accept higher prices in order to maintain the supply of the art that they preferred. This was also when the new model for arts organizations began to develop. Nonprofit arts organizations were now a way for people to distinguish themselves in society through their tastes in art.
 
