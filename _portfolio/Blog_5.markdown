@@ -7,6 +7,8 @@ date: 2015-07-15
 
 * How does supply and demand affect the performing arts?
 
+<img src="https://www.dropbox.com/s/vkego2ks3c81dgq/Screen%20Shot%202015-07-15%20at%2010.55.17%20AM.png?raw=1" width="100%">
+
 > "Much has been written about the ways in which such experiences enhance individual lives, foster personal growth, and contribute to the public sphere.3 For our purposes, the important point is that these benefits depend on the existence of works of art, opportunities to encounter them, and individuals capable of being caught up and moved by works of art so that they develop the inclination to seek more such experiences" (Zakaras 10). 
 
 Above is a quote that explains how supply of the arts is created and how it is involved with demand. Essentially, artists are created through an interest in the arts and therefore create a supply to support the demand. Also, the above figure is from a RAND Corp. study called Cultivating Demand for the Arts, which explains how supply and demand is created in the arts and the economic impact the community has on the arts and the converse: "At the center is where the individual who is seeking an arts experience (demand) encounters a work of art (supply)" (Zakaras 11). According to this study, the community's access to the arts demands on the supply and demand of the specific art in order to create "the aesthetic experience."
@@ -18,6 +20,8 @@ To create a supply for the arts, many organizations, universities, schools, teac
 According to the law of demand, as a price of a service is raised, the quantity demanded is lower. The demand of the arts is seen visually in a report completed by the National Arts Index. During times of recession (2002-2003 & 2008-2009), the demand of the arts decreased and as a product of the recession, arts organizations most likely had to raise ticket prices in order to maintain their budget and income levels. Through this correlation, the demand of the arts during these times is lower, as shown by the index score. This is partially because income is lowered for most art consumers during a time of recession, which is a demand determinant which affects the law of demand's reliability. Income directly correlates to the demand of services and goods. The lower the income, the lower the demand. Other demand determinants include the price of other goods (which can affect flexible income to be spent on entertainment by a consumer) and the personal tastes of the consumer.
 
 Right now, demand of the quantity of the arts is on an upward trend because the United States is coming out of the recession of 2008-2009. This also means that arts organizations can start to lower prices of services (tickets) because of the growing trend in demand of the arts, as stated by the law of demand.
+
+<img src="https://www.dropbox.com/s/cj5d75h5emaxaci/2012dataNAI.jpg?raw=1">
 
 > "Since 2002, discretionary consumer spending on the arts (e.g., admissions, musical instrument purchases) has remained in the $150 billion range. Because total consumer spending increased over time, however, the artsâ€™ share slipped from 1.83 percent in 2002 to 1.35 percent in 2012. As noted in the Key Findings, one of the economic factors most strongly correlated with the health of the arts is total employment in the economy. As economic revitalization in coming years builds employment, consumer buying power, and the charitable instinct, the arts are poised to compete better."
 
