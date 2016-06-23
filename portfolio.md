@@ -1,9 +1,20 @@
 ---
 layout: page
 title: portfolio
+description: Writings from my previous courses at the University of Illinois Urbana-Champaign & The University of T.
 permalink: /portfolio/
 ---
 
+<ul class="post-list">
+{% for project in site.portfolio reversed %}
+    <li>
+        <h3><a class="project-title" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h3>
+        <p class="post-meta">{{ project.date | date: '%B %-d, %Y' }} &middot; {{ project.description }}</p>
+      </li>
+{% endfor %}
+</ul>
+
+<!--
 {% for project in site.portfolio %}
 
 {% if project.redirect %}
@@ -45,3 +56,4 @@ permalink: /portfolio/
 {% endif %}
 
 {% endfor %}
+-->

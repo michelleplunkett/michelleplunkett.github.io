@@ -1,0 +1,20 @@
+---
+layout: post
+title: Discussion 1
+description: Cultural and Social Trends and the Affect on Krannert Center
+date: 2015-06-22
+---
+
+#### In this discussion post, I address the following questions:
+
+
+* How are cultural and social trends affecting your model organization?
+* Please list specific trends and explain how they are affecting or can potentially affect your organization.
+
+As found in the Ziff Marketing, Inc. survey mentioned in Chapter 4 of Management and the Arts, I think that Krannert's attendance is largely affected by peer group influence. When I have asked my older coworkers why they attended a certain show at Krannert, many of them will say, "because my friend invited me," or because their friend told them about the show and recommended it to them. I have found in my own experience that people who did not "grow up" in the arts like most music students, like myself, find their way into the arts through being invited to an event.
+
+That's why I think the events that Krannert is now holding after certain events to meet the musicians is very important to grow audiences. Events like the meet and greets that were held last season make the musicians and performers more accessible to people who have previously not had that much exposure to classical music or the theatre. I think part of the reason these events are so successful is the social accessibility of audience members to the performers. If an audience member was invited to attend an event at Krannert with a meet and greet scheduled to occur right after the event concludes, I think they will be more likely to attend another show or concert at Krannert in the future.
+
+In terms of other social factors, I think the Champaign-Urbana community is a relatively "open-minded" community with a more liberal mindset. This can be seen through a number of non-traditional events that Krannert holds every year. Champaign-Urbana also is open and accepting to the gay community, offering gay bars like "C-Street" and other accepting events held in the community. This being said, I do not think Krannert is affected by any particularly negative social trends and is accepting of homosexuals and not repressed by religious beliefs within the community.
+
+Overall, I do not think any major cultural or social trends affect Krannert's programming.

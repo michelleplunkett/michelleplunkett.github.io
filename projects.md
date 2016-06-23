@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /projects/
 title: projects
-description: Project submissions from my past courses at the University of Illinois Urbana-Champaign.
+description: Project submissions from my previous courses at the University of Illinois Urbana-Champaign & The University of Texas at Austin.
+permalink: /projects/
 ---
 
 {% for project in site.projects %}
@@ -46,13 +46,3 @@ description: Project submissions from my past courses at the University of Illin
 {% endif %}
 
 {% endfor %}
-<!-- 
-<ul class="post-list">
-{% for poem in site.projects reversed %}
-    <li>
-        <h2><a class="project-title" href="{{ poem.url | prepend: site.baseurl }}">{{ poem.title }}</a></h2>
-        <p class="post-meta">{{ poem.date | date: '%B %-d, %Y' }}</p>
-      </li>
-{% endfor %}
-</ul>
--->
