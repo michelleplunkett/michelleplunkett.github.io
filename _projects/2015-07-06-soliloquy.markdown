@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MUS 400 - Composition 1
+title: MUS 400 Composition 1
 date: 2015-10-01
 ---
 
