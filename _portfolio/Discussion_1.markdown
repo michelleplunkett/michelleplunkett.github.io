@@ -2,11 +2,10 @@
 layout: post
 title: Discussion 1
 description: Cultural and Social Trends and the Affect on Krannert Center
-date: 2015-06-22
+date: 2015-06-18
 ---
 
-#### In this discussion post, I address the following questions:
-
+In this discussion post, I address the following questions:
 
 * How are cultural and social trends affecting your model organization?
 * Please list specific trends and explain how they are affecting or can potentially affect your organization.

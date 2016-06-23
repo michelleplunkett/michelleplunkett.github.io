@@ -1,7 +1,7 @@
 ---
 layout: page
 title: projects
-description: Project submissions from my previous courses at the University of Illinois Urbana-Champaign & The University of Texas at Austin.
+description: Projects from my previous courses at the University of Illinois Urbana-Champaign & The University of Texas at Austin.
 permalink: /projects/
 ---
 

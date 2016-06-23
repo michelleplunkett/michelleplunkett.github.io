@@ -2,7 +2,7 @@
 layout: post
 title: Discussion 2
 description: Cultural and Social Trends and the Affect on Krannert Center
-date: 2015-02-15
+date: 2015-06-22
 ---
 
 In this discussion post, I address the following questions:
@@ -20,16 +20,20 @@ For example, the price of admission for a UI Student for the "Dedication Concert
 
 However, not only was this the dedication concert held to open Krannert officially, but the concert featured famous musicians like Tossy Spivakovsky (a virtuoso violinist). Spivakovsky, most likely, was not cheap to hire even in the 1960s. So it is impressive that the cost was still low to attend the dedication even when renowned artists were invited to perform.
 
+![Discussion 2 Image 1]({{ site.baseurl }}/img/discussion1.PNG)
+
 However, nowadays, a ticket to attend a concert at Krannert at the same magnitude of the 1969 dedication concert will set an adult back around $50 today ($7.76 in 1969). So, the cost of a ticket to attend a comparable event at Krannert today is around 3 times more expensive ($7.76 divided by $2.50) than when Krannert first opened. The price increase is very clear when put in this context. However, it is worth noting that the price could have been lower for the Dedication Concert through the support of sponsor funding and from Mr. and Mrs. Krannert's direct contribution. But I think the price increase seen in this example is still relevant.
 
 I think that the Krannert Center for the Performing Arts presents a combination of popular arts and high arts. Krannert features classical music from world-renown symphonies and orchestras while also embracing a popular music culture. Popular music can be seen at the biyearly guitar festival held at Krannert called ELLNORA. Artists that are not considered to be "high" art can be seen at this festival like the Punch Brothers and Bela Fleck. (Speaking of which, ELLNORA is named after Mrs. Krannert, whose first name is Ellnora.) However, during the August-May school year, I do think mostly "high" art like classical music concerts are featured, especially since our own School of Music uses Foellinger Great Hall almost exclusively for major ensemble concerts.
 
 Here's a bonus picture of the construction on Krannert's Great Hall, just because I think it is super cool and interesting.
 
+![Discussion 2 Image 2]({{ site.baseurl }}/img/discussion2.PNG)
+
 By the way, for anyone who is wondering, I received these pictures and information about Krannert from the UIUC Archives while I was doing research for RHET 105 (a freshman writing course). There is a scrapbook currently held in the UIUC Undergrad Library Archives that contains all of the newspaper clippings and items (like the tickets I feature in this post) from the grand opening of Krannert. I would highly suggest checking it out if you have some free time!
 
-References
+#### References
 
 Dedication Concert Tickets, (April 19-20, 1969), Record Series 32/1/12, Box 2, University of Illinois Archives.
 
-Krannert Center Great Hall Construction, 1968, Photographic Subject File, Record Series 39/2/20, Box BUI â€“ KCPA, Folder BUI â€“ KCPA Construction Great Hall 1968, University of Illinois Archives.
+Krannert Center Great Hall Construction, 1968, Photographic Subject File, Record Series 39/2/20, Box BUI KCPA, Folder BUI KCPA Construction Great Hall 1968, University of Illinois Archives.
