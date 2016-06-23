@@ -81,11 +81,11 @@ a {
   }
   */ }
   a:hover {
-    color: #FF3636;
+    color: #B509AC;
     text-decoration: none; }
 
 article a {
-  color: #FF3636;
+  color: #B509AC;
   font-weight: 100; }
   article a:hover {
     text-decoration: none; }
@@ -168,7 +168,7 @@ pre {
   margin-bottom: 0; }
   .site-title:hover {
     text-decoration: none;
-    color: #FF3636; }
+    color: #B509AC; }
 
 .site-nav {
   float: right;
@@ -202,7 +202,7 @@ pre {
   line-height: 3em;
   z-index: 25; }
   .header-bar h1 {
-    color: #FF3636;
+    color: #B509AC;
     font-size: 75px; }
   .header-bar h2 {
     font-size: 25px; }
@@ -235,7 +235,7 @@ pre {
 .paginationicon {
   font-size: 50px; }
   .paginationicon a {
-    color: #FF3636; }
+    color: #B509AC; }
 
 /**
  * Page content   **********************************************************
@@ -365,7 +365,7 @@ pre {
  * Portfolio pages **********************************************************
 */
 .blankbox {
-  background: #FF3636; }
+  background: #B509AC; }
 
 .img_row {
   height: 275px;
