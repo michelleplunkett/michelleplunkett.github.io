@@ -1,7 +1,7 @@
 ---
 layout: page
 title: portfolio
-description: Writings from my previous courses at the University of Illinois Urbana-Champaign & The University of T.
+description: Writings from my previous courses at UIUC and UT Austin.
 permalink: /portfolio/
 ---
 
