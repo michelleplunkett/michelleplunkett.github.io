@@ -5,7 +5,7 @@ description: Projects from my previous courses at UIUC and UT Austin.
 permalink: /projects/
 ---
 
-{% for project in site.projects %}
+{% for project in site.projects reversed %}
 
 {% if project.redirect %}
 <div class="project">
