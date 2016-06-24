@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Supply and Demand in the Arts
-description: Blog 5 - Cultural and Social Trends and the Affect on Krannert Center
-date: 2015-07-15
+title: Organization Marking Plan & Fundraising
+description: Blog 6 - Cultural and Social Trends and the Affect on Krannert Center
+date: 2015-07-22
 ---
 
 * Discuss how the marketing plan and organizational fundraising are interconnected.
