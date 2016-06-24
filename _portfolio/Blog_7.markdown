@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Death of the Artist: A Critique
+title: The Death of the Artist - A Critique
 description: Blog 7 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-07-28
 ---
