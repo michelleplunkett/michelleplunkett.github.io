@@ -1,6 +1,6 @@
 ---
 layout: post
-title: INFO 202 Final Paper
+title: 2014 Oboe Recital
 date: 2014-05-05
 img: /img/2014recital.PNG
 ---
