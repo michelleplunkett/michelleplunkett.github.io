@@ -7,18 +7,10 @@ img: /img/2014recital.PNG
 
 ### Michelle Plunkett's 2014 Recital  
 
-
-
-#### Part I: Sonata for Oboe and Piano, Op. 166 by Camille Saint-Saens  
-
-
+Part I: Sonata for Oboe and Piano, Op. 166 by Camille Saint-Saens  
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/IBM7qktLykM" frameborder="0" allowfullscreen></iframe>
 
-
-
-#### Part II: Oboe Concerto in C Major, Hob. VIIg:C1 by Franz Joseph Haydn  
-
-
+Part II: Oboe Concerto in C Major, Hob. VIIg:C1 by Franz Joseph Haydn  
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/yI-CM37YHuE" frameborder="0" allowfullscreen></iframe>
