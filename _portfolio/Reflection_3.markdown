@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SWOT Analysis
-description: Lesson Reflection 2 - Cultural and Social Trends and the Affect on Krannert Center
-date: 2015-06-28
+title: Advertisement Analysis
+description: Lesson Reflection 3 - Cultural and Social Trends and the Affect on Krannert Center
+date: 2015-07-04
 ---
 
 * Analyze an advertisement for your chosen organization, based on the core concepts of marketing.
