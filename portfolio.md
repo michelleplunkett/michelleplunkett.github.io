@@ -2,6 +2,7 @@
 layout: page
 title: portfolio
 description: Writings from my previous courses at UIUC and UT Austin.
+permalink: /portfolio/
 ---
 
 <ul class="post-list">
