@@ -5,7 +5,7 @@ date:   2016-06-24
 description: graduate studies at UT Austin
 ---
 
-<img src="/img/utexas.png" style="width: 75%;"/>
+<img src="/img/utexas.png" style="width: 50%;"/>
 
 In about a month and a half I will begin my graduate studies at the University of Texas at Austin Lyndon B. Johnson School of Public Affairs studying for a Master of Public Affairs degree.
 
