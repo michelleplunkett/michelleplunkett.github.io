@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  starting a new chapter
-date:   2016-06-24
+date:   2016-06-16
 description: graduate studies at UT Austin
 ---
 
