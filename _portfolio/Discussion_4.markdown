@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Organizational Structure
+title: Structure
 description: Discussion 4 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-07-09
 ---

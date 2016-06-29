@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Organization Potential Donors/Investors Campaign
+title: Potential Donors/Investors Campaign
 description: Discussion 6 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-07-23
 ---

@@ -45,7 +45,7 @@ In Lesson 5, I learned about budgets and fiscal management within arts organizat
   </ul>
 </ul>
 
-<img src="https://www.dropbox.com/s/apowxla91termx2/HW%20Week%205%20Statement%20of%20Activity.png?raw=1" ></img>
+<img src="https://www.dropbox.com/s/apowxla91termx2/HW%20Week%205%20Statement%20of%20Activity.png?raw=1" width="100%" ></img>
 
 #### Balance sheet
 
@@ -75,4 +75,4 @@ In Lesson 5, I learned about budgets and fiscal management within arts organizat
   </ul>
 </ul>
 
-<img src="https://www.dropbox.com/s/xyhpgev6bhcj4c9/HW%20Week%205%20Balance%20Sheet.png?raw=1" ></img>
+<img src="https://www.dropbox.com/s/xyhpgev6bhcj4c9/HW%20Week%205%20Balance%20Sheet.png?raw=1" width="100%" ></img>

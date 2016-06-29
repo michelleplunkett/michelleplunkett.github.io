@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Organization Budget Summary
+title: Budget Summary
 description: Discussion 5 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-07-16
 ---

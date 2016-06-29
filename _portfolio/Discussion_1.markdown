@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Cultural & Social Trends Are Affecting the Model Organization
+title: Cultural & Social Trends
 description: Discussion 1 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-06-18
 ---

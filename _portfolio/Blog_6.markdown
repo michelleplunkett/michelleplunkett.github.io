@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Organizational Marketing Plan & Fundraising
+title: Marketing Plan & Fundraising
 description: Blog 6 - Cultural and Social Trends and the Affect on Krannert Center
 date: 2015-07-22
 ---
