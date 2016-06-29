@@ -7,6 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://michelle-plunkett.com" # the base hostname & protocol for your site
 github_username:  michelleplunkett
 
+permalink: /:title/
+
 # Build settings
 markdown: kramdown
 gems: [jekyll-paginate]
