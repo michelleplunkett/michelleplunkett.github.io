@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Organization - The Next 20 Years
-description: Lesson Reflection 7 - Cultural and Social Trends and the Affect on Krannert Center
+description: Lesson Reflection 7 - Arts Administration
 date: 2015-07-28
 ---
 
