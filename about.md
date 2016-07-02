@@ -10,7 +10,7 @@ My name is Michelle Plunkett.
 
 I am a graduate student at the University of Texas at Austin studying for a Master of Public Affairs degree. I plan to graduate in May of 2018.
 
-In May of 2016, I completed my undergraduate degree at the University of Illinois at Urbana-Champaign. I received a Bachelor of Arts in Music Technology with highest honors and University Honors (Bronze Tablet Scholar). 
+In May of 2016, I completed my undergraduate degree at the University of Illinois at Urbana-Champaign. I received a Bachelor of Arts in Music Technology with Highest Honors (GPA above 3.75 and top 6% of class) and Bronze Tablet Honors (top 3% of class). 
 
 ---
 
