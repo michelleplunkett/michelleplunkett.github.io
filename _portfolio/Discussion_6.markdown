@@ -12,7 +12,6 @@ date: 2015-07-23
 **Fundraising Campaign Plan:**
 
 1.  **Organization Self-Assessment** - In order to maintain focus and use these lists to create a campaign for fundraising.
-
 2.  **Mission and Vision**
     * Krannert Center for the Performing Arts is dedicated to the advancement of education, research, and public engagement through the pursuit of excellence and innovation in the performing arts.
     * Embracing the art of the past as well as the art of our time, the Center supports the belief that creativity is a core human characteristic and that the arts hold uniquely transformative potential.
