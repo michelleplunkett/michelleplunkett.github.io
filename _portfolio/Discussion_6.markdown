@@ -94,6 +94,7 @@ Here are some potential donors/investors who might be good prospects for Kranner
    * Donating to Krannert might be a good business idea for local companies since Krannert advertises supporters in the concert programs and on the website. This would be good publicity, especially since a lot of times, people who are coming to Krannert have extra money to spend on entertainment, and therefore extra money to spend at their business.
 
 **Resources:**
+
 *   [https://www.cfsarasota.org/Portals/0/Uploads/Documents/Nonprofits/DevelopmentPlanWorkbook%202014.pdf](https://www.cfsarasota.org/Portals/0/Uploads/Documents/Nonprofits/DevelopmentPlanWorkbook%202014.pdf)
 *   [http://www.krannertcenter.com/meetus/oursetting.aspx](http://www.krannertcenter.com/meetus/oursetting.aspx)
 *   [http://www.krannertcenter.com/meetus/missionandvision.aspx](http://www.krannertcenter.com/meetus/missionandvision.aspx)
