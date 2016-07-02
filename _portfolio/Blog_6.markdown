@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Marketing Plan & Fundraising
-description: Blog 6
+description: Blog 6 - Arts Administration
 date: 2015-07-22
 ---
 
@@ -49,4 +49,4 @@ Most importantly, the key to a successful fundraising campaign is transparency o
 
 Resources:
 
-[Steps to Creating Your Best Nonprofit Marketing Plan Ever](http://www.fundraising123.org/files/training/7%20Steps%20to%20Creating%20Your%20Best%20Nonprofit%20Marketing%20Plan%20Ever.pdf)
+* [Steps to Creating Your Best Nonprofit Marketing Plan Ever](http://www.fundraising123.org/files/training/7%20Steps%20to%20Creating%20Your%20Best%20Nonprofit%20Marketing%20Plan%20Ever.pdf)
