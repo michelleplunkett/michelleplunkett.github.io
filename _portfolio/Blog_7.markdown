@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Death of the Artist - A Critique
-description: Blog 7
+description: Blog 7 - Arts Administration
 date: 2015-07-28
 ---
 
@@ -21,5 +21,4 @@ I think the technological affects that Deresiewicz discusses are already apparen
 In the end, art only becomes famous if support and enjoyment comes from the audience. This will mean the artist has to put him or herself out there in different ways, which is a pretense of our current time and societal ideals, however, I disagree with Deresiewiczthat the art that is being "produced" is just made to make money and is lower in quality than our predecessors. One does not choose to make art for the sake of financial stability, in any century.
 
 Article Link:
-
-[The Death of the Artist - and the Birth of the Creative Entrepeneur](http://www.theatlantic.com/magazine/archive/2015/01/the-death-of-the-artist-and-the-birth-of-the-creative-entrepreneur/383497/)
+* [The Death of the Artist - and the Birth of the Creative Entrepeneur](http://www.theatlantic.com/magazine/archive/2015/01/the-death-of-the-artist-and-the-birth-of-the-creative-entrepreneur/383497/)
