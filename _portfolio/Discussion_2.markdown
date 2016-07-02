@@ -28,7 +28,7 @@ I think that the Krannert Center for the Performing Arts presents a combination 
 
 Here's a bonus picture of the construction on Krannert's Great Hall, just because I think it is super cool and interesting.
 
-![Discussion 2 Image 2]({{ site.baseurl }}/img/discussion2.png)
+![Discussion 2 Image 2](/img/discussion2.png)
 
 By the way, for anyone who is wondering, I received these pictures and information about Krannert from the UIUC Archives while I was doing research for RHET 105 (a freshman writing course). There is a scrapbook currently held in the UIUC Undergrad Library Archives that contains all of the newspaper clippings and items (like the tickets I feature in this post) from the grand opening of Krannert. I would highly suggest checking it out if you have some free time!
 
