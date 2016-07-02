@@ -18,6 +18,6 @@ A consumer need that is present in the Champaign-Urbana community is the availab
 
 Here is the link to the video advertisement that I watched: <a href="https://www.youtube.com/watch?v=ZgWtsgKa-Mg">Krannert Center 2012-13</a>.
 
-<iframe src="https://www.youtube.com/embed/ZgWtsgKa-Mg" frameborder="0" allowfullscreen width="100%" height="400%"></iframe>
+![Video](https://www.youtube.com/embed/ZgWtsgKa-Mg)
 
 In terms of my specific advertisement, the video presented these words/names: bold, spontaneous, classic, cutting edge, La Excelencia, Circus Oz, Monterey Jazz Festival on Tour, Streb. This video was advertising ticket sales through the use of listing names of performance groups and words that describe Krannert and the events that will be held. Through listing words like "cutting edge" and "classic," Krannert was trying to appeal to a younger demographic while also trying to draw in an older audience. However, the video's images appealed to a younger audience because of the outdoor activities that younger people do during the summer. Also, through this advertisement, Krannert successfully and concisely told their audience when tickets go on sale, which was the main goal of the video; to let people know what performances will be held, and when you can buy tickets. I believe this video is an example of effective and simple advertising.
