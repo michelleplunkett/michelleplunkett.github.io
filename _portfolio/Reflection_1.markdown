@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Organizational Success
-description: Lesson Reflection 1 - Cultural and Social Trends and the Affect on Krannert Center
+description: Lesson Reflection 1 - Arts Administration
 date: 2015-06-20
 ---
 
