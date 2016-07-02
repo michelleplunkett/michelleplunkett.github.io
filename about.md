@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about
+title: About
 permalink: /about/
 ---
 
@@ -8,9 +8,9 @@ permalink: /about/
 <br/>
 My name is Michelle Plunkett.
 
-I am a graduate student at the University of Texas at Austin studying for a Master of Public Affairs degree.
+I am a graduate student at the University of Texas at Austin studying for a Master of Public Affairs degree. I plan to graduate in May of 2018.
 
-I plan to graduate in May of 2018.
+In May of 2016, I completed my undergraduate degree at the University of Illinois at Urbana-Champaign. I received a Bachelor of Arts in Music Technology with highest honors and University Honors (Bronze Tablet Scholar). 
 
 <br/><br/>
 
