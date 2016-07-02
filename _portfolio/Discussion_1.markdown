@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cultural & Social Trends
-description: Discussion 1
+description: Discussion 1 - Arts Administration
 date: 2015-06-18
 ---
 
