@@ -38,7 +38,7 @@ However, I believe that even though the events that Krannert puts on every seaso
 
 Final tidbit: I just noticed today that Krannert's logo has a little heart like symbol in the middle of where the lines meet. This could be another way that Krannert shows that they are dedicated to their involvement within the arts and making the arts available to the community.
 
-<img src="https://www.dropbox.com/s/cggm5mual8nl7n0/Untitled%20picture.png?raw=1">
+<img src="https://www.dropbox.com/s/cggm5mual8nl7n0/Untitled%20picture.png?raw=1" width="100%">
 
 References:
 
