@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supply and Demand in the Arts
-description: Blog 5 - Cultural and Social Trends and the Affect on Krannert Center
+description: Blog 5
 date: 2015-07-15
 ---
 
