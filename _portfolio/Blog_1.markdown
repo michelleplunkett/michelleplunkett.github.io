@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Analysis of Krannert Center's Mission & Vision
-description: Blog 1 - Cultural and Social Trends and the Affect on Krannert Center
+description: Blog 1
 date: 2015-06-16
 ---
 
