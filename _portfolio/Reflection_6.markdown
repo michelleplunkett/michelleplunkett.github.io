@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Societal Demographics
-description: Lesson Reflection 6 - Cultural and Social Trends and the Affect on Krannert Center
+description: Lesson Reflection 6 - Arts Administration
 date: 2015-07-27
 ---
 
