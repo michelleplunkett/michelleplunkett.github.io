@@ -1,7 +1,7 @@
 ---
 layout: page
 title: portfolio
-description: Writings from my previous courses at UIUC and UT Austin.
+description: Writing samples from a previous course at UIUC in Arts Administration. More samples to be added from UT Austin this fall. 
 permalink: /portfolio/
 ---
 
