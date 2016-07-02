@@ -24,7 +24,7 @@ In a previous module, we conducted a SWOT analysis that is essentially an intern
              <li>Handicap accessibility is a huge factor in running a performance hall and making sure patrons and guests of all backgrounds can enjoy a performance in the hall.</li>
              <li>Employing people to run and maintain the performance hall without discrimination is another Human Resource factor involved with running a hall. Some examples of employees that would need to be hired to run the hall are janitors, stage crew, lighting designers, audio techs, ushers, etc. All of these people will need to go through HR to be hired.</li>
               </ul>
-         </ul>  
+          </ul>  
     <li>High quality facility</li>
     <li>Location on the University of Illinois campus</li>
     <li>Organized and dedicated staff</li>
