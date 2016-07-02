@@ -13,102 +13,87 @@ date: 2015-07-23
 
 1.  Organization Self-Assessment - In order to maintain focus and use these lists to create a campaign for fundraising.
 
-1.  Mission and Vision
+2.  Mission and Vision
 
-*   Krannert Center for the Performing Arts is dedicated to the advancement of education, research, and public engagement through the pursuit of excellence and innovation in the performing arts.
-*   Embracing the art of the past as well as the art of our time, the Center supports the belief that creativity is a core human characteristic and that the arts hold uniquely transformative potential.
+* Krannert Center for the Performing Arts is dedicated to the advancement of education, research, and public engagement through the pursuit of excellence and innovation in the performing arts.
+* Embracing the art of the past as well as the art of our time, the Center supports the belief that creativity is a core human characteristic and that the arts hold uniquely transformative potential.
 *   Through its multiple and integrated roles as classroom, laboratory, and public square, Krannert Center serves as a touchstone for the exploration and expansion of human experience.
 
 3.  Values
+    1. We dig into that past, sift through its meanings, and uncover new truths.
+    2. We survey our planet and record not just its problems but its tangible solutions.
+    3. We embrace all perspectives, drink in images from around the globe, and soak up voices in every language.
+    4. We forge deep collaborations.
+    5. We envision a future of sustainability, health, inclusivity, equity, and beauty.
+    6. We send messages of hope down through time to future generations.
+    7. We are art makers.
+    8. We are knowledge builders and explorers of our unrealized human potential.
+    9. We see a world of promise.
 
-1.  We dig into that past, sift through its meanings, and uncover new truths.
-2.  We survey our planet and record not just its problems but its tangible solutions.
-3.  We embrace all perspectives, drink in images from around the globe, and soak up voices in every language.
-4.  We forge deep collaborations.
-5.  We envision a future of sustainability, health, inclusivity, equity, and beauty.
-6.  We send messages of hope down through time to future generations.
-7.  We are art makers.
-8.  We are knowledge builders and explorers of our unrealized human potential.
-9.  We see a world of promise.
+4.  Establish Fundraising Committee
 
-1.  Establish Fundraising Committee
+5.  Determine Activities of the Committee
 
-1.  Determine Activities of the Committee
+6.  Review current fundraising
+  * Types of fundraising activity already in place at Krannert:
+    ** * Individuals **
+      * Annual Gifts
+      * Planned Gifts
+      * Flex Giving Contributions
+      * Multiyear Pledges
+      * Honorary/Memorial Gifts
+      * Corporate Giving
+      * Foundation Giving
+      * University Giving
+      * Special Events
+      * Fundraising Events
+      * Matching Contributions
+      * Sponsorship Contributions
+      * Patron Sponsorships
+      * Marquee Circle
+      * The Loop
+    ** * Investments **
+      * General Investments
+      * The Producers Fund
+      * Sinfonia da Camera
+    ** * Government Funding **
+      * State Grants
+      * City/County Grants
+      * Federal Grants
 
-1.  Review current fundraising
+7.  Develop a timeline
 
-*   Types of fundraising activity already in place at Krannert:
+8.  Develop a budget
 
-*   Individuals
+9.  Set-up a benefit fund
 
-*   Annual Gifts
-*   Planned Gifts
-*   Flex Giving Contributions
-*   Multiyear Pledges
-*   Honorary/Memorial Gifts
+10.  Develop a **"call-to-action"** letter
+    1.  Develop letter content
+    2.  Develop donation form
+    3.  Develop mail/e-mail distribution lists
+    4.  Distribute donation form
+    5.  Acknowledge/record donations
 
-*   Corporate Giving
-*   Foundation Giving
-*   University Giving
-*   Special Events
-*   Fundraising Events
-*   Matching Contributions
-*   Sponsorship Contributions
+11.  Organize fundraising activity
+    1.  Organize volunteers/food/supplies/music/etc.
+    2.  Organize donation process
+    3.  Review timeline
+    4.  Review budget
 
-*   Patron Sponsorships
-*   Marquee Circle
-*   The Loop
+12.  Promote fundraising activity
+    1.  Develop marketing spread for activity
+    2.  Posters, flyers, articles
+    3.  Distribute promotional items
+    4.  Create a press release and distribute to media
 
-*   Investments
+13.  Conduct fundraising activity
+14.  Distribute donations
+    1.  Pay expenses
+    2.  Report donations
 
-*   General Investments
-*   The Producers Fund
-*   Sinfonia da Camera
-
-*   Government Funding
-
-*   State Grants
-*   City/County Grants
-*   Federal Grants
-
-3.  Develop a timeline
-4.  Develop a budget
-
-3.  Set-up a benefit fund
-4.  Develop a "call-to-action" letter
-
-1.  Develop letter content
-2.  Develop donation form
-3.  Develop mail/e-mail distribution lists
-4.  Distribute donation form
-5.  Acknowledge/record donations
-
-6.  Organize fundraising activity
-
-1.  Organize volunteers/food/supplies/music/etc.
-2.  Organize donation process
-3.  Review timeline
-4.  Review budget
-
-8.  Promote fundraising activity
-
-1.  Develop marketing spread for activity
-
-1.  Posters, flyers, articles
-
-3.  Distribute promotional items
-4.  Create a press release and distribute to media
-
-10.  Conduct fundraising activity
-11.  Distribute donations
-
-1.  Pay expenses
-2.  Report donations
-
-13.  Share story of event to donors and public
-
-1.  Thank donors again and the public
-2.  Share outcome
+15.  Share story of event to donors and public
+    1.  Thank donors again and the public
+    2.  Share outcome
 
 **Potential External Benefactors/Donors:**
 Here are some potential donors/investors who might be good prospects for Krannert:
