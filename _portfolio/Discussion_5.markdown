@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Budget Summary
-description: Discussion 5 - Cultural and Social Trends and the Affect on Krannert Center
+title: Budget Summary of Krannert Center
+description: Discussion 5 - Arts Administration
 date: 2015-07-16
 ---
 
