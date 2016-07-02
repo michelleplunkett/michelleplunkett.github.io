@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Analysis of the RAND Corporation Report
-description: Discussion 2 - Cultural and Social Trends and the Affect on Krannert Center
+description: Discussion 2
 date: 2015-06-22
 ---
 
