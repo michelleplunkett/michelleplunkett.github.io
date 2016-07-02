@@ -10,6 +10,7 @@ date: 2015-07-23
 <!--more-->
 
 **Fundraising Campaign Plan:**
+
 1.  **Organization Self-Assessment** - In order to maintain focus and use these lists to create a campaign for fundraising.
 
 2.  **Mission and Vision**
@@ -27,39 +28,37 @@ date: 2015-07-23
     7. We are art makers.
     8. We are knowledge builders and explorers of our unrealized human potential.
     9. We see a world of promise.
-
-
+    
 4.  Establish a **Fundraising Committee**
 
 5.  Determine **Activities of the Committee**
 
 6.  Review **current types of fundraising activity** already in place at Krannert:
    * **Individuals**
-      * Annual Gifts
-      * Planned Gifts
-      * Flex Giving Contributions
-      * Multiyear Pledges
-      * Honorary/Memorial Gifts
-      * Corporate Giving
-      * Foundation Giving
-      * University Giving
-      * Special Events
-      * Fundraising Events
-      * Matching Contributions
-      * Sponsorship Contributions
-      * Patron Sponsorships
-      * Marquee Circle
-      * The Loop
+         * Annual Gifts
+         * Planned Gifts
+         * Flex Giving Contributions
+         * Multiyear Pledges
+         * Honorary/Memorial Gifts
+         * Corporate Giving
+         * Foundation Giving
+         * University Giving
+         * Special Events
+         * Fundraising Events
+         * Matching Contributions
+         * Sponsorship Contributions
+         * Patron Sponsorships
+         * Marquee Circle
+         * The Loop
    * **Investments**
-      * General Investments
-      * The Producers Fund
-      * Sinfonia da Camera
+         * General Investments
+         * The Producers Fund
+         * Sinfonia da Camera
    * **Government Funding**
-      * State Grants
-      * City/County Grants
-      * Federal Grants
-
-
+         * State Grants
+         * City/County Grants
+         * Federal Grants
+      
 7.  Develop a **timeline**
 
 8.  Develop a **budget**
