@@ -91,7 +91,7 @@ Here are some potential donors/investors who might be good prospects for Kranner
 * **Banks in Champaign-Urbana**
       * Donations from banks could be another source of donations for Krannert.
 * **Local Businesses**
-      * Donating to Krannert might be a good business idea for local companies since Krannert advertises supporters in the concert programs and on the website. This would be good publicity, especially since a lot of times, people who are coming to Krannert have extra money to spend on entertainment, and therefore extra money to spend at their business.
+         * Donating to Krannert might be a good business idea for local companies since Krannert advertises supporters in the concert programs and on the website. This would be good publicity, especially since a lot of times, people who are coming to Krannert have extra money to spend on entertainment, and therefore extra money to spend at their business.
 
 **Resources:**
 *   [https://www.cfsarasota.org/Portals/0/Uploads/Documents/Nonprofits/DevelopmentPlanWorkbook%202014.pdf](https://www.cfsarasota.org/Portals/0/Uploads/Documents/Nonprofits/DevelopmentPlanWorkbook%202014.pdf)
