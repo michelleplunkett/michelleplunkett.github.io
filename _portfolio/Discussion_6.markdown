@@ -28,7 +28,8 @@ date: 2015-07-23
     8. We are knowledge builders and explorers of our unrealized human potential.
     9. We see a world of promise.
 
-4.  Establish **Fundraising Committee**
+
+4.  Establish a **Fundraising Committee**
 
 5.  Determine **Activities of the Committee**
 
@@ -58,6 +59,7 @@ date: 2015-07-23
       * City/County Grants
       * Federal Grants
 
+
 7.  Develop a **timeline**
 
 8.  Develop a **budget**
@@ -65,33 +67,33 @@ date: 2015-07-23
 9.  Set-up a **benefit fund**
 
 10.  Develop a **"call-to-action"** letter
-    1.  Develop letter content
-    2.  Develop donation form
-    3.  Develop mail/e-mail distribution lists
-    4.  Distribute donation form
-    5.  Acknowledge/record donations
+   1. Develop letter content
+   2. Develop donation form
+   3. Develop mail/e-mail distribution lists
+   4. Distribute donation form
+   5. Acknowledge/record donations
 
 11.  **Organize** fundraising activity
-    1.  Organize volunteers/food/supplies/music/etc.
-    2.  Organize donation process
-    3.  Review timeline
-    4.  Review budget
+   1. Organize volunteers/food/supplies/music/etc.
+   2. Organize donation process
+   3. Review timeline
+   4. Review budget
 
 12.  **Promote** fundraising activity
-    1.  Develop marketing spread for activity
-    2.  Posters, flyers, articles
-    3.  Distribute promotional items
-    4.  Create a press release and distribute to media
+   1. Develop marketing spread for activity
+   2. Posters, flyers, articles
+   3. Distribute promotional items
+   4. Create a press release and distribute to media
 
 13.  **Conduct** fundraising activity
 
 14.  Distribute **donations**
-    1.  Pay expenses
-    2.  Report donations
+   1. Pay expenses
+   2. Report donations
 
 15.  **Share** story of event to donors and public
-    1.  Thank donors again and the public
-    2.  Share outcome
+   1. Thank donors again and the public
+   2. Share outcome
 
 **Potential External Benefactors/Donors:**
 
