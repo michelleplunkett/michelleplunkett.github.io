@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Marketing Plan & Fundraising
-description: Blog 6 - Cultural and Social Trends and the Affect on Krannert Center
+description: Blog 6
 date: 2015-07-22
 ---
 
