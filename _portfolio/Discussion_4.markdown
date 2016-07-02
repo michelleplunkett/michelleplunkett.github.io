@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Structure of Krannert Center
-description: Discussion 4
+description: Discussion 4 - Arts Administration
 date: 2015-07-09
 ---
 
@@ -30,7 +30,7 @@ Here is a list of the departments that Krannert has divided their employees into
 
 Here is a picture of how I think a hierarchical diagram would look for Krannert (This is just my idea, not necessarily how Krannert is run currently.):
 
-<img src="https://www.dropbox.com/s/nk3knmcltekyznf/Krannert%20Diagram.jpg?raw=1">
+<img src="https://www.dropbox.com/s/nk3knmcltekyznf/Krannert%20Diagram.jpg?raw=1" width="100%">
 
 Links:
 
