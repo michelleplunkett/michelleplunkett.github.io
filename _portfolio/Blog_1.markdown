@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Analysis of Krannert Center's Mission & Vision
-description: Blog 1
+description: Blog 1 - Arts Administration
 date: 2015-06-16
 ---
 
