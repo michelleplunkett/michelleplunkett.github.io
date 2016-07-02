@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supply and Demand in the Arts
-description: Blog 5
+description: Blog 5 - Arts Administration
 date: 2015-07-15
 ---
 
