@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  starting a new chapter
+title:  A New Chapter
 date:   2016-06-16
-description: graduate studies at UT Austin
+description: The start of my graduate studies at UT Austin.
 ---
 
 In about a month and a half I will begin my graduate studies at the University of Texas at Austin Lyndon B. Johnson School of Public Affairs studying for a Master of Public Affairs degree.
