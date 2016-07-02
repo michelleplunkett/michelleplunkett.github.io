@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Human Resource Management
-description: Blog 4
+description: Blog 4 - Arts Administration
 date: 2015-07-08
 ---
 
