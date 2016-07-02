@@ -10,15 +10,15 @@ date: 2015-07-23
 <!--more-->
 
 **Fundraising Campaign Plan:**
-1.  Organization Self-Assessment - In order to maintain focus and use these lists to create a campaign for fundraising.
+1.  **Organization Self-Assessment** - In order to maintain focus and use these lists to create a campaign for fundraising.
 
-2.  Mission and Vision
+2.  **Mission and Vision**
 
     * Krannert Center for the Performing Arts is dedicated to the advancement of education, research, and public engagement through the pursuit of excellence and innovation in the performing arts.
     * Embracing the art of the past as well as the art of our time, the Center supports the belief that creativity is a core human characteristic and that the arts hold uniquely transformative potential.
     * Through its multiple and integrated roles as classroom, laboratory, and public square, Krannert Center serves as a touchstone for the exploration and expansion of human experience.
 
-3.  Values
+3.  **Values**
     1. We dig into that past, sift through its meanings, and uncover new truths.
     2. We survey our planet and record not just its problems but its tangible solutions.
     3. We embrace all perspectives, drink in images from around the globe, and soak up voices in every language.
@@ -29,12 +29,11 @@ date: 2015-07-23
     8. We are knowledge builders and explorers of our unrealized human potential.
     9. We see a world of promise.
 
-4.  Establish Fundraising Committee
+4.  Establish **Fundraising Committee**
 
-5.  Determine Activities of the Committee
+5.  Determine **Activities of the Committee**
 
-6.  Review current fundraising
-   Types of fundraising activity already in place at Krannert:
+6.  Review **current types of fundraising activity** already in place at Krannert:
 
    **Individuals**
       * Annual Gifts
@@ -63,11 +62,11 @@ date: 2015-07-23
       * City/County Grants
       * Federal Grants
 
-7.  Develop a timeline
+7.  Develop a **timeline**
 
-8.  Develop a budget
+8.  Develop a **budget**
 
-9.  Set-up a benefit fund
+9.  Set-up a **benefit fund**
 
 10.  Develop a **"call-to-action"** letter
     1.  Develop letter content
@@ -76,25 +75,25 @@ date: 2015-07-23
     4.  Distribute donation form
     5.  Acknowledge/record donations
 
-11.  Organize fundraising activity
+11.  **Organize** fundraising activity
     1.  Organize volunteers/food/supplies/music/etc.
     2.  Organize donation process
     3.  Review timeline
     4.  Review budget
 
-12.  Promote fundraising activity
+12.  **Promote** fundraising activity
     1.  Develop marketing spread for activity
     2.  Posters, flyers, articles
     3.  Distribute promotional items
     4.  Create a press release and distribute to media
 
-13.  Conduct fundraising activity
+13.  **Conduct** fundraising activity
 
-14.  Distribute donations
+14.  Distribute **donations**
     1.  Pay expenses
     2.  Report donations
 
-15.  Share story of event to donors and public
+15.  **Share** story of event to donors and public
     1.  Thank donors again and the public
     2.  Share outcome
 
