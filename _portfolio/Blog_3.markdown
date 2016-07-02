@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Strategic Planning and Market Management
-description: Blog 3
+description: Blog 3 - Arts Administration
 date: 2015-07-01
 ---
 
@@ -21,5 +21,5 @@ These values can also be seen in not just consumer based retail stores, but perf
 
 Sources:
 
-* [Chapter 1 of the "Marketing: An Introduction"](http://www.prenhall.com/marketing/armstrong/38187_01_p1-33.pdf)
+* [Chapter 1 of "Marketing: An Introduction"](http://www.prenhall.com/marketing/armstrong/38187_01_p1-33.pdf)
 * [Chapter 2](http://docslide.us/documents/chapter2-strategic-planning-and-the-marketing-process.html)
