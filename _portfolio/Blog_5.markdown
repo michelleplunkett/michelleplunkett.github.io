@@ -21,7 +21,7 @@ According to the law of demand, as a price of a service is raised, the quantity 
 
 Right now, demand of the quantity of the arts is on an upward trend because the United States is coming out of the recession of 2008-2009. This also means that arts organizations can start to lower prices of services (tickets) because of the growing trend in demand of the arts, as stated by the law of demand.
 
-<img src="https://www.dropbox.com/s/cj5d75h5emaxaci/2012dataNAI.jpg?raw=1">
+<img src="https://www.dropbox.com/s/cj5d75h5emaxaci/2012dataNAI.jpg?raw=1" width="100%">
 
 > "Since 2002, discretionary consumer spending on the arts (e.g., admissions, musical instrument purchases) has remained in the $150 billion range. Because total consumer spending increased over time, however, the artsâ€™ share slipped from 1.83 percent in 2002 to 1.35 percent in 2012. As noted in the Key Findings, one of the economic factors most strongly correlated with the health of the arts is total employment in the economy. As economic revitalization in coming years builds employment, consumer buying power, and the charitable instinct, the arts are poised to compete better."
 
