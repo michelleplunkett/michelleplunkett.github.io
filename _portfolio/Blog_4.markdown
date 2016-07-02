@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Human Resource Management
-description: Blog 4 - Cultural and Social Trends and the Affect on Krannert Center
+description: Blog 4
 date: 2015-07-08
 ---
 
