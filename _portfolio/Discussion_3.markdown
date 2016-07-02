@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Core Benefit of Krannert Center
-description: Discussion 3
+description: Discussion 3 - Arts Administration
 date: 2015-07-02
 ---
 
