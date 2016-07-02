@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SWOT Analysis
-description: Lesson Reflection 2 - Cultural and Social Trends and the Affect on Krannert Center
+title: SWOT Analysis of Krannert Center
+description: Lesson Reflection 2 - Arts Administration
 date: 2015-06-28
 ---
 
