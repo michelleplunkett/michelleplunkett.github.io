@@ -15,9 +15,9 @@ date: 2015-07-23
 
 2.  Mission and Vision
 
-* Krannert Center for the Performing Arts is dedicated to the advancement of education, research, and public engagement through the pursuit of excellence and innovation in the performing arts.
-* Embracing the art of the past as well as the art of our time, the Center supports the belief that creativity is a core human characteristic and that the arts hold uniquely transformative potential.
-*   Through its multiple and integrated roles as classroom, laboratory, and public square, Krannert Center serves as a touchstone for the exploration and expansion of human experience.
+    * Krannert Center for the Performing Arts is dedicated to the advancement of education, research, and public engagement through the pursuit of excellence and innovation in the performing arts.
+    * Embracing the art of the past as well as the art of our time, the Center supports the belief that creativity is a core human characteristic and that the arts hold uniquely transformative potential.
+    * Through its multiple and integrated roles as classroom, laboratory, and public square, Krannert Center serves as a touchstone for the exploration and expansion of human experience.
 
 3.  Values
     1. We dig into that past, sift through its meanings, and uncover new truths.
@@ -35,6 +35,7 @@ date: 2015-07-23
 5.  Determine Activities of the Committee
 
 6.  Review current fundraising
+
   * Types of fundraising activity already in place at Krannert:
     ** * Individuals **
       * Annual Gifts
