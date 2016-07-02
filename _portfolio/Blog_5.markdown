@@ -7,7 +7,7 @@ date: 2015-07-15
 
 * How does supply and demand affect the performing arts?
 
-<img src="https://www.dropbox.com/s/vkego2ks3c81dgq/Screen%20Shot%202015-07-15%20at%2010.55.17%20AM.png?raw=1" width="50%">
+<img src="https://www.dropbox.com/s/vkego2ks3c81dgq/Screen%20Shot%202015-07-15%20at%2010.55.17%20AM.png?raw=1" width="80%">
 
 > "Much has been written about the ways in which such experiences enhance individual lives, foster personal growth, and contribute to the public sphere.3 For our purposes, the important point is that these benefits depend on the existence of works of art, opportunities to encounter them, and individuals capable of being caught up and moved by works of art so that they develop the inclination to seek more such experiences" (Zakaras 10). 
 
