@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RAND Corporations Report (2001) - A Response
-description: Blog 2
+description: Blog 2 - Arts Administration
 date: 2015-06-22
 ---
 
