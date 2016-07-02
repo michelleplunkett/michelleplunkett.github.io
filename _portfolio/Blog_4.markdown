@@ -22,4 +22,4 @@ Finally, I do not believe that Krannert's employees are unionized, so I do not t
 
 Mentioned Links:
 
-[http://www.krannertcenter.com/meetus/accessibility.aspx](http://www.krannertcenter.com/meetus/accessibility.aspx)
+* [http://www.krannertcenter.com/meetus/accessibility.aspx](http://www.krannertcenter.com/meetus/accessibility.aspx)
