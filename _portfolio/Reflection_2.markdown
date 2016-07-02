@@ -11,7 +11,7 @@ In Lesson 2, I learned about strategic planning within organizations and especia
 
 Overall, a mission statement cannot be fulfilled without necessary planning. This planning should not just involve upper level management, but then needs to involve middle and lower management levels, including the staff and personnel in order to be successful. Planning can either go from bottom-up or top-down, and usually involves a mixture of both when this type of planning is most successful.
 
-## SWOT Analysis - Krannert Center for the Performing Arts
+#### SWOT Analysis - Krannert Center for the Performing Arts
 
 <ul>
 <li><strong>Internal Strengths</strong></li>
