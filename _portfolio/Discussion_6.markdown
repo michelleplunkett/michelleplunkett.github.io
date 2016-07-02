@@ -83,6 +83,7 @@ date: 2015-07-23
 **Potential External Benefactors/Donors:**
 
 Here are some potential donors/investors who might be good prospects for Krannert:
+
 * Community Foundation of East Central Illinois
       * They have already donated a large sum of money to the CU Symphony, which performs at Krannert. This type of donor is a collection of donors that forms a foundation that gives to causes around East Central Illinois (like Urbana-Champaign). Also, this foundation specifically donates to the arts.
 * NewsTalk 1400 WDWS, Lite Rock 97.5 WHMS & Classics Hits 107.9
