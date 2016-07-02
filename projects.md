@@ -1,7 +1,7 @@
 ---
 layout: page
 title: projects
-description: Projects from my previous courses at UIUC and UT Austin.
+description: This page contains projects & research papers from coursework at UIUC and UT Austin.
 permalink: /projects/
 ---
 
