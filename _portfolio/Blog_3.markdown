@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Strategic Planning and Market Management
-description: Blog 3 - Cultural and Social Trends and the Affect on Krannert Center
+description: Blog 3
 date: 2015-07-01
 ---
 
