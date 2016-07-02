@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Statement of Activity & Balance Sheet
-description: Lesson Reflection 5 - Cultural and Social Trends and the Affect on Krannert Center
+description: Lesson Reflection 5 - Arts Administration
 date: 2015-07-19
 ---
 
