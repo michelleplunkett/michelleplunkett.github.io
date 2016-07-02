@@ -14,7 +14,8 @@ In May of 2016, I completed my undergraduate degree at the University of Illinoi
 
 ---
 
-<br>
+<br></br>
+
 > "Education in music and poetry is most important ... because rhythm and harmony permeate the inner part of the soul more than anything else, affecting it most strongly and bringing it grace, so that is someone is properly educated in music and poetry, it makes him graceful, but if not, then the opposite. [And] because anyone who has been properly educated in music and poetry will sense it acutely when something has been omitted from a thing and when it hasn't been finely crafted or finely made by nature."<br/><br/>
 Plato in Republic III 401d-e
 
