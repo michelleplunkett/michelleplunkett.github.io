@@ -13,7 +13,6 @@ date: 2015-07-23
 1.  **Organization Self-Assessment** - In order to maintain focus and use these lists to create a campaign for fundraising.
 
 2.  **Mission and Vision**
-
     * Krannert Center for the Performing Arts is dedicated to the advancement of education, research, and public engagement through the pursuit of excellence and innovation in the performing arts.
     * Embracing the art of the past as well as the art of our time, the Center supports the belief that creativity is a core human characteristic and that the arts hold uniquely transformative potential.
     * Through its multiple and integrated roles as classroom, laboratory, and public square, Krannert Center serves as a touchstone for the exploration and expansion of human experience.
@@ -110,7 +109,6 @@ Here are some potential donors/investors who might be good prospects for Kranner
    * Donating to Krannert might be a good business idea for local companies since Krannert advertises supporters in the concert programs and on the website. This would be good publicity, especially since a lot of times, people who are coming to Krannert have extra money to spend on entertainment, and therefore extra money to spend at their business.
 
 **Resources:**
-
 *   [https://www.cfsarasota.org/Portals/0/Uploads/Documents/Nonprofits/DevelopmentPlanWorkbook%202014.pdf](https://www.cfsarasota.org/Portals/0/Uploads/Documents/Nonprofits/DevelopmentPlanWorkbook%202014.pdf)
 *   [http://www.krannertcenter.com/meetus/oursetting.aspx](http://www.krannertcenter.com/meetus/oursetting.aspx)
 *   [http://www.krannertcenter.com/meetus/missionandvision.aspx](http://www.krannertcenter.com/meetus/missionandvision.aspx)
