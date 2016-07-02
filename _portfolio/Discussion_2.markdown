@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Analysis of the RAND Corporation Report
-description: Discussion 2
+description: Discussion 2 - Arts Administration
 date: 2015-06-22
 ---
 
