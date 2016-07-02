@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Human Resource Analysis
-description: Lesson Reflection 4 - Cultural and Social Trends and the Affect on Krannert Center
+title: Human Resources Analysis
+description: Lesson Reflection 4 - Arts Administration
 date: 2015-07-12
 ---
 
@@ -10,9 +10,9 @@ date: 2015-07-12
 
 In Lesson 4, I learned about the organizational structure and personnel management of companies in general, and then related these concepts back to arts organizations like Krannert Center. In Chapter 10 of <u>Management</u>, I learned a great amount of definitions that are involved with the organization and structure of organizations and types of organizations based on the company's purpose or product. Along with these concepts, we also learned the pros and cons to each type of organizational structure and how one type might work better for one type of organization over another. In Chapter 12 of <u>Management</u>, I learned what the Human Resource Management (HRM) process is and how it affects how an organization runs and does business. This includes learning about how to select employees, factors than can affect the HRM process, training employees, and maintaining highly competent employees within the organization. Throughout our blog posts and discussions, we discussed how these concepts might be shown through our chosen organization.
 
-In a previous module, we conduct a SWOT analysis that is essentially an internal and external analysis of the factors than can affect an organization. Below is my SWOT analysis and underneath each bullet point includes Human Resource factors that are involved with a few.
+In a previous module, we conducted a SWOT analysis that is essentially an internal and external analysis of the factors than can affect an organization. Below is my SWOT analysis and underneath each bullet point includes Human Resource factors that are involved with a few.
 
-### SWOT Analysis - Krannert Center for the Performing Arts
+#### **SWOT Analysis - Krannert Center for the Performing Arts**
 
 <ul>
 <li><strong>Internal Strengths</strong></li>
