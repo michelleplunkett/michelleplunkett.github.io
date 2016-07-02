@@ -20,7 +20,7 @@ For example, the price of admission for a UI Student for the "Dedication Concert
 
 However, not only was this the dedication concert held to open Krannert officially, but the concert featured famous musicians like Tossy Spivakovsky (a virtuoso violinist). Spivakovsky, most likely, was not cheap to hire even in the 1960s. So it is impressive that the cost was still low to attend the dedication even when renowned artists were invited to perform.
 
-![Discussion 2 Image 1]({{ site.baseurl }}/img/discussion1.png)
+![Discussion 2 Image 1](/img/discussion1.png)
 
 However, nowadays, a ticket to attend a concert at Krannert at the same magnitude of the 1969 dedication concert will set an adult back around $50 today ($7.76 in 1969). So, the cost of a ticket to attend a comparable event at Krannert today is around 3 times more expensive ($7.76 divided by $2.50) than when Krannert first opened. The price increase is very clear when put in this context. However, it is worth noting that the price could have been lower for the Dedication Concert through the support of sponsor funding and from Mr. and Mrs. Krannert's direct contribution. But I think the price increase seen in this example is still relevant.
 
