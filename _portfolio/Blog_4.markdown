@@ -21,5 +21,4 @@ As for other external factors, I think another factor that could affect Krannert
 Finally, I do not believe that Krannert's employees are unionized, so I do not think the external factor of employee labor unions affect Krannert greatly. However, outside sources of performers do deal with unions. For example, Equity actors are union based, and Krannert could potentially contract an Equity actor for a performance. Other arts professionals like musicians could also be involved with a union. The terms of the contract will therefore have to coincide with union terms and be agreed upon mutually before any work takes place. This could be problematic for Krannert's HR, but I believe that since an arts organization, like Krannert, specifically deals with professionals in unions on a regular basis that they are familiar with how to effectively deal with union rules and terms/conditions without too much trouble.
 
 Mentioned Links:
-
 * [http://www.krannertcenter.com/meetus/accessibility.aspx](http://www.krannertcenter.com/meetus/accessibility.aspx)
