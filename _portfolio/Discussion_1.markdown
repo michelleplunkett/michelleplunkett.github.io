@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cultural & Social Trends
-description: Discussion 1 - Cultural and Social Trends and the Affect on Krannert Center
+description: Discussion 1
 date: 2015-06-18
 ---
 
