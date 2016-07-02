@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Core Benefit
-description: Discussion 3 - Cultural and Social Trends and the Affect on Krannert Center
+title: Core Benefit of Krannert Center
+description: Discussion 3
 date: 2015-07-02
 ---
 
