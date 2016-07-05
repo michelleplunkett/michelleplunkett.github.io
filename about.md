@@ -5,7 +5,6 @@ permalink: /about/
 ---
 
 <img class="col one right" src="/img/headshot.jpg">
-<br/>
 My name is Michelle Plunkett.
 
 I am a graduate student at the University of Texas at Austin studying for a Master of Public Affairs degree. I plan to graduate in May of 2018.
