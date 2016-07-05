@@ -15,8 +15,8 @@ In May of 2016, I graduated from the University of Illinois at Urbana-Champaign.
 
 <br/>
 
-> "Education in music and poetry is most important ... because rhythm and harmony permeate the inner part of the soul more than anything else, affecting it most strongly and bringing it grace, so that is someone is properly educated in music and poetry, it makes him graceful, but if not, then the opposite. [And] because anyone who has been properly educated in music and poetry will sense it acutely when something has been omitted from a thing and when it hasn't been finely crafted or finely made by nature."<br/><br/>
-Plato in Republic III 401d-e
+> "Everyone has the right to culture, as he has the right to education and the right to work…. This is the basis and first purpose of cultural policy.""<br/><br/>
+Augustin Girard, Cultural Development: Experiences and Policies, pp. 182-183
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" target="blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture "prof_pic.jpg" and put it in the img folder. 
