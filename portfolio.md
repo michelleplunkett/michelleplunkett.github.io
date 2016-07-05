@@ -1,7 +1,7 @@
 ---
 layout: page
 title: portfolio
-description: This page contains writing samples from coursework at UIUC & UT Austin.
+description: This page contains writing samples from my coursework at UIUC & UT Austin.
 permalink: /portfolio/
 ---
 
