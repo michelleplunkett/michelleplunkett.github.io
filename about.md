@@ -4,6 +4,8 @@ title: about
 permalink: /about/
 ---
 
+# about
+
 <img class="col one right" src="/img/headshot.jpg">
 My name is Michelle Plunkett.
 
