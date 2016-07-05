@@ -16,7 +16,7 @@ In May of 2016, I graduated from the University of Illinois at Urbana-Champaign.
 <br/>
 
 > "Everyone has the right to culture, as he has the right to education and the right to work… This is the basis and first purpose of cultural policy."<br/><br/>
-Augustin Girard, Cultural Development: Experiences and Policies, pp. 182-183
+<h3>Augustin Girard, Cultural Development: Experiences and Policies, pp. 182-183</h3>
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" target="blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture "prof_pic.jpg" and put it in the img folder. 
