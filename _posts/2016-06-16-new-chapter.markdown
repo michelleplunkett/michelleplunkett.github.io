@@ -9,4 +9,6 @@ In about a month and a half I will begin my graduate studies at the University o
 
 I will graduate in May of 2018! I am very excited to start this drastic change in career paths.
 
+<center>
 <img src="/img/utexas.png" width="80%">
+</center>
