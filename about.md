@@ -19,6 +19,7 @@ In May of 2016, I graduated from the University of Illinois at Urbana-Champaign.
 
 Augustin Girard in *Cultural Development: Experiences and Policies*, pp. 182-183
 
+<br/>
 <hr/>
 <br/>
 <span class="contacticon center">
