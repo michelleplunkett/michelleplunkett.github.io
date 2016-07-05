@@ -27,13 +27,13 @@ Link to your social media connections, too. This theme is set up to use <a href=
 <br/>
 <hr/>
 <br/>
-<div class="contacticon">
+<span class="contacticon center">
 	<a href="mailto:michellep1994@gmail.com"><i class="fa fa-envelope-square"></i></a>
 	<a href="https://github.com/michelleplunkett" target="_blank"><i class="fa fa-github-square"></i></a>
 	<a href="https://www.linkedin.com/in/michellejane" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 	<a href="http://blog.michelle-plunkett.com" target="_blank"><i class="fa fa-tumblr-square"></i></a>
 	<a href="https://twitter.com/michelleisatwin" target="_blank"><i class="fa fa-twitter-square"></i></a>
-</div>
+</span>
 <!-- <div class="col three caption">
 	You can even add a little note about which of these is the best way to reach you.
 </div> -->
