@@ -12,6 +12,8 @@ I am a graduate student at the University of Texas at Austin studying for a Mast
 In May of 2016, I graduated from the University of Illinois at Urbana-Champaign. I completed a Bachelor of Arts in Music Technology degree with Highest Honors (GPA above 3.75 and top 6% of class) and Bronze Tablet Honors (top 3% of class). I was able to complete this four-year program in only three years. 
 
 <br/>
+<hr/>
+<br/>
 
 > "Everyone has the right to culture, as he has the right to education and the right to work… This is the basis and first purpose of cultural policy."
 
