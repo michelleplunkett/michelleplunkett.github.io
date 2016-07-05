@@ -256,7 +256,16 @@ pre {
 .contacticon {
   font-size: 60px;
   display: block;
-  margin: 10px; }
+  margin: 10px;
+}
+  
+.contacticon a {
+  color:#666;
+}
+
+.contacticon a:hover {
+  color:#b509ac;
+}
 
 .center {
   text-align: center; }
