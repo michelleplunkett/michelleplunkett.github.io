@@ -1,8 +1,11 @@
 ---
-layout: page
+layout: default
 title: about
 permalink: /about/
 ---
+
+<h1>about</h1>
+<br/></br/>
 
 <img class="col one right" src="/img/headshot.jpg">
 <br/>
