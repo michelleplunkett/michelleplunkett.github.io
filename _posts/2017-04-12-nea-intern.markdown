@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NEA Internship
+title:  internship
 date:   2017-04-12
 description: I will be working as a Research Intern at the National Endowment for the Arts!
 ---
