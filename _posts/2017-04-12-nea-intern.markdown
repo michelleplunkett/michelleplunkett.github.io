@@ -14,3 +14,7 @@ I will have three main duties this summer:
 3. Administrative Support - provide administrative support, plan meetings and maintain an event calendar, and perform other tasks as assigned
 
 I am very excited to be in D.C. this summer and working for the NEA. I start on May 22nd and will be working until August 25th. After which I will head back to Austin to start my 2nd year at LBJ.
+
+<center>
+<img src="/img/nea-logo.jpg" width="80%">
+</center>
