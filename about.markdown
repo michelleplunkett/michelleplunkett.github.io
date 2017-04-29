@@ -7,7 +7,9 @@ permalink: /about/
 <img class="col one right" src="/img/headshot.jpg">
 My name is Michelle Plunkett.
 
-I am a graduate student at the University of Texas at Austin studying for a Master of Public Affairs degree. I plan to graduate in May of 2018.
+I am a rising second year graduate student in the Master of Public Affairs program at the Lyndon B. Johnson School of Public Affairs at The University of Texas at Austin. I am also a member of the Arts & Cultural Management & Entrepreneurship Certificate Program. I plan to graduate and receive my degree and certificate in May of 2018. 
+
+During the summer of 2017, I will be working as a research intern in Washington, D.C. at the National Endowment for the Arts in the Office of Research & Analysis. This internship is the perfect complement to my degree program and interests and I am very excited to begin my work!
 
 In May of 2016, I graduated from the University of Illinois at Urbana-Champaign. I completed a Bachelor of Arts in Music Technology degree with Highest Honors (*Summa Cum Laude*, GPA above 3.75 and top 6% of college's class) and Bronze Tablet Honors (top 3% of entire university graduating class). I completed this four-year program in only three years. 
 
