@@ -17,9 +17,10 @@ In May of 2016, I graduated from the University of Illinois at Urbana-Champaign.
 > "Everyone has the right to culture, as he has the right to education and the right to work… This is the basis and first purpose of cultural policy."
 
 – Augustin Girard in *Cultural Development: Experiences and Policies*, pp. 182-183
-<br/>
-<hr/>
-<br/>
+<br>
+-----
+<br>
+
 <span class="contacticon center">
 	<a href="mailto:michellep1994@gmail.com"><i class="fa fa-envelope-square"></i></a>
 	<a href="https://github.com/michelleplunkett" target="_blank"><i class="fa fa-github-square"></i></a>
