@@ -1,0 +1,963 @@
+<!doctype html>
+<html>
+<head>
+<p><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></p>
+<!-- SYNTAX HIGHLIGHTING CLASSES  -->
+<style type="text/css">
+.author {display:block;text-align:center;font-size:16px;margin-bottom:3px;}
+.date {display:block;text-align:center;font-size:12px;margin-bottom:3px;}
+.center, #center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0px 0px 2px rgba( 0, 0, 0, 0.5 );
+    -moz-box-shadow: 0px 0px 2px rgba( 0, 0, 0, 0.5 );
+    box-shadow: 0px 0px 2px rgba( 0, 0, 0, 0.5 );
+
+    padding: 0px;
+    border-width: 0px;
+    border-style: solid;
+    cursor:-webkit-zoom-in;
+    cursor:-moz-zoom-in;
+    }
+
+pagebreak {
+        page-break-before: always;
+        }
+
+.pagebreak, #pagebreak {
+        page-break-before: always;
+        }
+
+td > p {padding:0; margin:0;}
+
+
+
+
+header {
+        font-size:28px;
+        padding-bottom:5px; 
+        margin:0;
+        padding-top:150px; 
+        font-family: ;
+        background-color:white; 
+        text-align:center;
+        display:block;
+        }
+
+table {
+        border-collapse: collapse;
+        border-bottom:1px solid black;
+        padding:5px;
+        margin-top:5px;
+
+}
+.tble {
+        display:block;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-bottom: 0px;
+}
+
+.tblecenter {
+        display:block;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-bottom: 0px;
+        text-align:center;
+}
+
+span.tblecenter + table, span.tble + table, span.tble + img {
+        margin-top: 2px;
+}
+
+th {
+border-bottom:1px solid black;
+border-top:1px solid black;
+padding-right:20px;
+}
+
+td {
+padding-right:20px;
+}
+
+</style>
+</head>
+<header>
+AEM Problem Set #4
+</header>
+<body>
+<p><span class="author">Michelle Plunkett</span> <span class="date"> 5 May 2017</span></p>
+<h1 id="introduction">Introduction</h1>
+<p>I went all out on this problem set (in terms of the formatting of my final document.) In order to run my do file, Stata requires that you have ivreg2, xtivreg2, ranktest, ivendog, and overid installed to run these statistical analyses. I used the &quot;ssc install&quot; command to install the latest versions of these functions. Using &quot;search [package name]&quot; works but I found that it is hard to find the latest version this way (xtivreg2 requires the newest versions of certain supplementary functions).</p>
+<p>To make this Word Document, I used a package called &quot;MarkDoc&quot; and coded my do-file with markdown (a langauge). This package then converts the SMCL file into a Word Document or a PDF using additional packages like Statax and Weaver. Additional third party packages are also required, specifically, Pandoc and wkhtmltopdf. Finally, I wrote an external style sheet using CSS to tell the conversion process how to style my final document in HTML.</p>
+<p><a href="http://bit.ly/2qKAZe4">Click Here</a> to read more about MarkDoc.</p>
+<h2 id="data-summary">Data Summary</h2>
+<pre><code>      .  xtset
+             panel variable:  country (unbalanced)
+              time variable:  year, 1981 to 1999
+                      delta:  1 year
+      
+      .  xtdescribe
+      
+       country:  404, 420, ..., 625                                n =         41
+          year:  1981, 1982, ..., 1999                             T =         19
+                 Delta(year) = 1 year
+                 Span(year)  = 19 periods
+                 (country*year uniquely identifies each observation)
+      
+      Distribution of T_i:   min      5%     25%       50%       75%     95%     max
+                               9      11      19        19        19      19      19
+      
+           Freq.  Percent    Cum. |  Pattern
+       ---------------------------+---------------------
+             35     85.37   85.37 |  1111111111111111111
+              3      7.32   92.68 |  11111111111........
+              2      4.88   97.56 |  111111111111111111.
+              1      2.44  100.00 |  ..........111111111
+       ---------------------------+---------------------
+             41    100.00         |  XXXXXXXXXXXXXXXXXXX
+      
+      </code></pre>
+<h1 id="questions">Questions</h1>
+<h2 id="question-1">Question #1</h2>
+<pre><code>      .  reg conflict polity egrowth
+      
+            Source |       SS           df       MS      Number of obs   =       736
+      -------------+----------------------------------   F(2, 733)       =      1.52
+             Model |  .592245418         2  .296122709   Prob &gt; F        =    0.2193
+          Residual |  142.743352       733  .194738544   R-squared       =    0.0041
+      -------------+----------------------------------   Adj R-squared   =    0.0014
+             Total |  143.335598       735  .195014419   Root MSE        =    .44129
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+            polity |  -.0028457   .0029206    -0.97   0.330    -.0085795    .0028881
+           egrowth |  -.3241802   .2296393    -1.41   0.158    -.7750093     .126649
+             _cons |   .2536455   .0190768    13.30   0.000     .2161939    .2910971
+      ------------------------------------------------------------------------------
+      
+      
+      </code></pre>
+<p>This is a pooled model, I am not accounting for individual (country) or time differences yet. I cannot tell if either of these variables clearly connected to conflict since they are both statistically not significant and are not using the same units, so their relative strengths are not comparable. However, if were to ignore this fact, based on the coefficients I think that egrowth has a stronger effect on conflict.</p>
+<h2 id="question-2">Question #2</h2>
+<p>I cannot take the magnitude of the two coefficients as an indicator because not all of these variables are in the same units, making it so you cannot compare the relative strengths of the units on conflict against one another. It would be comparing apples against oranges in their strength of effect on conflict.</p>
+<h2 id="question-3">Question #3</h2>
+<pre><code>      .  reg conflict polity egrowth, beta
+      
+            Source |       SS           df       MS      Number of obs   =       736
+      -------------+----------------------------------   F(2, 733)       =      1.52
+             Model |  .592245418         2  .296122709   Prob &gt; F        =    0.2193
+          Residual |  142.743352       733  .194738544   R-squared       =    0.0041
+      -------------+----------------------------------   Adj R-squared   =    0.0014
+             Total |  143.335598       735  .195014419   Root MSE        =    .44129
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      t    P&gt;|t|                     Beta
+      -------------+----------------------------------------------------------------
+            polity |  -.0028457   .0029206    -0.97   0.330                -.0359358
+           egrowth |  -.3241802   .2296393    -1.41   0.158                -.0520655
+             _cons |   .2536455   .0190768    13.30   0.000                        .
+      ------------------------------------------------------------------------------
+      
+      
+      </code></pre>
+<p>This regression uses standardized betas. I can now say with confidence that a one standard deviation increase in polity would yield a 0.036 standard deviation decrease in the predicted conflict variable. Additionally, a one standard deviation increase in egrowth would yield a 0.05 decrease in the predicted conflict variable.</p>
+<p>Because standardized betas are in the standard units for predictor variables, I can use them to compare the relative strengths of the predictors on the dependent variable, conflict. In this situation, it now looks like egrowth has a stronger, negative effect on conflict. However, the difference is most likely not statistically significant. I can test this using the following command:</p>
+<pre><code>      .  testparm polity egrowth, equal
+      
+       ( 1)  - polity + egrowth = 0
+      
+             F(  1,   733) =    1.96
+                  Prob &gt; F =    0.1624
+      
+      </code></pre>
+<h2 id="question-4">Question #4</h2>
+<p>It makes sense to include country dummy variables in the equation because one country might always be in conflict with another while others are relatively peaceful. One country might be skewing the results one way or another. It would be interesting to see if one country has more of an effect on the dependent variable than another and compare the effects. If they aren't included, the results might be invalid because there might be different intercepts for each country, this would effect the regression and would not result in an accurate regression model.</p>
+<h2 id="question-5">Question #5</h2>
+<pre><code>      .  xtreg conflict polity egrowth, fe
+      
+      Fixed-effects (within) regression               Number of obs     =        736
+      Group variable: country                         Number of groups  =         41
+      
+      R-sq:                                           Obs per group:
+           within  = 0.0087                                         min =          9
+           between = 0.0009                                         avg =       18.0
+           overall = 0.0040                                         max =         19
+      
+                                                      F(2,693)          =       3.05
+      corr(u_i, Xb)  = -0.0065                        Prob &gt; F          =     0.0482
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+            polity |  -.0020908   .0026952    -0.78   0.438    -.0073826    .0032009
+           egrowth |  -.3832445   .1644501    -2.33   0.020    -.7061247   -.0603643
+             _cons |   .2559206   .0146182    17.51   0.000     .2272194    .2846219
+      -------------+----------------------------------------------------------------
+           sigma_u |  .33235047
+           sigma_e |  .30825734
+               rho |  .53755667   (fraction of variance due to u_i)
+      ------------------------------------------------------------------------------
+      F test that all u_i=0: F(40, 693) = 20.23                    Prob &gt; F = 0.0000
+      
+      </code></pre>
+<p>This is the xtreg regression with the fixed effects option initiated. It doesn't change the coefficients on polity or egrowth substantially. R-squared will always increase, so I don't necessarily think the increase is statistically significant. I think I should keep country fixed effects in my regression equation because it will account for any major differences between countries that would effect the regression.</p>
+<h2 id="question-6">Question #6</h2>
+<p>I think military, rural, or oil would be good to include to identify risks on a country-by-country basis. Military is a dummy variable, but says 1 if the chief executive is a military officer, which would possibly mean more conflict occurs in that country since the chief exec is an officer. Rural may be a good identifier because if much of the population is rural there might not be as much conflict since a high percentage of the country is spread out, for example . My bias says that oil exports would mean that it is a country that possibly involved in active warfare and therefore has increased conflict.</p>
+<h2 id="question-7">Question #7</h2>
+<pre><code>      .  xtreg conflict polity egrowth military rural oil
+      
+      Random-effects GLS regression                   Number of obs     =        735
+      Group variable: country                         Number of groups  =         41
+      
+      R-sq:                                           Obs per group:
+           within  = 0.0167                                         min =          9
+           between = 0.0607                                         avg =       17.9
+           overall = 0.0030                                         max =         19
+      
+                                                      Wald chi2(5)      =       9.05
+      corr(u_i, X)   = 0 (assumed)                    Prob &gt; chi2       =     0.1071
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+            polity |  -.0048598   .0030185    -1.61   0.107    -.0107759    .0010563
+           egrowth |  -.3794129   .1639836    -2.31   0.021     -.700815   -.0580109
+          military |  -.0684308   .0400055    -1.71   0.087    -.1468401    .0099785
+             rural |  -.0007403   .0022814    -0.32   0.746    -.0052116    .0037311
+               oil |  -.0190014   .1041775    -0.18   0.855    -.2231855    .1851827
+             _cons |   .3409467   .1683455     2.03   0.043     .0109956    .6708979
+      -------------+----------------------------------------------------------------
+           sigma_u |  .32642089
+           sigma_e |  .30573861
+               rho |  .53268188   (fraction of variance due to u_i)
+      ------------------------------------------------------------------------------
+      
+      </code></pre>
+<p>In this regression, the only added variable that is borderline statistically significant is military, but only when the significance level is 0.1. I don't think adding these variables helps me identify what makes a country prone to civil war any better than the fixed effects model.</p>
+<pre><code>      .  xtreg conflict polity egrowth military, fe 
+      
+      Fixed-effects (within) regression               Number of obs     =        735
+      Group variable: country                         Number of groups  =         41
+      
+      R-sq:                                           Obs per group:
+           within  = 0.0155                                         min =          9
+           between = 0.0368                                         avg =       17.9
+           overall = 0.0008                                         max =         19
+      
+                                                      F(3,691)          =       3.63
+      corr(u_i, Xb)  = -0.1997                        Prob &gt; F          =     0.0127
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+            polity |  -.0052412   .0029725    -1.76   0.078    -.0110775    .0005951
+           egrowth |  -.3822686   .1635603    -2.34   0.020    -.7034033   -.0611338
+          military |  -.0923016   .0418122    -2.21   0.028    -.1743958   -.0102075
+             _cons |   .2869112   .0208513    13.76   0.000     .2459717    .3278507
+      -------------+----------------------------------------------------------------
+           sigma_u |  .34240008
+           sigma_e |  .30629036
+               rho |   .5554936   (fraction of variance due to u_i)
+      ------------------------------------------------------------------------------
+      F test that all u_i=0: F(40, 691) = 20.38                    Prob &gt; F = 0.0000
+      
+      </code></pre>
+<h2 id="question-8">Question #8</h2>
+<p>I would add in military if I was going to add in any of them to a regression equation, but I would prefer to use country fixed effects to see what makes a country prone to civil war. A fixed effects option is looking at the &quot;within-subjects&quot; effects on conflict. This effect represents the variability of a value like polity or egrowth for each country. It measures how much these values are changing within each country. If we care about risks on a country by country basis, this is the way to go, since it deals with values within a country/individual in a sample.</p>
+<h2 id="question-9">Question #9</h2>
+<p>The &quot;year&quot; dummy variables (t1981-t1999) give &quot;1&quot; for each year within a country. So, a country like Liberia will have a 1 for &quot;t1981&quot; if the year is 1981 and 0 for all of the other years present for that country to give only one year at a time for each country. t1981=1 if year==&quot;1981&quot;. It is a conditional function based on the year the data was collected.</p>
+<p>It makes sense to include them in the equation to control for each year's differences. One year might have a lot more conflict than another year. The results may be wrong if the time variables are omitted because it might cause me to over or understate the effect on conflict.</p>
+<h2 id="question-10">Question #10</h2>
+<pre><code>      .  xtreg conflict polity egrowth military t1981-t1999, fe
+      note: t1999 omitted because of collinearity
+      
+      Fixed-effects (within) regression               Number of obs     =        735
+      Group variable: country                         Number of groups  =         41
+      
+      R-sq:                                           Obs per group:
+           within  = 0.0774                                         min =          9
+           between = 0.0388                                         avg =       17.9
+           overall = 0.0075                                         max =         19
+      
+                                                      F(21,673)         =       2.69
+      corr(u_i, Xb)  = -0.1851                        Prob &gt; F          =     0.0001
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+            polity |   -.010847   .0034481    -3.15   0.002    -.0176173   -.0040767
+           egrowth |  -.4041479   .1658485    -2.44   0.015    -.7297907   -.0785052
+          military |  -.1174906   .0419837    -2.80   0.005    -.1999255   -.0350557
+             t1981 |  -.2042944   .0723703    -2.82   0.005    -.3463932   -.0621956
+             t1982 |  -.2385995    .072321    -3.30   0.001    -.3806015   -.0965975
+             t1983 |  -.2287211   .0727929    -3.14   0.002    -.3716496   -.0857927
+             t1984 |  -.2235768   .0728492    -3.07   0.002    -.3666159   -.0805378
+             t1985 |  -.2339333   .0725849    -3.22   0.001    -.3764533   -.0914132
+             t1986 |  -.2020242   .0725279    -2.79   0.005    -.3444324   -.0596161
+             t1987 |  -.2116898   .0727051    -2.91   0.004    -.3544459   -.0689336
+             t1988 |  -.2298027   .0726656    -3.16   0.002    -.3724811   -.0871242
+             t1989 |  -.2091183   .0729166    -2.87   0.004    -.3522897   -.0659469
+             t1990 |  -.0828716   .0724993    -1.14   0.253    -.2252237    .0594804
+             t1991 |  -.0541338   .0711279    -0.76   0.447    -.1937931    .0855255
+             t1992 |  -.1548876   .0715988    -2.16   0.031    -.2954714   -.0143037
+             t1993 |  -.2222625    .071283    -3.12   0.002    -.3622262   -.0822987
+             t1994 |  -.1800871   .0715824    -2.52   0.012    -.3206388   -.0395353
+             t1995 |  -.2154662   .0715901    -3.01   0.003    -.3560331   -.0748994
+             t1996 |  -.1624253   .0715336    -2.27   0.023    -.3028811   -.0219695
+             t1997 |  -.0897546   .0715205    -1.25   0.210    -.2301848    .0506756
+             t1998 |   .0150113   .0715345     0.21   0.834    -.1254462    .1554689
+             t1999 |          0  (omitted)
+             _cons |    .446008   .0543392     8.21   0.000     .3393132    .5527028
+      -------------+----------------------------------------------------------------
+           sigma_u |  .34858263
+           sigma_e |  .30044684
+               rho |  .57376007   (fraction of variance due to u_i)
+      ------------------------------------------------------------------------------
+      F test that all u_i=0: F(40, 673) = 21.46                    Prob &gt; F = 0.0000
+      
+      </code></pre>
+<p>Yes, this changes the coefficients on egrowth and polity, it makes them more negative. It also increases R-squared. I would say that this increase is statistically significant, but again, it will always increase, especially since many more variables are added. I think I should keep year fixed effects in the equation, as the coefficients may have been understated without the fixed effects of year. However, for simplicity's sake, I will not be considering the time variables for now.</p>
+<pre><code>      .  testparm t1981-t1999
+      
+       ( 1)  t1981 = 0
+       ( 2)  t1982 = 0
+       ( 3)  t1983 = 0
+       ( 4)  t1984 = 0
+       ( 5)  t1985 = 0
+       ( 6)  t1986 = 0
+       ( 7)  t1987 = 0
+       ( 8)  t1988 = 0
+       ( 9)  t1989 = 0
+       (10)  t1990 = 0
+       (11)  t1991 = 0
+       (12)  t1992 = 0
+       (13)  t1993 = 0
+       (14)  t1994 = 0
+       (15)  t1995 = 0
+       (16)  t1996 = 0
+       (17)  t1997 = 0
+       (18)  t1998 = 0
+      
+             F( 18,   673) =    2.51
+                  Prob &gt; F =    0.0005
+      
+      </code></pre>
+<p>This will tell me if r-squared increased by a statistically significant amount. When the time variables are 0, the p-value is statistically significant. This means that I can reject the null that all of the time variables are 0. It tells me that the time explanatory variables are statistically significant, meaning that r-squared increased by a statistically significant amount.</p>
+<p>Below is the final function that I will be using:</p>
+<pre><code>      .  xtreg conflict polity egrowth, fe
+      
+      Fixed-effects (within) regression               Number of obs     =        736
+      Group variable: country                         Number of groups  =         41
+      
+      R-sq:                                           Obs per group:
+           within  = 0.0087                                         min =          9
+           between = 0.0009                                         avg =       18.0
+           overall = 0.0040                                         max =         19
+      
+                                                      F(2,693)          =       3.05
+      corr(u_i, Xb)  = -0.0065                        Prob &gt; F          =     0.0482
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+            polity |  -.0020908   .0026952    -0.78   0.438    -.0073826    .0032009
+           egrowth |  -.3832445   .1644501    -2.33   0.020    -.7061247   -.0603643
+             _cons |   .2559206   .0146182    17.51   0.000     .2272194    .2846219
+      -------------+----------------------------------------------------------------
+           sigma_u |  .33235047
+           sigma_e |  .30825734
+               rho |  .53755667   (fraction of variance due to u_i)
+      ------------------------------------------------------------------------------
+      F test that all u_i=0: F(40, 693) = 20.23                    Prob &gt; F = 0.0000
+      
+      </code></pre>
+<p>This is a fixed-effects panel-data regression without the time-variables included.</p>
+<h2 id="question-11">Question #11</h2>
+<p>The OLS coefficient might be an error because it might not follow all of the Gauss Markov assumptions, like homoegeniety. Additionally, it might fail when the covariance between the independent variable and the random error does not equal 0 (no serial correlation), which goes against a Gauss Markov assumption that makes the least squares estimates valid. The least squares method fails because it does not accurately estimate the intercept of the regression line, therefore under or over estimating the slope because of the correlation between the independent variable and the random error term, resulting in a biased estimation. The true regression function will have a different slope and intercept. I think that using instruments would help me deal with this correlation issue, since it solves issues resulting from correlation with the random error term. Because an instrument will not have a direct effect on conflict, it will allow me to estimate the relationship between egrowth and conflict.</p>
+<h2 id="question-12">Question #12</h2>
+<p>A good instrument would not be correlated or have a direct effect on Y, conflict, but should allow a relationship to exist between egrowth and conflict, but indirectly. The instrument should be exogenous and not correlated with the error term. It should be strongly correlated with egrowth, the endogenous explanatory variable. Finally, the instrument should not have a direct effect on conflict, and cannot be used as an explanatory variable in this way.</p>
+<h2 id="question-13">Question #13</h2>
+<p>I definitely do not think that percent changes in rainfall directly effect conflicts that have greater than 25 casualties in a country. I also do not think that it will be correlated with the regerssino error term for this reason. I think the instrument is also correlated with egrowth, but I don't think it will be necessarily strongly correlated with it. One of the conditions is that it has to be strongly correlated with the endogenous explanatory variable, but I think that it might be as good of an instrument I can get with the data that's available to me, without looking at any statistical tests.</p>
+<h2 id="question-14">Question #14</h2>
+<p>Another variable I might use as an instrument might be percentage of arable land, as it is probably directly correlated with egrowth but not directly correlated to conflict. Oil might work too, but I think it is too correlated with conflict, but I do not know for sure.</p>
+<h2 id="question-15">Question #15</h2>
+<pre><code>      .  ivreg2 conflict polity (egrowth L.egrowth = ld_rainfall L1.ld_rainfall ///
+       L2.ld_rainfall), first
+      
+      
+      First-stage regressions
+      -----------------------
+      
+      
+      First-stage regression of egrowth:
+      
+      Statistics consistent for homoskedasticity only
+      Number of obs =                    654
+      ------------------------------------------------------------------------------
+           egrowth |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+       ld_rainfall |
+               --. |   .0570218   .0139458     4.09   0.000     .0296374    .0844062
+               L1. |   .0493078   .0151647     3.25   0.001       .01953    .0790857
+               L2. |   .0305568   .0137589     2.22   0.027     .0035394    .0575742
+                   |
+            polity |    .000126    .000453     0.28   0.781    -.0007636    .0010155
+             _cons |  -.0078697   .0029824    -2.64   0.009     -.013726   -.0020135
+      ------------------------------------------------------------------------------
+      F test of excluded instruments:
+        F(  3,   649) =     6.30
+        Prob &gt; F      =   0.0003
+      Sanderson-Windmeijer multivariate F test of excluded instruments:
+        F(  2,   649) =     7.80
+        Prob &gt; F      =   0.0004
+      
+      
+      First-stage regression of L.egrowth:
+      
+      Statistics consistent for homoskedasticity only
+      Number of obs =                    654
+      ------------------------------------------------------------------------------
+         L.egrowth |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+       ld_rainfall |
+               --. |  -.0022202   .0143708    -0.15   0.877    -.0304392    .0259987
+               L1. |   .0466771   .0156269     2.99   0.003     .0159918    .0773624
+               L2. |   .0361112   .0141782     2.55   0.011     .0082704    .0639519
+                   |
+            polity |   .0002129   .0004668     0.46   0.649    -.0007038    .0011296
+             _cons |  -.0074916   .0030733    -2.44   0.015    -.0135264   -.0014569
+      ------------------------------------------------------------------------------
+      F test of excluded instruments:
+        F(  3,   649) =     4.83
+        Prob &gt; F      =   0.0025
+      Sanderson-Windmeijer multivariate F test of excluded instruments:
+        F(  2,   649) =     6.24
+        Prob &gt; F      =   0.0021
+      
+      
+      
+      Summary results for first-stage regressions
+      -------------------------------------------
+      
+                                                 (Underid)            (Weak id)
+      Variable     | F(  3,   649)  P-val | SW Chi-sq(  2) P-val | SW F(  2,   649)
+      egrowth      |       6.30    0.0003 |       15.73   0.0004 |        7.80
+      L.egrowth    |       4.83    0.0025 |       12.57   0.0019 |        6.24
+      
+      Stock-Yogo weak ID F test critical values for single endogenous regressor:
+                                          5% maximal IV relative bias    13.91
+                                         10% maximal IV relative bias     9.08
+                                         20% maximal IV relative bias     6.46
+                                         30% maximal IV relative bias     5.39
+                                         10% maximal IV size             22.30
+                                         15% maximal IV size             12.83
+                                         20% maximal IV size              9.54
+                                         25% maximal IV size              7.80
+      Source: Stock-Yogo (2005).  Reproduced by permission.
+      NB: Critical values are for Sanderson-Windmeijer F statistic.
+      
+      Underidentification test
+      Ho: matrix of reduced form coefficients has rank=K1-1 (underidentified)
+      Ha: matrix has rank=K1 (identified)
+      Anderson canon. corr. LM statistic       Chi-sq(2)=11.39    P-val=0.0034
+      
+      Weak identification test
+      Ho: equation is weakly identified
+      Cragg-Donald Wald F statistic                                       3.84
+      
+      Stock-Yogo weak ID test critical values for K1=2 and L1=3:
+                                         10% maximal IV size             13.43
+                                         15% maximal IV size              8.18
+                                         20% maximal IV size              6.40
+                                         25% maximal IV size              5.45
+      Source: Stock-Yogo (2005).  Reproduced by permission.
+      
+      Weak-instrument-robust inference
+      Tests of joint significance of endogenous regressors B1 in main equation
+      Ho: B1=0 and orthogonality conditions are valid
+      Anderson-Rubin Wald test           F(3,649)=       1.24     P-val=0.2933
+      Anderson-Rubin Wald test           Chi-sq(3)=      3.76     P-val=0.2890
+      Stock-Wright LM S statistic        Chi-sq(3)=      3.74     P-val=0.2915
+      
+      Number of observations               N  =        654
+      Number of regressors                 K  =          4
+      Number of endogenous regressors      K1 =          2
+      Number of instruments                L  =          5
+      Number of excluded instruments       L1 =          3
+      
+      IV (2SLS) estimation
+      --------------------
+      
+      Estimates efficient for homoskedasticity only
+      Statistics consistent for homoskedasticity only
+      
+                                                            Number of obs =      654
+                                                            F(  3,   650) =     1.49
+                                                            Prob &gt; F      =   0.2167
+      Total (centered) SS     =  128.6360856                Centered R2   =  -0.0429
+      Total (uncentered) SS   =          176                Uncentered R2 =   0.2377
+      Residual SS             =  134.1566306                Root MSE      =    .4529
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+           egrowth |
+               --. |  -1.919684    1.69796    -1.13   0.258    -5.247624    1.408255
+               L1. |  -.9189742    1.88117    -0.49   0.625    -4.605999     2.76805
+                   |
+            polity |  -.0040629   .0032368    -1.26   0.209    -.0104069     .002281
+             _cons |   .2377145    .023784     9.99   0.000     .1910987    .2843303
+      ------------------------------------------------------------------------------
+      Underidentification test (Anderson canon. corr. LM statistic):          11.393
+                                                         Chi-sq(2) P-val =    0.0034
+      ------------------------------------------------------------------------------
+      Weak identification test (Cragg-Donald Wald F statistic):                3.835
+      Stock-Yogo weak ID test critical values: 10% maximal IV size             13.43
+                                               15% maximal IV size              8.18
+                                               20% maximal IV size              6.40
+                                               25% maximal IV size              5.45
+      Source: Stock-Yogo (2005).  Reproduced by permission.
+      ------------------------------------------------------------------------------
+      Sargan statistic (overidentification test of all instruments):           1.535
+                                                         Chi-sq(1) P-val =    0.2154
+      ------------------------------------------------------------------------------
+      Instrumented:         egrowth L.egrowth
+      Included instruments: polity
+      Excluded instruments: ld_rainfall L.ld_rainfall L2.ld_rainfall
+      ------------------------------------------------------------------------------
+      
+      </code></pre>
+<p>I would have also included fixed effects but ivreg2 doesn't let me include it as an option. In the first stage of the regression, the p-values for both egrowth and L.egrowth are statistically significant. The F-values are not small enough for me to be reasonably confident that my instrument estimates are on target. Since the p-values were statistically significant, and I have to reject the null that my instruments have no effect on conflict, this means that I have not properly controlled for egrowth since rainfall is somewhat predictive of conflict. I believe this means that my instruments are not efficient. This results in less precise estimation than the least squares estimation procedure, creating invalid estimates that are over or underidentified/esimated.</p>
+<p>From the first stage summary results, it also looks like using these instruments results in slight underidentification, and is weakly correlated with the endogenous variable, egrowth. Staiger &amp; Stock's rule of thumb is that your instruments are not weak when F is greater than 10. My F-values are nowhere near 10, therefore I think this is a weak instrument situation. In a perfect world, I would be looking for new instruments now.</p>
+<h2 id="question-16">Question #16</h2>
+<pre><code>      .  xtreg conflict polity egrowth l1.egrowth, fe
+      
+      Fixed-effects (within) regression               Number of obs     =        695
+      Group variable: country                         Number of groups  =         41
+      
+      R-sq:                                           Obs per group:
+           within  = 0.0102                                         min =          8
+           between = 0.0153                                         avg =       17.0
+           overall = 0.0090                                         max =         18
+      
+                                                      F(3,651)          =       2.24
+      corr(u_i, Xb)  = 0.0255                         Prob &gt; F          =     0.0830
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+            polity |  -.0032644   .0027603    -1.18   0.237    -.0086844    .0021557
+                   |
+           egrowth |
+               --. |  -.4184045   .1823974    -2.29   0.022    -.7765627   -.0602463
+               L1. |  -.0329915   .1657787    -0.20   0.842    -.3585171    .2925341
+                   |
+             _cons |   .2524435   .0149093    16.93   0.000     .2231672    .2817197
+      -------------+----------------------------------------------------------------
+           sigma_u |  .33292772
+           sigma_e |  .30754691
+               rho |  .53956599   (fraction of variance due to u_i)
+      ------------------------------------------------------------------------------
+      F test that all u_i=0: F(40, 651) = 19.28                    Prob &gt; F = 0.0000
+      
+      </code></pre>
+<p>Comparing the old regression to the ivreg2 regression, it looks like the coefficients on egrowth and L1.egrowth have decreased significantly. They are not nearly as negative as they were before, suggesting that the previous regression overestimated the effect egrowth had on conflict. I am not sure if there is a statistically significant difference between the two, and therefore I am not sure which coefficient is &quot;better&quot; than the other from a policy standpoint. Both regressions contain similar variables, except I was supposedly able to capture a more accurate effect of egrowth on conflict in the ivreg2 regression. However, since I found that perhaps my instruments are weak, I am not sure how reliable those results are. The next question will answer this with the statistical test.</p>
+<h2 id="question-17">Question #17</h2>
+<pre><code>      .  ivreg2 conflict polity (egrowth L.egrowth = ld_rainfall L1.ld_rainfall ///
+       L2.ld_rainfall), first
+      
+      
+      First-stage regressions
+      -----------------------
+      
+      
+      First-stage regression of egrowth:
+      
+      Statistics consistent for homoskedasticity only
+      Number of obs =                    654
+      ------------------------------------------------------------------------------
+           egrowth |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+       ld_rainfall |
+               --. |   .0570218   .0139458     4.09   0.000     .0296374    .0844062
+               L1. |   .0493078   .0151647     3.25   0.001       .01953    .0790857
+               L2. |   .0305568   .0137589     2.22   0.027     .0035394    .0575742
+                   |
+            polity |    .000126    .000453     0.28   0.781    -.0007636    .0010155
+             _cons |  -.0078697   .0029824    -2.64   0.009     -.013726   -.0020135
+      ------------------------------------------------------------------------------
+      F test of excluded instruments:
+        F(  3,   649) =     6.30
+        Prob &gt; F      =   0.0003
+      Sanderson-Windmeijer multivariate F test of excluded instruments:
+        F(  2,   649) =     7.80
+        Prob &gt; F      =   0.0004
+      
+      
+      First-stage regression of L.egrowth:
+      
+      Statistics consistent for homoskedasticity only
+      Number of obs =                    654
+      ------------------------------------------------------------------------------
+         L.egrowth |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+       ld_rainfall |
+               --. |  -.0022202   .0143708    -0.15   0.877    -.0304392    .0259987
+               L1. |   .0466771   .0156269     2.99   0.003     .0159918    .0773624
+               L2. |   .0361112   .0141782     2.55   0.011     .0082704    .0639519
+                   |
+            polity |   .0002129   .0004668     0.46   0.649    -.0007038    .0011296
+             _cons |  -.0074916   .0030733    -2.44   0.015    -.0135264   -.0014569
+      ------------------------------------------------------------------------------
+      F test of excluded instruments:
+        F(  3,   649) =     4.83
+        Prob &gt; F      =   0.0025
+      Sanderson-Windmeijer multivariate F test of excluded instruments:
+        F(  2,   649) =     6.24
+        Prob &gt; F      =   0.0021
+      
+      
+      
+      Summary results for first-stage regressions
+      -------------------------------------------
+      
+                                                 (Underid)            (Weak id)
+      Variable     | F(  3,   649)  P-val | SW Chi-sq(  2) P-val | SW F(  2,   649)
+      egrowth      |       6.30    0.0003 |       15.73   0.0004 |        7.80
+      L.egrowth    |       4.83    0.0025 |       12.57   0.0019 |        6.24
+      
+      Stock-Yogo weak ID F test critical values for single endogenous regressor:
+                                          5% maximal IV relative bias    13.91
+                                         10% maximal IV relative bias     9.08
+                                         20% maximal IV relative bias     6.46
+                                         30% maximal IV relative bias     5.39
+                                         10% maximal IV size             22.30
+                                         15% maximal IV size             12.83
+                                         20% maximal IV size              9.54
+                                         25% maximal IV size              7.80
+      Source: Stock-Yogo (2005).  Reproduced by permission.
+      NB: Critical values are for Sanderson-Windmeijer F statistic.
+      
+      Underidentification test
+      Ho: matrix of reduced form coefficients has rank=K1-1 (underidentified)
+      Ha: matrix has rank=K1 (identified)
+      Anderson canon. corr. LM statistic       Chi-sq(2)=11.39    P-val=0.0034
+      
+      Weak identification test
+      Ho: equation is weakly identified
+      Cragg-Donald Wald F statistic                                       3.84
+      
+      Stock-Yogo weak ID test critical values for K1=2 and L1=3:
+                                         10% maximal IV size             13.43
+                                         15% maximal IV size              8.18
+                                         20% maximal IV size              6.40
+                                         25% maximal IV size              5.45
+      Source: Stock-Yogo (2005).  Reproduced by permission.
+      
+      Weak-instrument-robust inference
+      Tests of joint significance of endogenous regressors B1 in main equation
+      Ho: B1=0 and orthogonality conditions are valid
+      Anderson-Rubin Wald test           F(3,649)=       1.24     P-val=0.2933
+      Anderson-Rubin Wald test           Chi-sq(3)=      3.76     P-val=0.2890
+      Stock-Wright LM S statistic        Chi-sq(3)=      3.74     P-val=0.2915
+      
+      Number of observations               N  =        654
+      Number of regressors                 K  =          4
+      Number of endogenous regressors      K1 =          2
+      Number of instruments                L  =          5
+      Number of excluded instruments       L1 =          3
+      
+      IV (2SLS) estimation
+      --------------------
+      
+      Estimates efficient for homoskedasticity only
+      Statistics consistent for homoskedasticity only
+      
+                                                            Number of obs =      654
+                                                            F(  3,   650) =     1.49
+                                                            Prob &gt; F      =   0.2167
+      Total (centered) SS     =  128.6360856                Centered R2   =  -0.0429
+      Total (uncentered) SS   =          176                Uncentered R2 =   0.2377
+      Residual SS             =  134.1566306                Root MSE      =    .4529
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+           egrowth |
+               --. |  -1.919684    1.69796    -1.13   0.258    -5.247624    1.408255
+               L1. |  -.9189742    1.88117    -0.49   0.625    -4.605999     2.76805
+                   |
+            polity |  -.0040629   .0032368    -1.26   0.209    -.0104069     .002281
+             _cons |   .2377145    .023784     9.99   0.000     .1910987    .2843303
+      ------------------------------------------------------------------------------
+      Underidentification test (Anderson canon. corr. LM statistic):          11.393
+                                                         Chi-sq(2) P-val =    0.0034
+      ------------------------------------------------------------------------------
+      Weak identification test (Cragg-Donald Wald F statistic):                3.835
+      Stock-Yogo weak ID test critical values: 10% maximal IV size             13.43
+                                               15% maximal IV size              8.18
+                                               20% maximal IV size              6.40
+                                               25% maximal IV size              5.45
+      Source: Stock-Yogo (2005).  Reproduced by permission.
+      ------------------------------------------------------------------------------
+      Sargan statistic (overidentification test of all instruments):           1.535
+                                                         Chi-sq(1) P-val =    0.2154
+      ------------------------------------------------------------------------------
+      Instrumented:         egrowth L.egrowth
+      Included instruments: polity
+      Excluded instruments: ld_rainfall L.ld_rainfall L2.ld_rainfall
+      ------------------------------------------------------------------------------
+      
+      .  ivendog egrowth
+      
+      Tests of endogeneity of: egrowth
+      H0: Regressor is exogenous
+          Wu-Hausman F test:                  0.71524  F(1,649)    P-value = 0.39802
+          Durbin-Wu-Hausman chi-sq test:      0.71996  Chi-sq(1)   P-value = 0.39616
+      
+      </code></pre>
+<p>This tests the endogeneity of egrowth. The results show that it is not statistically significant. The null hypothesis states that the OLS estimator of the same ivreg2 equation would yield consistent estimates, the alternative hypothesis states that the endogenous variable's effects on the estimates are meaningful and the IVs are required to have accurate estimates. When you don't reject the null, any endogeneity with egrowth will not have any sort of negative consequences on the OLS estimates of the same equation. In this case, my p-values are not statistically significant, meaning that I cannot reject the null. In this equation, the OLS estimates would be fine to use since there is no serious endogeneity problem present with egrowth and conflict. The explanatory variable (egrowth) is not correlated with the error term and conflict does not have an effect on growth; there is no difference.</p>
+<h2 id="question-18">Question #18</h2>
+<pre><code>      .  overid
+      
+      Tests of overidentifying restrictions:
+      Sargan N*R-sq test        1.535  Chi-sq(1)    P-value = 0.2154
+      Basmann test              1.527  Chi-sq(1)    P-value = 0.2166
+      
+      </code></pre>
+<p>In this postestimation test, the null hypothesis states that the excluded instruments are valid instruments (uncorrelated with the error term and excluded from the estimated equation). If you reject the null, it means you are questioning the validity of the instruments. My results say that I cannot reject the null that my instruments are valid. They should be valid instruments for economic growth.</p>
+<h2 id="question-19">Question #19</h2>
+<pre><code>      .  xtivreg2 conflict polity t1981-t1999 (egrowth L.egrowth = ld_rainfall ///
+       L1.ld_rainfall L2.ld_rainfall),fe first
+      
+      Warning - collinearities detected
+      Vars dropped:       t1981 t1982 t1999
+      
+      FIXED EFFECTS ESTIMATION
+      ------------------------
+      Number of groups =        41                    Obs per group: min =         7
+                                                                     avg =      16.0
+                                                                     max =        17
+      Warning - collinearities detected
+      Vars dropped:  t1981 t1982 t1999
+      
+      First-stage regressions
+      -----------------------
+      
+      
+      FIXED EFFECTS ESTIMATION
+      ------------------------
+      Number of groups =        41                    Obs per group: min =         7
+                                                                     avg =      16.0
+                                                                     max =        17
+      
+      First-stage regression of egrowth:
+      
+      Statistics consistent for homoskedasticity only
+      Number of obs =                    654
+      ------------------------------------------------------------------------------
+           egrowth |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+       ld_rainfall |
+               --. |   .0407094   .0163697     2.49   0.013     .0085597    .0728592
+               L1. |   .0272425   .0180621     1.51   0.132     -.008231     .062716
+               L2. |   .0087478   .0159026     0.55   0.582    -.0224845    .0399801
+                   |
+            polity |  -.0009565   .0007128    -1.34   0.180    -.0023564    .0004434
+             t1981 |          0  (omitted)
+             t1982 |          0  (omitted)
+             t1983 |  -.0370858    .015731    -2.36   0.019    -.0679811   -.0061906
+             t1984 |  -.0251957   .0155089    -1.62   0.105    -.0556547    .0052634
+             t1985 |  -.0106315   .0155865    -0.68   0.495     -.041243    .0199799
+             t1986 |   .0015358   .0157118     0.10   0.922    -.0293218    .0323933
+             t1987 |   -.014758   .0155482    -0.95   0.343    -.0452941    .0157782
+             t1988 |   -.004808   .0154797    -0.31   0.756    -.0352098    .0255937
+             t1989 |   -.006244    .015872    -0.39   0.694    -.0374162    .0249281
+             t1990 |  -.0150457   .0159488    -0.94   0.346    -.0463688    .0162774
+             t1991 |  -.0131958   .0152477    -0.87   0.387    -.0431417    .0167502
+             t1992 |  -.0334488   .0157035    -2.13   0.034    -.0642901   -.0026075
+             t1993 |   -.028442   .0150196    -1.89   0.059    -.0579401    .0010562
+             t1994 |   -.019445   .0153704    -1.27   0.206    -.0496321    .0107421
+             t1995 |   .0234092   .0153942     1.52   0.129    -.0068246     .053643
+             t1996 |   .0194499   .0151333     1.29   0.199    -.0102714    .0491713
+             t1997 |   .0079344   .0151584     0.52   0.601    -.0218363     .037705
+             t1998 |   .0056887   .0152746     0.37   0.710    -.0243102    .0356877
+             t1999 |          0  (omitted)
+      ------------------------------------------------------------------------------
+      F test of excluded instruments:
+        F(  3,   593) =     2.12
+        Prob &gt; F      =   0.0961
+      Sanderson-Windmeijer multivariate F test of excluded instruments:
+        F(  2,   593) =     2.94
+        Prob &gt; F      =   0.0539
+      
+      
+      FIXED EFFECTS ESTIMATION
+      ------------------------
+      Number of groups =        41                    Obs per group: min =         7
+                                                                     avg =      16.0
+                                                                     max =        17
+      
+      First-stage regression of L.egrowth:
+      
+      Statistics consistent for homoskedasticity only
+      Number of obs =                    654
+      ------------------------------------------------------------------------------
+         L.egrowth |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+       ld_rainfall |
+               --. |   .0067057   .0169151     0.40   0.692    -.0265152    .0399266
+               L1. |   .0449626   .0186639     2.41   0.016     .0083072     .081618
+               L2. |   .0270577   .0164325     1.65   0.100    -.0052152    .0593306
+                   |
+            polity |   -.000688   .0007365    -0.93   0.351    -.0021345    .0007585
+             t1981 |          0  (omitted)
+             t1982 |          0  (omitted)
+             t1983 |  -.0214276   .0162551    -1.32   0.188    -.0533523     .010497
+             t1984 |  -.0417586   .0160256    -2.61   0.009    -.0732324   -.0102847
+             t1985 |  -.0312966   .0161058    -1.94   0.052     -.062928    .0003347
+             t1986 |  -.0171163   .0162353    -1.05   0.292    -.0490019    .0147693
+             t1987 |  -.0026099   .0160662    -0.16   0.871    -.0341634    .0289437
+             t1988 |  -.0197818   .0159955    -1.24   0.217    -.0511965    .0116329
+             t1989 |  -.0110256   .0164008    -0.67   0.502    -.0432363    .0211852
+             t1990 |  -.0096809   .0164802    -0.59   0.557    -.0420476    .0226858
+             t1991 |  -.0166257   .0157557    -1.06   0.292    -.0475694     .014318
+             t1992 |  -.0163273   .0162267    -1.01   0.315    -.0481961    .0155416
+             t1993 |  -.0392001   .0155201    -2.53   0.012     -.069681   -.0087191
+             t1994 |  -.0395428   .0158825    -2.49   0.013    -.0707356   -.0083499
+             t1995 |  -.0273442   .0159071    -1.72   0.086    -.0585853    .0038969
+             t1996 |   .0177363   .0156375     1.13   0.257    -.0129753    .0484479
+             t1997 |   .0125851   .0156634     0.80   0.422    -.0181774    .0433477
+             t1998 |   .0013114   .0157836     0.08   0.934    -.0296871    .0323098
+             t1999 |          0  (omitted)
+      ------------------------------------------------------------------------------
+      F test of excluded instruments:
+        F(  3,   593) =     2.43
+        Prob &gt; F      =   0.0647
+      Sanderson-Windmeijer multivariate F test of excluded instruments:
+        F(  2,   593) =     3.32
+        Prob &gt; F      =   0.0370
+      
+      
+      
+      Summary results for first-stage regressions
+      -------------------------------------------
+      
+                                                 (Underid)            (Weak id)
+      Variable     | F(  3,   593)  P-val | SW Chi-sq(  2) P-val | SW F(  2,   593)
+      egrowth      |       2.12    0.0961 |        6.07   0.0481 |        2.94
+      L.egrowth    |       2.43    0.0647 |        6.86   0.0325 |        3.32
+      
+      Stock-Yogo weak ID F test critical values for single endogenous regressor:
+                                          5% maximal IV relative bias    13.91
+                                         10% maximal IV relative bias     9.08
+                                         20% maximal IV relative bias     6.46
+                                         30% maximal IV relative bias     5.39
+                                         10% maximal IV size             22.30
+                                         15% maximal IV size             12.83
+                                         20% maximal IV size              9.54
+                                         25% maximal IV size              7.80
+      Source: Stock-Yogo (2005).  Reproduced by permission.
+      NB: Critical values are for Sanderson-Windmeijer F statistic.
+      
+      Underidentification test
+      Ho: matrix of reduced form coefficients has rank=K1-1 (underidentified)
+      Ha: matrix has rank=K1 (identified)
+      Anderson canon. corr. LM statistic       Chi-sq(2)=5.32     P-val=0.0698
+      
+      Weak identification test
+      Ho: equation is weakly identified
+      Cragg-Donald Wald F statistic                                       1.73
+      
+      Stock-Yogo weak ID test critical values for K1=2 and L1=3:
+                                         10% maximal IV size             13.43
+                                         15% maximal IV size              8.18
+                                         20% maximal IV size              6.40
+                                         25% maximal IV size              5.45
+      Source: Stock-Yogo (2005).  Reproduced by permission.
+      
+      Weak-instrument-robust inference
+      Tests of joint significance of endogenous regressors B1 in main equation
+      Ho: B1=0 and orthogonality conditions are valid
+      Anderson-Rubin Wald test           F(3,593)=       1.02     P-val=0.3826
+      Anderson-Rubin Wald test           Chi-sq(3)=      3.17     P-val=0.3664
+      Stock-Wright LM S statistic        Chi-sq(3)=      3.15     P-val=0.3688
+      
+      Number of observations               N  =        654
+      Number of regressors                 K  =         19
+      Number of endogenous regressors      K1 =          2
+      Number of instruments                L  =         20
+      Number of excluded instruments       L1 =          3
+      
+      IV (2SLS) estimation
+      --------------------
+      
+      Estimates efficient for homoskedasticity only
+      Statistics consistent for homoskedasticity only
+      
+                                                            Number of obs =      654
+                                                            F( 19,   594) =     2.08
+                                                            Prob &gt; F      =   0.0048
+      Total (centered) SS     =   58.5236769                Centered R2   =  -0.1258
+      Total (uncentered) SS   =   58.5236769                Uncentered R2 =  -0.1258
+      Residual SS             =  65.88583837                Root MSE      =    .3278
+      
+      ------------------------------------------------------------------------------
+          conflict |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+      -------------+----------------------------------------------------------------
+           egrowth |
+               --. |  -.5183368   2.086061    -0.25   0.804    -4.606942    3.570268
+               L1. |  -2.385718   1.889003    -1.26   0.207    -6.088097     1.31666
+                   |
+            polity |  -.0108283   .0041539    -2.61   0.009    -.0189698   -.0026869
+             t1981 |          0  (omitted)
+             t1982 |          0  (omitted)
+             t1983 |  -.2789642    .123994    -2.25   0.024    -.5219879   -.0359404
+             t1984 |  -.3387446   .1253323    -2.70   0.007    -.5843914   -.0930978
+             t1985 |  -.3123337   .0966148    -3.23   0.001    -.5016952   -.1229721
+             t1986 |  -.2321531   .0812015    -2.86   0.004    -.3913052   -.0730011
+             t1987 |  -.2221652     .08845    -2.51   0.012    -.3955241   -.0488064
+             t1988 |  -.2841833   .0868283    -3.27   0.001    -.4543637   -.1140029
+             t1989 |  -.2231381   .0804946    -2.77   0.006    -.3809046   -.0653717
+             t1990 |  -.1083455   .0926102    -1.17   0.242    -.2898582    .0731672
+             t1991 |  -.1045534   .0932215    -1.12   0.262    -.2872641    .0781573
+             t1992 |  -.2033694   .1150807    -1.77   0.077    -.4289234    .0221845
+             t1993 |  -.3306294     .11624    -2.84   0.004    -.5584556   -.1028032
+             t1994 |   -.258249   .1035939    -2.49   0.013    -.4612894   -.0552087
+             t1995 |  -.2556879   .1009199    -2.53   0.011    -.4534873   -.0578886
+             t1996 |  -.1117582   .0905906    -1.23   0.217    -.2893124     .065796
+             t1997 |  -.0529919    .082599    -0.64   0.521     -.214883    .1088992
+             t1998 |   .0240965   .0782271     0.31   0.758    -.1292258    .1774187
+             t1999 |          0  (omitted)
+      ------------------------------------------------------------------------------
+      Underidentification test (Anderson canon. corr. LM statistic):           5.324
+                                                         Chi-sq(2) P-val =    0.0698
+      ------------------------------------------------------------------------------
+      Weak identification test (Cragg-Donald Wald F statistic):                1.732
+      Stock-Yogo weak ID test critical values: 10% maximal IV size             13.43
+                                               15% maximal IV size              8.18
+                                               20% maximal IV size              6.40
+                                               25% maximal IV size              5.45
+      Source: Stock-Yogo (2005).  Reproduced by permission.
+      ------------------------------------------------------------------------------
+      Sargan statistic (overidentification test of all instruments):           0.772
+                                                         Chi-sq(1) P-val =    0.3796
+      ------------------------------------------------------------------------------
+      Instrumented:         egrowth L.egrowth
+      Included instruments: polity t1983 t1984 t1985 t1986 t1987 t1988 t1989 t1990
+                            t1991 t1992 t1993 t1994 t1995 t1996 t1997 t1998
+      Excluded instruments: ld_rainfall L.ld_rainfall L2.ld_rainfall
+      Dropped collinear:    t1981 t1982 t1999
+      ------------------------------------------------------------------------------
+      
+      </code></pre>
+<p>Using the xtivreg2 command will allow me to bring back the fixed effects into this regression model. I also added the time variables back in to control for time. It looks like this slightly improves the validity of the instruments. My overid test still tells me that the instruments are valid. So the three changes I made where to change the function to &quot;xtivreg2&quot; rather than &quot;ivreg2&quot;, add back in the &quot;fe&quot; option, and add back in the time variable fixed effects to control for the within-effects of each year.</p>
+<h2 id="question-20">Question #20</h2>
+<p>Omitted variable bias may still be a threat to internal validity, especially when trying to figure out if the coefficients are reliable or not. Additionally, there could be &quot;errors in variables&quot; present in the independent variables in the regression function. For example, there could be errors within polity, egrowth, or the time variables. The time variables did also show collinearity in the last regression I ran and therefore some years were excluded. Fixing this problem might improve internal validity.</p>
+<p>Along with these problems, there might also be a problem of correlation between the regressor and the error term which violates the least squares assumption, invalidating the regression coefficients. Suggestions to fix these problems include finding whether the independent variables are statistically significant, estimate regressions with alternative specifications like keeping or removing some variables, or even change the experimental design that collected this data. A problem with the indepedent variable, conflict, might come about because of noise present within countries. A solution could be to adjust the estimates for this bias somehow.</p>
+<p>Additionally, when running the OLS regression again, a solution to fixing inconsistency in the standard errors could be to use robust standard errors with the &quot;robust&quot; option when running the regression. This would solve a problem of heteroskedasticity, and not assuming homoskedasticity, an SR assumption. A major adjustment to improve the IV regression would be to find new variables that are better instruments, as it seems like the variables we chose for this problem set are weak, meaning that they are weekly correlated with egrowth, the endogenous variable that needed instruments. I think using better instruments should improve the confidence region in the regression results.</p>
+</body>
+</html>
