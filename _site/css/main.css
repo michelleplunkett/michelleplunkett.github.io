@@ -132,7 +132,24 @@ code {
         unicode-bidi: embed;
         margin:20px 0 0px 0;
 }
-
+.code {
+        white-space:pre;
+        color: black;
+        align-content: center;
+        padding:5px;
+        display:block;
+        font-size:12px;
+        line-height:14px;
+        background-color:#E1E6F0;
+        font-family:"Lucida Console", Monaco, monospace, "Courier New", Courier, monospace;
+        font-weight:normal;
+        text-shadow:#FFF;
+        border:thin;
+        border-color: #345A8A; 
+        border-style: solid;
+        unicode-bidi: embed;
+        margin:20px 0 0px 0;
+}
 pre {
   overflow-x: scroll;
     background-color: #f2f2f2;
@@ -140,6 +157,12 @@ pre {
     padding: 12px;
     border: 1px solid #CCCCCC;
     padding: 30px 10px 0px 10px;
+}
+pre code {
+    border-radius: 3px;
+    background-color: #F8F8F8;
+    background: transparent; 
+    padding: 0;
 }
   pre > code {
     border: 0;
