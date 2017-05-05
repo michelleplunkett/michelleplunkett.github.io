@@ -5,6 +5,204 @@ description: A statistical analysis using Stata and the MarkDoc package.
 date: 2017-05-05
 ---
 
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Amaranth');
+
+body {
+        margin: auto;
+        font-family: "Source Sans Pro";
+        font-size: 14px;
+        max-width: 778px;
+        }
+header {
+        font-size:28px;
+        padding-bottom:5px; 
+        margin:0;
+        padding-top:5px; 
+        font-family: "Amaranth";
+        background-color:white; 
+        color: #3f1d56;
+        text-align:center;
+        display:block;
+        }
+
+ul {    list-style:circle;
+        margin-top:0;
+        margin-bottom:0;
+        }
+
+div ul a {
+        color:black;
+        text-decoration:none;
+        }
+
+div ul {
+        list-style: none;
+        margin: 0px 0 10px -15px;
+        padding-left:15px;
+        }
+
+div ul li {
+        font-weight:bold;
+        margin-top:20px;
+        }
+
+div ul li ul li {
+        font-weight: normal;
+        margin-left:20px;
+        margin-top:5px;
+        }
+
+div ul li ul li ul li {
+        font-weight: normal;
+        font-style:none;
+        margin-top:5px;
+        }
+
+div ul li ul li ul li ul li {
+        font-weight: normal;
+        font-style:italic;
+        margin-top:5px;
+        }
+
+img {
+        margin: 5px 0 5px 0;
+        padding: 0px;
+        cursor:-webkit-zoom-in;
+        cursor:-moz-zoom-in;
+        display:inline-block;
+        text-align: left;
+        clear: both;
+        }
+
+h1, h1 > a, h1 > a:link {
+        margin:24px 0px 10px 0px;
+        padding: 0;
+        font-family: "Amaranth";
+        color:#3f1d56;
+        font-size: 22px;
+        }
+
+h1 > a:hover, h1 > a:hover{
+color:#345A8A;
+} 
+
+h2, h2 > a, h2 > a, h2 > a:link {
+        margin:14px 0px 10px 0px;
+        padding: 0;
+        font-family: "Amaranth";
+        color:#5a297c;
+        font-size: 18px;
+        font-weight:bold;
+        }
+
+h3, h3 > a,h3 > a, h3 > a:link,h3 > a:link {
+        margin:14px 0px 0px 0px;
+        padding: 0;
+        font-family: ;
+        color:#5a297c;
+        font-size: 14px;
+        font-weight:bold;
+        }
+
+h4 {
+        margin:10px 0px 0px 0px;
+        padding: 0;
+        font-family: ;
+        font-size: 14px;
+        color:#4F81BD;
+        font-weight:bold;
+        font-style:italic;
+        }
+
+h5  {
+        font-family: ;
+        font-size: 14px;
+        font-weight:normal;
+        color:#4F81BD;
+        }
+
+h6  {
+        font-size:14px;
+        font-family: ;
+        font-weight:normal;
+        font-style:italic;
+        color:#4F81BD;
+        }
+
+p {
+        font-family: ;
+        font-weight:normal;
+        font-size:15px;
+        line-height:16px;
+        line-height: 20px;
+        text-align:justify;
+        text-align: left;
+        text-justify:inter-word;
+        margin:0 0 14px 0;
+        }
+
+.code {
+        white-space:pre;
+        color: black;
+        align-content: center;
+        padding:5px;
+        display:block;
+        font-size:12px;
+        line-height:14px;
+        background-color:#E1E6F0;
+        font-family:"Lucida Console", Monaco, monospace, "Courier New", Courier, monospace;
+        font-weight:normal;
+        text-shadow:#FFF;
+        border:thin;
+        border-color: #345A8A; 
+        border-style: solid;
+        unicode-bidi: embed;
+        margin:20px 0 0px 0;
+        }
+
+.output {
+        white-space:pre;
+        display:block;
+        font-family:monospace,"Lucida Console", Monaco, "Courier New", Courier, monospace;
+        font-size:12px; 
+        line-height: 12px;
+        margin:0 0 14px 0;
+        border:thin; 
+        unicode-bidi: embed;
+        border-color: #345A8A; 
+        padding:14px 5px 0 5px;
+        background-color:transparent;
+        }
+pre.sh_sourceCode {
+    background-color: #FFFFFF;
+    border-radius: 0px; 
+    padding: 12px;
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px 10px 10px;
+}
+pre {
+    background-color: #f2f2f2;
+    border-radius: 7px; 
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    padding: 30px 10px 0px 10px;
+}
+pre code {
+    border-radius: 3px;
+    background-color: #F8F8F8;
+    background: transparent; 
+    padding: 0;
+}
+
+.date {
+        font-family: ;
+        font-weight:normal;
+        font-size:16px;
+}
+</style>
+
 <h1>Introduction</h1>
 <p>I went all out on this problem set (in terms of the formatting of my final document.) In order to run my do file, Stata requires that you have ivreg2, xtivreg2, ranktest, ivendog, and overid installed to run these statistical analyses. I used the &quot;ssc install&quot; command to install the latest versions of these functions. Using &quot;search [package name]&quot; works but I found that it is hard to find the latest version this way (xtivreg2 requires the newest versions of certain supplementary functions).</p>
 <p>To make this Word Document, I used a package called &quot;MarkDoc&quot; and coded my do-file with markdown (a langauge). This package then converts the SMCL file into a Word Document or a PDF using additional packages like Statax and Weaver. Additional third party packages are also required, specifically, Pandoc and wkhtmltopdf. Finally, I wrote an external style sheet using CSS to tell the conversion process how to style my final document in HTML.</p>
