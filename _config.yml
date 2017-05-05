@@ -1,8 +1,8 @@
 # Site settings
 title: Michelle Plunkett
-email: michellejplunkett@gmail.com
+email: michellep1994@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Michelle Plunkett's website.
+  Michelle Plunkett's Website
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://michelle-plunkett.com" # the base hostname & protocol for your site
 github_username:  michelleplunkett
