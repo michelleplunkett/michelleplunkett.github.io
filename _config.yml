@@ -4,7 +4,7 @@ email: michellejplunkett@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Michelle Plunkett's website.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://michelle-plunkett.com" # the base hostname & protocol for your site
+url: "https://michelle-plunkett.com" # the base hostname & protocol for your site
 github_username:  michelleplunkett
 
 permalink: /:title/
