@@ -4,7 +4,7 @@
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
-    margin: 0;
+    margin: 0px 0px 15px 0px;
     padding: 0;
 }
 
@@ -161,31 +161,92 @@ blockquote {
     }
 }
 
-
-
 /**
  * Code formatting
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: 13px;
     border-radius: 3px;
-    background-color: $grey-color-light;
+    background-color: #F8F8F8;
+    background: transparent; 
+    padding: 0;
 }
 
 code {
-    padding: 1px 5px;
+   white-space:pre;
+        color: black;
+        align-content: center;
+        padding:5px;
+        display:block;
+        font-size:11px;
+        line-height:14px;
+        background-color:#E1E6F0;
+        font-family:"Lucida Console", Monaco, monospace, "Courier New", Courier, monospace;
+        font-weight:normal;
+        text-shadow:#FFF;
+        border:thin;
+        border-color: #345A8A; 
+        border-style: solid;
+        unicode-bidi: embed;
+        margin:20px 0 0px 0;
 }
-
+.code {
+        white-space:pre;
+        color: black;
+        align-content: center;
+        padding:5px;
+        display:block;
+        font-size:12px;
+        line-height:14px;
+        background-color:#E1E6F0;
+        font-family:"Lucida Console", Monaco, monospace, "Courier New", Courier, monospace;
+        font-weight:normal;
+        text-shadow:#FFF;
+        border:thin;
+        border-color: #345A8A; 
+        border-style: solid;
+        unicode-bidi: embed;
+        margin:20px 0 0px 0;
+}
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+  overflow-x: scroll;
+    background-color: #f2f2f2;
+    border-radius: 7px; 
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    padding: 30px 10px 0px 10px;
+}
+pre code {
+    border-radius: 3px;
+    background-color: #F8F8F8;
+    background: transparent; 
+    padding: 0;
+}
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; 
+}
+pre.sh_sourceCode {
+    background-color: #FFFFFF;
+    border-radius: 0px; 
+    padding: 12px;
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px 10px 10px;
+}
+.output {
+        white-space:pre;
+        display:block;
+        font-family:monospace,"Lucida Console", Monaco, "Courier New", Courier, monospace;
+        font-size:12px; 
+        line-height: 12px;
+        margin:0 0 14px 0;
+        border:thin; 
+        unicode-bidi: embed;
+        border-color: #345A8A; 
+        padding:14px 5px 0 5px;
+        background-color:transparent;
 }
 
 
