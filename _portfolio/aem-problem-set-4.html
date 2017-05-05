@@ -5,17 +5,11 @@ description: A statistical analysis using Stata and the MarkDoc package.
 date: 2017-05-05
 ---
 
-<html>
-<header>
-AEM Problem Set #4
-</header>
-<body>
-<p><span class="author">Michelle Plunkett</span> <span class="date"> 5 May 2017</span></p>
 <h1 id="introduction">Introduction</h1>
 <p>I went all out on this problem set (in terms of the formatting of my final document.) In order to run my do file, Stata requires that you have ivreg2, xtivreg2, ranktest, ivendog, and overid installed to run these statistical analyses. I used the &quot;ssc install&quot; command to install the latest versions of these functions. Using &quot;search [package name]&quot; works but I found that it is hard to find the latest version this way (xtivreg2 requires the newest versions of certain supplementary functions).</p>
 <p>To make this Word Document, I used a package called &quot;MarkDoc&quot; and coded my do-file with markdown (a langauge). This package then converts the SMCL file into a Word Document or a PDF using additional packages like Statax and Weaver. Additional third party packages are also required, specifically, Pandoc and wkhtmltopdf. Finally, I wrote an external style sheet using CSS to tell the conversion process how to style my final document in HTML.</p>
 <p><a href="http://bit.ly/2qKAZe4">Click Here</a> to read more about MarkDoc.</p>
-<h2 id="data-summary">Data Summary</h2>
+<h3 id="data-summary">Data Summary</h3>
 <pre><code>      .  xtset
              panel variable:  country (unbalanced)
               time variable:  year, 1981 to 1999
@@ -43,7 +37,7 @@ AEM Problem Set #4
       
       </code></pre>
 <h1 id="questions">Questions</h1>
-<h2 id="question-1">Question #1</h2>
+<h3 id="question-1">Question #1</h3>
 <pre><code>      .  reg conflict polity egrowth
       
             Source |       SS           df       MS      Number of obs   =       736
@@ -64,9 +58,9 @@ AEM Problem Set #4
       
       </code></pre>
 <p>This is a pooled model, I am not accounting for individual (country) or time differences yet. I cannot tell if either of these variables clearly connected to conflict since they are both statistically not significant and are not using the same units, so their relative strengths are not comparable. However, if were to ignore this fact, based on the coefficients I think that egrowth has a stronger effect on conflict.</p>
-<h2 id="question-2">Question #2</h2>
+<h3 id="question-2">Question #2</h3>
 <p>I cannot take the magnitude of the two coefficients as an indicator because not all of these variables are in the same units, making it so you cannot compare the relative strengths of the units on conflict against one another. It would be comparing apples against oranges in their strength of effect on conflict.</p>
-<h2 id="question-3">Question #3</h2>
+<h3 id="question-3">Question #3</h3>
 <pre><code>      .  reg conflict polity egrowth, beta
       
             Source |       SS           df       MS      Number of obs   =       736
@@ -96,9 +90,9 @@ AEM Problem Set #4
                   Prob &gt; F =    0.1624
       
       </code></pre>
-<h2 id="question-4">Question #4</h2>
+<h3 id="question-4">Question #4</h3>
 <p>It makes sense to include country dummy variables in the equation because one country might always be in conflict with another while others are relatively peaceful. One country might be skewing the results one way or another. It would be interesting to see if one country has more of an effect on the dependent variable than another and compare the effects. If they aren't included, the results might be invalid because there might be different intercepts for each country, this would effect the regression and would not result in an accurate regression model.</p>
-<h2 id="question-5">Question #5</h2>
+<h3 id="question-5">Question #5</h3>
 <pre><code>      .  xtreg conflict polity egrowth, fe
       
       Fixed-effects (within) regression               Number of obs     =        736
@@ -127,9 +121,9 @@ AEM Problem Set #4
       
       </code></pre>
 <p>This is the xtreg regression with the fixed effects option initiated. It doesn't change the coefficients on polity or egrowth substantially. R-squared will always increase, so I don't necessarily think the increase is statistically significant. I think I should keep country fixed effects in my regression equation because it will account for any major differences between countries that would effect the regression.</p>
-<h2 id="question-6">Question #6</h2>
+<h3 id="question-6">Question #6</h3>
 <p>I think military, rural, or oil would be good to include to identify risks on a country-by-country basis. Military is a dummy variable, but says 1 if the chief executive is a military officer, which would possibly mean more conflict occurs in that country since the chief exec is an officer. Rural may be a good identifier because if much of the population is rural there might not be as much conflict since a high percentage of the country is spread out, for example . My bias says that oil exports would mean that it is a country that possibly involved in active warfare and therefore has increased conflict.</p>
-<h2 id="question-7">Question #7</h2>
+<h3 id="question-7">Question #7</h3>
 <pre><code>      .  xtreg conflict polity egrowth military rural oil
       
       Random-effects GLS regression                   Number of obs     =        735
@@ -188,12 +182,12 @@ AEM Problem Set #4
       F test that all u_i=0: F(40, 691) = 20.38                    Prob &gt; F = 0.0000
       
       </code></pre>
-<h2 id="question-8">Question #8</h2>
+<h3 id="question-8">Question #8</h3>
 <p>I would add in military if I was going to add in any of them to a regression equation, but I would prefer to use country fixed effects to see what makes a country prone to civil war. A fixed effects option is looking at the &quot;within-subjects&quot; effects on conflict. This effect represents the variability of a value like polity or egrowth for each country. It measures how much these values are changing within each country. If we care about risks on a country by country basis, this is the way to go, since it deals with values within a country/individual in a sample.</p>
-<h2 id="question-9">Question #9</h2>
+<h3 id="question-9">Question #9</h3>
 <p>The &quot;year&quot; dummy variables (t1981-t1999) give &quot;1&quot; for each year within a country. So, a country like Liberia will have a 1 for &quot;t1981&quot; if the year is 1981 and 0 for all of the other years present for that country to give only one year at a time for each country. t1981=1 if year==&quot;1981&quot;. It is a conditional function based on the year the data was collected.</p>
 <p>It makes sense to include them in the equation to control for each year's differences. One year might have a lot more conflict than another year. The results may be wrong if the time variables are omitted because it might cause me to over or understate the effect on conflict.</p>
-<h2 id="question-10">Question #10</h2>
+<h3 id="question-10">Question #10</h3>
 <pre><code>      .  xtreg conflict polity egrowth military t1981-t1999, fe
       note: t1999 omitted because of collinearity
       
@@ -298,15 +292,15 @@ AEM Problem Set #4
       
       </code></pre>
 <p>This is a fixed-effects panel-data regression without the time-variables included.</p>
-<h2 id="question-11">Question #11</h2>
+<h3 id="question-11">Question #11</h3>
 <p>The OLS coefficient might be an error because it might not follow all of the Gauss Markov assumptions, like homoegeniety. Additionally, it might fail when the covariance between the independent variable and the random error does not equal 0 (no serial correlation), which goes against a Gauss Markov assumption that makes the least squares estimates valid. The least squares method fails because it does not accurately estimate the intercept of the regression line, therefore under or over estimating the slope because of the correlation between the independent variable and the random error term, resulting in a biased estimation. The true regression function will have a different slope and intercept. I think that using instruments would help me deal with this correlation issue, since it solves issues resulting from correlation with the random error term. Because an instrument will not have a direct effect on conflict, it will allow me to estimate the relationship between egrowth and conflict.</p>
-<h2 id="question-12">Question #12</h2>
+<h3 id="question-12">Question #12</h3>
 <p>A good instrument would not be correlated or have a direct effect on Y, conflict, but should allow a relationship to exist between egrowth and conflict, but indirectly. The instrument should be exogenous and not correlated with the error term. It should be strongly correlated with egrowth, the endogenous explanatory variable. Finally, the instrument should not have a direct effect on conflict, and cannot be used as an explanatory variable in this way.</p>
-<h2 id="question-13">Question #13</h2>
+<h3 id="question-13">Question #13</h3>
 <p>I definitely do not think that percent changes in rainfall directly effect conflicts that have greater than 25 casualties in a country. I also do not think that it will be correlated with the regerssino error term for this reason. I think the instrument is also correlated with egrowth, but I don't think it will be necessarily strongly correlated with it. One of the conditions is that it has to be strongly correlated with the endogenous explanatory variable, but I think that it might be as good of an instrument I can get with the data that's available to me, without looking at any statistical tests.</p>
-<h2 id="question-14">Question #14</h2>
+<h3 id="question-14">Question #14</h3>
 <p>Another variable I might use as an instrument might be percentage of arable land, as it is probably directly correlated with egrowth but not directly correlated to conflict. Oil might work too, but I think it is too correlated with conflict, but I do not know for sure.</p>
-<h2 id="question-15">Question #15</h2>
+<h3 id="question-15">Question #15</h3>
 <pre><code>      .  ivreg2 conflict polity (egrowth L.egrowth = ld_rainfall L1.ld_rainfall ///
        L2.ld_rainfall), first
       
@@ -455,7 +449,7 @@ AEM Problem Set #4
       </code></pre>
 <p>I would have also included fixed effects but ivreg2 doesn't let me include it as an option. In the first stage of the regression, the p-values for both egrowth and L.egrowth are statistically significant. The F-values are not small enough for me to be reasonably confident that my instrument estimates are on target. Since the p-values were statistically significant, and I have to reject the null that my instruments have no effect on conflict, this means that I have not properly controlled for egrowth since rainfall is somewhat predictive of conflict. I believe this means that my instruments are not efficient. This results in less precise estimation than the least squares estimation procedure, creating invalid estimates that are over or underidentified/esimated.</p>
 <p>From the first stage summary results, it also looks like using these instruments results in slight underidentification, and is weakly correlated with the endogenous variable, egrowth. Staiger &amp; Stock's rule of thumb is that your instruments are not weak when F is greater than 10. My F-values are nowhere near 10, therefore I think this is a weak instrument situation. In a perfect world, I would be looking for new instruments now.</p>
-<h2 id="question-16">Question #16</h2>
+<h3 id="question-16">Question #16</h3>
 <pre><code>      .  xtreg conflict polity egrowth l1.egrowth, fe
       
       Fixed-effects (within) regression               Number of obs     =        695
@@ -488,7 +482,7 @@ AEM Problem Set #4
       
       </code></pre>
 <p>Comparing the old regression to the ivreg2 regression, it looks like the coefficients on egrowth and L1.egrowth have decreased significantly. They are not nearly as negative as they were before, suggesting that the previous regression overestimated the effect egrowth had on conflict. I am not sure if there is a statistically significant difference between the two, and therefore I am not sure which coefficient is &quot;better&quot; than the other from a policy standpoint. Both regressions contain similar variables, except I was supposedly able to capture a more accurate effect of egrowth on conflict in the ivreg2 regression. However, since I found that perhaps my instruments are weak, I am not sure how reliable those results are. The next question will answer this with the statistical test.</p>
-<h2 id="question-17">Question #17</h2>
+<h3 id="question-17">Question #17</h3>
 <pre><code>      .  ivreg2 conflict polity (egrowth L.egrowth = ld_rainfall L1.ld_rainfall ///
        L2.ld_rainfall), first
       
@@ -643,7 +637,7 @@ AEM Problem Set #4
       
       </code></pre>
 <p>This tests the endogeneity of egrowth. The results show that it is not statistically significant. The null hypothesis states that the OLS estimator of the same ivreg2 equation would yield consistent estimates, the alternative hypothesis states that the endogenous variable's effects on the estimates are meaningful and the IVs are required to have accurate estimates. When you don't reject the null, any endogeneity with egrowth will not have any sort of negative consequences on the OLS estimates of the same equation. In this case, my p-values are not statistically significant, meaning that I cannot reject the null. In this equation, the OLS estimates would be fine to use since there is no serious endogeneity problem present with egrowth and conflict. The explanatory variable (egrowth) is not correlated with the error term and conflict does not have an effect on growth; there is no difference.</p>
-<h2 id="question-18">Question #18</h2>
+<h3 id="question-18">Question #18</h3>
 <pre><code>      .  overid
       
       Tests of overidentifying restrictions:
@@ -652,7 +646,7 @@ AEM Problem Set #4
       
       </code></pre>
 <p>In this postestimation test, the null hypothesis states that the excluded instruments are valid instruments (uncorrelated with the error term and excluded from the estimated equation). If you reject the null, it means you are questioning the validity of the instruments. My results say that I cannot reject the null that my instruments are valid. They should be valid instruments for economic growth.</p>
-<h2 id="question-19">Question #19</h2>
+<h3 id="question-19">Question #19</h3>
 <pre><code>      .  xtivreg2 conflict polity t1981-t1999 (egrowth L.egrowth = ld_rainfall ///
        L1.ld_rainfall L2.ld_rainfall),fe first
       
@@ -878,9 +872,7 @@ AEM Problem Set #4
       
       </code></pre>
 <p>Using the xtivreg2 command will allow me to bring back the fixed effects into this regression model. I also added the time variables back in to control for time. It looks like this slightly improves the validity of the instruments. My overid test still tells me that the instruments are valid. So the three changes I made where to change the function to &quot;xtivreg2&quot; rather than &quot;ivreg2&quot;, add back in the &quot;fe&quot; option, and add back in the time variable fixed effects to control for the within-effects of each year.</p>
-<h2 id="question-20">Question #20</h2>
+<h3 id="question-20">Question #20</h3>
 <p>Omitted variable bias may still be a threat to internal validity, especially when trying to figure out if the coefficients are reliable or not. Additionally, there could be &quot;errors in variables&quot; present in the independent variables in the regression function. For example, there could be errors within polity, egrowth, or the time variables. The time variables did also show collinearity in the last regression I ran and therefore some years were excluded. Fixing this problem might improve internal validity.</p>
 <p>Along with these problems, there might also be a problem of correlation between the regressor and the error term which violates the least squares assumption, invalidating the regression coefficients. Suggestions to fix these problems include finding whether the independent variables are statistically significant, estimate regressions with alternative specifications like keeping or removing some variables, or even change the experimental design that collected this data. A problem with the indepedent variable, conflict, might come about because of noise present within countries. A solution could be to adjust the estimates for this bias somehow.</p>
 <p>Additionally, when running the OLS regression again, a solution to fixing inconsistency in the standard errors could be to use robust standard errors with the &quot;robust&quot; option when running the regression. This would solve a problem of heteroskedasticity, and not assuming homoskedasticity, an SR assumption. A major adjustment to improve the IV regression would be to find new variables that are better instruments, as it seems like the variables we chose for this problem set are weak, meaning that they are weekly correlated with egrowth, the endogenous variable that needed instruments. I think using better instruments should improve the confidence region in the regression results.</p>
-</body>
-</html>
