@@ -1,8 +1,8 @@
 ---
 layout: post
-title: U.S. Museums Tableau Map
+title: US Museums Tableau Map
 date: 2017-07-08
-img: /img/USMuseums.png/
+img: /img/USMuseums.png
 ---
 
 <div class='tableauPlaceholder' id='viz1499523891154' style='position: relative'>
