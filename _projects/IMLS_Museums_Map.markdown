@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: U.S. Museums Tableau Map
 date: 2017-07-08
 img: /img/USMuseums.png/
