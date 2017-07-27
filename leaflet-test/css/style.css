@@ -1,0 +1,41 @@
+#mapid {
+  height: 475px;
+  width: 90%;
+  margin: auto;
+	border-style: solid;
+	border-color: #555555;
+	border-width: 3px;
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+	font-size: 45px;
+	color: #444444;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 10px 20px 10px 20px;
+	background-color: #F8F8F8;
+}
+
+a:link {
+	font-weight: bold;
+	color: #555555;
+	text-decoration: none;
+}
+
+a:visited {
+	color: hotpink;
+}
+
+a:hover {
+	color: #BBBBBB;
+	text-decoration: underline;
+}
