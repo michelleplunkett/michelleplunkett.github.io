@@ -26,3 +26,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  notebooks:
+    output: true
+    permalink: /notebooks/:path/
