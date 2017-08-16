@@ -11807,7 +11807,63 @@ to the file and save it.</li>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Step-1">Step 1<a class="anchor-link" href="#Step-1">&#194;&#182;</a></h2><p>Install the devtools package.</p>
+<h1 id="Greer's-Tutorial">Greer's Tutorial<a class="anchor-link" href="#Greer's-Tutorial">&#194;&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Why-R?">Why R?<a class="anchor-link" href="#Why-R?">&#194;&#182;</a></h2><ol>
+<li>Free/open source geocode capabilties.</li>
+<li>Merging/matching to congressional districts/MSAs/counties/etc. </li>
+<li>Add geographic indicators to geocoded data.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Basic-Information-about-R-&amp;-RStudio">Basic Information about R &amp; RStudio<a class="anchor-link" href="#Basic-Information-about-R-&amp;-RStudio">&#194;&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Screens-in-RStudio">Screens in RStudio<a class="anchor-link" href="#Screens-in-RStudio">&#194;&#182;</a></h3><ol>
+<li><strong>Script window:</strong> <em>(top left)</em> the commands and functions that you would like to keep for later use</li>
+<li><strong>Console:</strong> <em>(bottom left)</em> the window where the commands run and produce outputs. Commands typed here do not get saved in your script. </li>
+<li><strong>Environment/Help window:</strong> shows details about the current dataset loaded and any help documentation for R</li>
+<li><strong>Plots/packages window:</strong> shows details about the current package selected (for example, details about the "neaR" package)</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="How-to-Run-a-Script">How to Run a Script<a class="anchor-link" href="#How-to-Run-a-Script">&#194;&#182;</a></h3><ol>
+<li>Highlight the command you would like to run</li>
+<li>Click the key combination CTRL+ENTER</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Step-1">Step 1<a class="anchor-link" href="#Step-1">&#194;&#182;</a></h2><h3 id="Step-1.a.">Step 1.a.<a class="anchor-link" href="#Step-1.a.">&#194;&#182;</a></h3><p>Install the devtools package by writing the following command in the script window. Highlight the command in a script window and click CTRL+ENTER to run the command.</p>
+<p>The command is finished executing when the "&gt;" arrow appears in the console.</p>
 
 </div>
 </div>
@@ -11836,7 +11892,7 @@ to the file and save it.</li>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 The downloaded binary packages are in
-	/var/folders/kp/2dzcn39934x4700rb9kpvtx00000gn/T//RtmpeHGeeC/downloaded_packages
+	/var/folders/kp/2dzcn39934x4700rb9kpvtx00000gn/T//RtmpUbOjsi/downloaded_packages
 </pre>
 </div>
 </div>
@@ -11849,7 +11905,7 @@ The downloaded binary packages are in
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Enable the devtools package.</p>
+<h3 id="Step-1.b.">Step 1.b.<a class="anchor-link" href="#Step-1.b.">&#194;&#182;</a></h3><p>Enable the devtools package by writing the following command in the script window. Then, highlight "library(devtools)" and click CTRL+ENTER. If done correctly, the next line in the console should show this symbol "&gt;".</p>
 
 </div>
 </div>
@@ -11889,14 +11945,14 @@ The downloaded binary packages are in
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Step-2">Step 2<a class="anchor-link" href="#Step-2">&#194;&#182;</a></h2><p>Install Greer Mellon's "neaR" package.</p>
+<h2 id="Step-2">Step 2<a class="anchor-link" href="#Step-2">&#194;&#182;</a></h2><h3 id="Step-2.a.">Step 2.a.<a class="anchor-link" href="#Step-2.a.">&#194;&#182;</a></h3><p>Install Greer Mellon's "neaR" package.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>install_github<span class="p">(</span><span class="s">&quot;gmellon/neaR&quot;</span><span class="p">)</span>
@@ -11916,15 +11972,8 @@ The downloaded binary packages are in
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>Downloading GitHub repo gmellon/neaR@master
-from URL https://api.github.com/repos/gmellon/neaR/zipball/master
-Installing neaR
-&#39;/Library/Frameworks/R.framework/Resources/bin/R&#39; --no-site-file --no-environ  \
-  --no-save --no-restore --quiet CMD INSTALL  \
-  &#39;/private/var/folders/kp/2dzcn39934x4700rb9kpvtx00000gn/T/RtmpeHGeeC/devtools14ef87341d123/gmellon-neaR-c969f1b&#39;  \
-  --library=&#39;/Library/Frameworks/R.framework/Versions/3.4/Resources/library&#39;  \
-  --install-tests 
-
+<pre>Skipping install of &#39;neaR&#39; from a github remote, the SHA1 (c969f1b9) has not changed since last install.
+  Use `force = TRUE` to force installation
 </pre>
 </div>
 </div>
@@ -11937,14 +11986,14 @@ Installing neaR
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Enable the neaR package.</p>
+<h3 id="Step-2.b.">Step 2.b.<a class="anchor-link" href="#Step-2.b.">&#194;&#182;</a></h3><p>Enable the neaR package.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kn">library</span><span class="p">(</span>neaR<span class="p">)</span>
@@ -12006,17 +12055,1521 @@ Warning message:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Step-3">Step 3<a class="anchor-link" href="#Step-3">&#194;&#182;</a></h2><p>Follow the steps for the rest of the tutorial.</p>
+<h2 id="Step-3">Step 3<a class="anchor-link" href="#Step-3">&#194;&#182;</a></h2><h3 id="Step-3.a.">Step 3.a.<a class="anchor-link" href="#Step-3.a.">&#194;&#182;</a></h3><p>Set your working directory. This is where your files will be located after the scripts run.</p>
+<p>In the RStudio application window, at the top select <strong>Session --&gt; Set working directory --&gt; Choose Directory --&gt; (select folder location you would like to work in)</strong></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>
+<div class=" highlight hl-r"><pre><span></span><span class="kp">setwd</span><span class="p">(</span><span class="s">&quot;/Users/michelle/Desktop/Tableau Workshop Materials - 081617/Data Files/&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Step-3.b.">Step 3.b.<a class="anchor-link" href="#Step-3.b.">&#194;&#182;</a></h3><p>Use the following command to receive a list of files and directories in the working directory previously set.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="kp">list.files</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>'cb_2015_06_tract_500k.zip'</li>
+	<li>'NEA_for_tableau.csv'</li>
+	<li>'NEA_workshop_file.csv'</li>
+	<li>'PEP_2016_GCTPEPANNR.US23PR_with_ann.csv'</li>
+	<li>'population_by_state.csv'</li>
+</ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Step-4">Step 4<a class="anchor-link" href="#Step-4">&#194;&#182;</a></h2><h3 id="Step-4.a.">Step 4.a.<a class="anchor-link" href="#Step-4.a.">&#194;&#182;</a></h3><p>Assign an object to a data file by typing in the following command to your script window and using the CTRL-ENTER key combination.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>NEA <span class="o">&lt;-</span> read.csv<span class="p">(</span><span class="s">&quot;NEA_workshop_file.csv&quot;</span> <span class="p">,</span> stringsAsFactors<span class="o">=</span><span class="bp">F</span> <span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Step-4.b.">Step 4.b.<a class="anchor-link" href="#Step-4.b.">&#194;&#182;</a></h3><p>Use the following command to view the CSV/dataset that you just assigned to the "NEA" object.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>View<span class="p">(</span>NEA<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+Error in View(NEA): ‘View()’ not yet supported in the Jupyter R kernel
+Traceback:
+
+1. View(NEA)
+2. stop(sQuote(&#34;View()&#34;), &#34; not yet supported in the Jupyter R kernel&#34;)</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You have now successfully loaded data into RStudio and can now use this data with the "neaR" package commands.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Working-with-the-neaR-Package">Working with the neaR Package<a class="anchor-link" href="#Working-with-the-neaR-Package">&#194;&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>CoZip
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'20005-1747'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'02115-4557'</li>
+	<li>'04011-8449'</li>
+	<li>'84602-1400'</li>
+	<li>'84602-1400'</li>
+	<li>'84602-1400'</li>
+	<li>'84602-1400'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'91355-2340'</li>
+	<li>'44106-1705'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'14627-0140'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'90012-3034'</li>
+	<li>'10027-4689'</li>
+	<li>'10027-4689'</li>
+	<li>'10027-4689'</li>
+	<li>'10027-4689'</li>
+	<li>'10027-4689'</li>
+	<li>'10027-4689'</li>
+	<li>'10027-4689'</li>
+	<li>'10027-4689'</li>
+	<li>'10027-4689'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'48109-1274'</li>
+	<li>'93108-2865'</li>
+	<li>'93108-2865'</li>
+	<li>'93108-2865'</li>
+	<li>'93108-2865'</li>
+	<li>'93108-2865'</li>
+	<li>'93108-2865'</li>
+	<li>'93108-2865'</li>
+	<li>'93108-2865'</li>
+	<li>'20566-0001'</li>
+	<li>'20566-0001'</li>
+	<li>'20566-0001'</li>
+	<li>'20566-0001'</li>
+	<li>'20566-0001'</li>
+	<li>'20566-0001'</li>
+	<li>'20566-0001'</li>
+	<li>'20566-0001'</li>
+	<li>'44074-1099'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'60604-2559'</li>
+	<li>'53201-0340'</li>
+	<li>'53201-0340'</li>
+	<li>'53201-0340'</li>
+	<li>'53201-0340'</li>
+	<li>'53201-0340'</li>
+	<li>'53201-0340'</li>
+	<li>'53201-0340'</li>
+	<li>'53201-0340'</li>
+	<li>'53201-0340'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'06520-8327'</li>
+	<li>'05346-0507'</li>
+	<li>'05346-0507'</li>
+	<li>'05346-0507'</li>
+	<li>'05346-0507'</li>
+	<li>'05346-0507'</li>
+	<li>'05346-0507'</li>
+	<li>'05346-0507'</li>
+	<li>'10004-2277'</li>
+	<li>'10004-2277'</li>
+	<li>'10004-2277'</li>
+	<li>'10004-2277'</li>
+	<li>'10004-2277'</li>
+	<li>'10004-2277'</li>
+	<li>'10004-2277'</li>
+	<li>'10004-2277'</li>
+	<li>'10004-2277'</li>
+	<li>'10022-1001'</li>
+	<li>'10022-1001'</li>
+	<li>'10022-1001'</li>
+	<li>'10022-1001'</li>
+	<li>'10022-1001'</li>
+	<li>'10022-1001'</li>
+	<li>'10022-1001'</li>
+	<li>'10022-1001'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'85287-6011'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'93106-2050'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'10012-3396'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'61820-7406'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'94613-1301'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'55102-1439'</li>
+	<li>'80639-0001'</li>
+	<li>'80639-0001'</li>
+	<li>'80639-0001'</li>
+	<li>'80639-0001'</li>
+	<li>'80639-0001'</li>
+	<li>'80639-0001'</li>
+	<li>'80639-0001'</li>
+	<li>'08543-0036'</li>
+	<li>'08543-0036'</li>
+	<li>'08543-0036'</li>
+	<li>'08543-0036'</li>
+	<li>'08543-0036'</li>
+	<li>'12180-3522'</li>
+	<li>'12180-3522'</li>
+	<li>'12180-3522'</li>
+	<li>'12180-3522'</li>
+	<li>'12180-3522'</li>
+	<li>'12180-3522'</li>
+	<li>'12180-3522'</li>
+	<li>'12180-3522'</li>
+	<li>'12180-3522'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'12201-0009'</li>
+	<li>'94304-8445'</li>
+	<li>'94304-8445'</li>
+	<li>'94304-8445'</li>
+	<li>'94304-8445'</li>
+	<li>'94304-8445'</li>
+	<li>'94304-8445'</li>
+	<li>'94304-8445'</li>
+	<li>'94304-8445'</li>
+	<li>'94304-8445'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'06106-1222'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'10128-1612'</li>
+	<li>'06813-3167'</li>
+	<li>'06813-3167'</li>
+	<li>'12601-3214'</li>
+	<li>'12601-3214'</li>
+	<li>'12601-3214'</li>
+	<li>'12601-3214'</li>
+	<li>'12601-3214'</li>
+	<li>'12601-3214'</li>
+	<li>'12601-3214'</li>
+	<li>'11201-1303'</li>
+	<li>'10463-3039'</li>
+	<li>'10463-3039'</li>
+	<li>'10463-3039'</li>
+	<li>'10463-3039'</li>
+	<li>'11217-1486'</li>
+	<li>'11217-1486'</li>
+	<li>'11217-1486'</li>
+	<li>'11217-1486'</li>
+	<li>'11217-1486'</li>
+	<li>'11217-1486'</li>
+	<li>'11217-1486'</li>
+	<li>'11217-1486'</li>
+	<li>'11217-1486'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'90095-1406'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'94704-5940'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'10001-3813'</li>
+	<li>'97239-3817'</li>
+	<li>'97239-3817'</li>
+	<li>'97239-3817'</li>
+	<li>'97239-3817'</li>
+	<li>'10019-0026'</li>
+	<li>'10019-0026'</li>
+	<li>'10019-0026'</li>
+	<li>'10019-0026'</li>
+	<li>'10019-0026'</li>
+	<li>'10019-0026'</li>
+	<li>'10019-0026'</li>
+	<li>'10019-0026'</li>
+	<li>'27858-5235'</li>
+	<li>'27858-5235'</li>
+	<li>'27858-5235'</li>
+	<li>'27858-5235'</li>
+	<li>'27858-5235'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'96822-2234'</li>
+	<li>'22207-3606'</li>
+	<li>'77005-1892'</li>
+	<li>'77005-1892'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'52242-1320'</li>
+	<li>'94122-2307'</li>
+	<li>'94122-2307'</li>
+	<li>'94122-2307'</li>
+	<li>'94122-2307'</li>
+	<li>'94122-2307'</li>
+	<li>'94122-2307'</li>
+	<li>'94122-2307'</li>
+	<li>'94122-2307'</li>
+	<li>'10027-5706'</li>
+	<li>'10027-5706'</li>
+	<li>'10027-5706'</li>
+	<li>'10027-5706'</li>
+	<li>'10027-5706'</li>
+	<li>'10027-5706'</li>
+	<li>'10027-5706'</li>
+	<li>'15213-3504'</li>
+	<li>'15213-3504'</li>
+	<li>'15213-3504'</li>
+	<li>'15213-3504'</li>
+	<li>'15213-3504'</li>
+	<li>'15213-3504'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'87504-2227'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'10018-4016'</li>
+	<li>'19103-7080'</li>
+	<li>'19103-7080'</li>
+	<li>'19103-7080'</li>
+	<li>'19103-7080'</li>
+	<li>'19103-7080'</li>
+	<li>'10025-1284'</li>
+	<li>'10025-1284'</li>
+	<li>'10025-1284'</li>
+	<li>'10025-1284'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'10025-6990'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'76102-3177'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'10013-1268'</li>
+	<li>'55403-1139'</li>
+	<li>'55403-1139'</li>
+	<li>'55403-1139'</li>
+	<li>'55403-1139'</li>
+	<li>'55403-1139'</li>
+	<li>'55403-1139'</li>
+	<li>'55403-1139'</li>
+	<li>'10471-2899'</li>
+	<li>'10471-2899'</li>
+	<li>'10471-2899'</li>
+	<li>'10471-2899'</li>
+	<li>'10471-2899'</li>
+	<li>'10471-2899'</li>
+	<li>'10471-2899'</li>
+	<li>'63103-1024'</li>
+	<li>'21217-4103'</li>
+	<li>'21217-4103'</li>
+	<li>'21217-4103'</li>
+	<li>'21217-4103'</li>
+	<li>'21217-4103'</li>
+	<li>'21217-4103'</li>
+	<li>'02116-2639'</li>
+	<li>'02116-2639'</li>
+	<li>'02116-2639'</li>
+	<li>'20015-2024'</li>
+	<li>'20015-2024'</li>
+	<li>'20015-2024'</li>
+	<li>'20015-2024'</li>
+	<li>'20015-2024'</li>
+	<li>'20015-2024'</li>
+	<li>'20015-2024'</li>
+	<li>'20015-2024'</li>
+	<li>'45202-7531'</li>
+	<li>'45202-7531'</li>
+	<li>'45202-7531'</li>
+	<li>'10022-2049'</li>
+	<li>'10022-2049'</li>
+	<li>'10022-2049'</li>
+	<li>'10022-2049'</li>
+	<li>'43215-4203'</li>
+	<li>'43215-4203'</li>
+	<li>'43215-4203'</li>
+	<li>'43215-4203'</li>
+	<li>'43215-4203'</li>
+	<li>'43215-4203'</li>
+	<li>'43215-4203'</li>
+	<li>'43215-4203'</li>
+	<li>'94110-2586'</li>
+	<li>'94110-2586'</li>
+	<li>'94110-2586'</li>
+	<li>'94110-2586'</li>
+	<li>'94110-2586'</li>
+	<li>'94110-2586'</li>
+	<li>'94110-2586'</li>
+	<li>'94110-2586'</li>
+	<li>'10701-5108'</li>
+	<li>'10701-5108'</li>
+	<li>'10701-5108'</li>
+	<li>'02116-6439'</li>
+	<li>'02116-6439'</li>
+	<li>'02116-6439'</li>
+	<li>'02116-6439'</li>
+	<li>'02116-6439'</li>
+	<li>'02116-6439'</li>
+	<li>'02116-6439'</li>
+	<li>'02116-6439'</li>
+	<li>'02116-6439'</li>
+	<li>'90012-3013'</li>
+	<li>'90012-3013'</li>
+	<li>'90012-3013'</li>
+	<li>'90012-3013'</li>
+	<li>'90012-3013'</li>
+	<li>'90012-3013'</li>
+	<li>'90012-3013'</li>
+	<li>'90012-3013'</li>
+	<li>'79711-0658'</li>
+	<li>'53202-3148'</li>
+	<li>'53202-3148'</li>
+	<li>'53202-3148'</li>
+	<li>'53202-3148'</li>
+	<li>'53202-3148'</li>
+	<li>'53202-3148'</li>
+	<li>'60602-1912'</li>
+	<li>'44106-1796'</li>
+	<li>'44106-1796'</li>
+	<li>'44106-1796'</li>
+	<li>'44106-1796'</li>
+	<li>'44106-1796'</li>
+	<li>'44106-1796'</li>
+	<li>'44106-1796'</li>
+	<li>'44106-1796'</li>
+	<li>'44106-1796'</li>
+	<li>'03060-3425'</li>
+	<li>'03060-3425'</li>
+	<li>'20083829'</li>
+	<li>'20083829'</li>
+	<li>'20083829'</li>
+	<li>'20083829'</li>
+	<li>'20083829'</li>
+	<li>'20083829'</li>
+	<li>'20083829'</li>
+	<li>'20083829'</li>
+	<li>'19107-4117'</li>
+	<li>'19107-4117'</li>
+	<li>'55403-3746'</li>
+	<li>'55403-3746'</li>
+	<li>'55403-3746'</li>
+	<li>'55403-3746'</li>
+	<li>'55403-3746'</li>
+	<li>'55403-3746'</li>
+	<li>'55403-3746'</li>
+	<li>'55403-3746'</li>
+	<li>'55403-3746'</li>
+	<li>'55403-3746'</li>
+	<li>'94102-5972'</li>
+	<li>'94102-5972'</li>
+	<li>'94102-5972'</li>
+	<li>'94102-5972'</li>
+	<li>'94102-5972'</li>
+	<li>'94102-5972'</li>
+	<li>'94102-5972'</li>
+	<li>'94102-5972'</li>
+	<li>'94102-5972'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'94102-4507'</li>
+	<li>'99201-0916'</li>
+	<li>'99201-0916'</li>
+	<li>'99201-0916'</li>
+	<li>'99201-0916'</li>
+	<li>'99201-0916'</li>
+	<li>'99201-0916'</li>
+	<li>'99201-0916'</li>
+	<li>'99201-0916'</li>
+	<li>'63105-0358'</li>
+	<li>'94607-4892'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'98368-0958'</li>
+	<li>'20005-4943'</li>
+	<li>'20005-4943'</li>
+	<li>'20005-4943'</li>
+	<li>'20005-4943'</li>
+	<li>'20005-4943'</li>
+	<li>'20005-4943'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'12207-2211'</li>
+	<li>'10019-5515'</li>
+	<li>'10019-5515'</li>
+	<li>'10019-5515'</li>
+	<li>'10019-5515'</li>
+	<li>'10019-5515'</li>
+	<li>'10019-5515'</li>
+	<li>'10019-5515'</li>
+	<li>'10019-5515'</li>
+	<li>'10019-5515'</li>
+	<li>'94704-1246'</li>
+	<li>'94704-1246'</li>
+	<li>'94704-1246'</li>
+	<li>'94704-1246'</li>
+	<li>'94704-1246'</li>
+	<li>'94704-1246'</li>
+	<li>'94704-1246'</li>
+	<li>'94704-1246'</li>
+	<li>'94704-1246'</li>
+	<li>'94704-1246'</li>
+	<li>'02143-3538'</li>
+	<li>'02143-3538'</li>
+	<li>'02143-3538'</li>
+	<li>'02143-3538'</li>
+	<li>'02143-3538'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'10023-6582'</li>
+	<li>'45202-2518'</li>
+	<li>'45202-2518'</li>
+	<li>'45202-2518'</li>
+	<li>'45202-2518'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10003-8991'</li>
+	<li>'10014-1791'</li>
+	<li>'10014-1791'</li>
+	<li>'10023-6053'</li>
+	<li>'10023-6053'</li>
+	<li>'10023-6053'</li>
+	<li>'10023-6053'</li>
+	<li>'10023-6053'</li>
+	<li>'10023-6053'</li>
+	<li>'10023-6053'</li>
+	<li>'20141-2300'</li>
+	<li>'20141-2300'</li>
+	<li>'96814-1495'</li>
+	<li>'96814-1495'</li>
+	<li>'00902-4184'</li>
+	<li>'00902-4184'</li>
+	<li>'00902-4184'</li>
+	<li>'00902-4184'</li>
+	<li>'00902-4184'</li>
+	<li>'00902-4184'</li>
+	<li>'00902-4184'</li>
+	<li>'63108-1160'</li>
+	<li>'11372-2705'</li>
+	<li>'11372-2705'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'55102-1497'</li>
+	<li>'94102-3916'</li>
+	<li>'94102-3916'</li>
+	<li>'94102-3916'</li>
+	<li>'94102-3916'</li>
+	<li>'94102-3916'</li>
+	<li>'94102-3916'</li>
+	<li>'94102-3916'</li>
+	<li>'13224-1839'</li>
+	<li>'13224-1839'</li>
+	<li>'13224-1839'</li>
+	<li>'13224-1839'</li>
+	<li>'13224-1839'</li>
+	<li>'13224-1839'</li>
+	<li>'13224-1839'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'24061-0001'</li>
+	<li>'10107-1218'</li>
+	<li>'10107-1218'</li>
+	<li>'10107-1218'</li>
+	<li>'10107-1218'</li>
+	<li>'10107-1218'</li>
+	<li>'10107-1218'</li>
+	<li>'10107-1218'</li>
+	<li>'10107-1218'</li>
+	<li>'79101-3408'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10023-7905'</li>
+	<li>'10018-0286'</li>
+	<li>'10018-0286'</li>
+	<li>'10018-0286'</li>
+	<li>'10018-0286'</li>
+	<li>'10018-0286'</li>
+	<li>'10018-0286'</li>
+	<li>'10018-0286'</li>
+	<li>'72217-7328'</li>
+	<li>'72217-7328'</li>
+	<li>'72217-7328'</li>
+	<li>'72217-7328'</li>
+	<li>'72217-7328'</li>
+	<li>'72217-7328'</li>
+	<li>'72217-7328'</li>
+	<li>'72217-7328'</li>
+	<li>'78701-1912'</li>
+	<li>'78701-1912'</li>
+	<li>'78701-1912'</li>
+	<li>'21201-5556'</li>
+	<li>'21201-5556'</li>
+	<li>'21201-5556'</li>
+	<li>'21201-5556'</li>
+	<li>'21201-5556'</li>
+	<li>'21201-5556'</li>
+	<li>'21201-5556'</li>
+	<li>'21201-5556'</li>
+	<li>'21201-5556'</li>
+	<li>'21201-5556'</li>
+</ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>CoZip <span class="o">&lt;-</span> get_padded_zip<span class="p">(</span>NEA<span class="o">$</span>CoZip<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>help<span class="p">(</span><span class="s">&quot;create_full_address&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Example:</strong></p>
+<p>NEA$full_address &lt;- create_full_address(NEA, c("CoAddress1", "CoAddress2",
+"CoCity", "CoState", "CoZip"))</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>address <span class="o">&lt;-</span> create_full_address<span class="p">(</span>NEA<span class="p">,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;CoAddress1&quot;</span><span class="p">,</span> <span class="s">&quot;CoAddress2&quot;</span><span class="p">,</span> <span class="s">&quot;CoCity&quot;</span><span class="p">,</span> <span class="s">&quot;CoState&quot;</span><span class="p">,</span> <span class="s">&quot;CoZip&quot;</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Run the "get_geocode_data" command with the previously created "NEA$Address" object as the command's input. This will geocode each address in the "NEA" object and assign the (Lat, Lon) combination to the "coords" object.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>coords <span class="o">&lt;-</span> get_geocode_data<span class="p">(</span>NEA<span class="o">$</span>address<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Assign the latitude values held within the "coords" object to the "NEA" object in its own field called "NEA$Latitude". This creates a new column with only Latitude values.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>Latitude <span class="o">&lt;-</span> coords<span class="o">$</span>lat
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Assign the longitude values within the "coords" object to the "NEA" object in its own field called "NEA$Longitude". This creates a new column with only Longitude values.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>Longitude <span class="o">&lt;-</span> coords<span class="o">$</span>lon
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can view these newly added columns briefly by using the "head(NEA)" command. THe Latitude and Longitude columns are all the way to the right in this view.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="kp">head</span><span class="p">(</span>NEA<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>X</th><th scope=col>ApplicationNumber</th><th scope=col>Discipline</th><th scope=col>CoName</th><th scope=col>CoAddress1</th><th scope=col>CoAddress2</th><th scope=col>CoCity</th><th scope=col>CoState</th><th scope=col>CoZip</th><th scope=col>TOTAL_AUDIENCE</th><th scope=col>⋯</th><th scope=col>Committed</th><th scope=col>FY</th><th scope=col>FdrFlag</th><th scope=col>Disposition</th><th scope=col>Individual</th><th scope=col>CT_NAMELSAD</th><th scope=col>CT_GEOID</th><th scope=col>address</th><th scope=col>Latitude</th><th scope=col>Longitude</th></tr></thead>
+<tbody>
+	<tr><td>1                                                          </td><td>10-922191                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td>100000                                                     </td><td>2011                                                       </td><td>A                                                          </td><td>Awarded                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
+	<tr><td>2                                                          </td><td>11-932113                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td>NA                                                         </td><td>⋯                                                          </td><td>     0                                                     </td><td>2012                                                       </td><td>                                                           </td><td>Rejected                                                   </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
+	<tr><td>3                                                          </td><td>13-948528                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td> 95000                                                     </td><td>2014                                                       </td><td>A                                                          </td><td>Awarded                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
+	<tr><td>4                                                          </td><td>17-980612                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td>    NA                                                     </td><td>2018                                                       </td><td>                                                           </td><td>Pending                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
+	<tr><td>5                                                          </td><td>17-980082                                                  </td><td>Research                                                   </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td> 20000                                                     </td><td>2017                                                       </td><td>                                                           </td><td>Awarded                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
+	<tr><td>6                                                          </td><td>16-969075                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td> 90000                                                     </td><td>2017                                                       </td><td>                                                           </td><td>Awarded                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Advanced-commands">Advanced commands<a class="anchor-link" href="#Advanced-commands">&#194;&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This command assigns MSA data to the object "msa" using the command "get_msa_data". This command is provided in the "neaR" package.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>help<span class="p">(</span><span class="s">&quot;get_msa_data&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Usage:</strong> get_msa_data(Latitude, Longitude, year = 2016)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>msa <span class="o">&lt;-</span> get_msa_data<span class="p">(</span>NEA<span class="o">$</span>Latitude<span class="p">,</span> NEA<span class="o">$</span>Longitude<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Use the following command to view the first six rows of the "msa" object and the column names.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="kp">head</span><span class="p">(</span>msa<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>cbsa_GEOID</th><th scope=col>cbsa_NAMELSAD</th><th scope=col>cbsa_LSAD</th><th scope=col>source</th></tr></thead>
+<tbody>
+	<tr><td>47900                                                  </td><td>Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area</td><td>M1                                                     </td><td>MSA                                                    </td></tr>
+	<tr><td>47900                                                  </td><td>Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area</td><td>M1                                                     </td><td>MSA                                                    </td></tr>
+	<tr><td>47900                                                  </td><td>Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area</td><td>M1                                                     </td><td>MSA                                                    </td></tr>
+	<tr><td>47900                                                  </td><td>Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area</td><td>M1                                                     </td><td>MSA                                                    </td></tr>
+	<tr><td>47900                                                  </td><td>Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area</td><td>M1                                                     </td><td>MSA                                                    </td></tr>
+	<tr><td>47900                                                  </td><td>Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area</td><td>M1                                                     </td><td>MSA                                                    </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Create a new column in the "NEA" object. It will appear all the way to the right if you run the "View(NEA)" command.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>poverty_rate <span class="o">&lt;-</span> <span class="kc">NA</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong><em>NOTE:</em></strong> If your object does not already have a "CT_GEOID" column, you need to assign a NEA$CT_GEOID column and run the "get_ct_data" command in the "neaR" package.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>poverty_rate <span class="o">&lt;-</span> append_poverty_data<span class="p">(</span>NEA<span class="o">$</span>CT_GEOID<span class="p">,</span> NEA<span class="o">$</span>poverty_rate<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Save the "NEA" object to a CSV using the following command. The resulting file will be saved in your working directoy set at the beginning of the tutorial.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>write.csv<span class="p">(</span>NEA<span class="p">,</span> <span class="s">&quot;workshop_sample.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
