@@ -11870,7 +11870,7 @@ to the file and save it.</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>install.packages<span class="p">(</span><span class="s">&quot;devtools&quot;</span><span class="p">)</span>
@@ -11892,7 +11892,7 @@ to the file and save it.</li>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 The downloaded binary packages are in
-	/var/folders/kp/2dzcn39934x4700rb9kpvtx00000gn/T//RtmpUbOjsi/downloaded_packages
+	/var/folders/kp/2dzcn39934x4700rb9kpvtx00000gn/T//RtmpoasXU9/downloaded_packages
 </pre>
 </div>
 </div>
@@ -11912,31 +11912,13 @@ The downloaded binary packages are in
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kn">library</span><span class="p">(</span>devtools<span class="p">)</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Warning message:
-“package ‘devtools’ was built under R version 3.4.1”</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -11952,32 +11934,13 @@ The downloaded binary packages are in
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>install_github<span class="p">(</span><span class="s">&quot;gmellon/neaR&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Skipping install of &#39;neaR&#39; from a github remote, the SHA1 (c969f1b9) has not changed since last install.
-  Use `force = TRUE` to force installation
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -11993,60 +11956,13 @@ The downloaded binary packages are in
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kn">library</span><span class="p">(</span>neaR<span class="p">)</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Loading required package: sf
-Warning message:
-“package ‘sf’ was built under R version 3.4.1”Linking to GEOS 3.6.1, GDAL 2.1.3, proj.4 4.9.3
-Loading required package: stringr
-Loading required package: tigris
-As of version 0.5.1, tigris does not cache downloaded data by default. To enable caching of data, set `options(tigris_use_cache = TRUE)` in your R script or .Rprofile.
-
-Attaching package: ‘tigris’
-
-The following object is masked from ‘package:graphics’:
-
-    plot
-
-Loading required package: RJSONIO
-Loading required package: RDSTK
-Loading required package: plyr
-Loading required package: rjson
-
-Attaching package: ‘rjson’
-
-The following objects are masked from ‘package:RJSONIO’:
-
-    fromJSON, toJSON
-
-Loading required package: RCurl
-Loading required package: bitops
-Loading required package: progress
-Loading required package: sp
-Warning message:
-“package ‘sp’ was built under R version 3.4.1”Loading required package: httr
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12063,7 +11979,7 @@ Warning message:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kp">setwd</span><span class="p">(</span><span class="s">&quot;/Users/michelle/Desktop/Tableau Workshop Materials - 081617/Data Files/&quot;</span><span class="p">)</span>
@@ -12085,7 +12001,7 @@ Warning message:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kp">list.files</span><span class="p">()</span>
@@ -12107,11 +12023,14 @@ Warning message:
 
 <div class="output_html rendered_html output_subarea ">
 <ol class=list-inline>
+	<li>'cb_2015_06_tract_500k'</li>
 	<li>'cb_2015_06_tract_500k.zip'</li>
 	<li>'NEA_for_tableau.csv'</li>
 	<li>'NEA_workshop_file.csv'</li>
 	<li>'PEP_2016_GCTPEPANNR.US23PR_with_ann.csv'</li>
 	<li>'population_by_state.csv'</li>
+	<li>'tl_2016_us_cbsa.zip'</li>
+	<li>'tl_2016_us_necta.zip'</li>
 </ol>
 
 </div>
@@ -12133,7 +12052,7 @@ Warning message:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>NEA <span class="o">&lt;-</span> read.csv<span class="p">(</span><span class="s">&quot;NEA_workshop_file.csv&quot;</span> <span class="p">,</span> stringsAsFactors<span class="o">=</span><span class="bp">F</span> <span class="p">)</span>
@@ -12155,35 +12074,13 @@ Warning message:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>View<span class="p">(</span>NEA<span class="p">)</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-Error in View(NEA): ‘View()’ not yet supported in the Jupyter R kernel
-Traceback:
-
-1. View(NEA)
-2. stop(sQuote(&#34;View()&#34;), &#34; not yet supported in the Jupyter R kernel&#34;)</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12207,7 +12104,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>CoZip
@@ -13241,7 +13138,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>CoZip <span class="o">&lt;-</span> get_padded_zip<span class="p">(</span>NEA<span class="o">$</span>CoZip<span class="p">)</span>
@@ -13254,7 +13151,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>help<span class="p">(</span><span class="s">&quot;create_full_address&quot;</span><span class="p">)</span>
@@ -13278,7 +13175,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>address <span class="o">&lt;-</span> create_full_address<span class="p">(</span>NEA<span class="p">,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;CoAddress1&quot;</span><span class="p">,</span> <span class="s">&quot;CoAddress2&quot;</span><span class="p">,</span> <span class="s">&quot;CoCity&quot;</span><span class="p">,</span> <span class="s">&quot;CoState&quot;</span><span class="p">,</span> <span class="s">&quot;CoZip&quot;</span><span class="p">))</span>
@@ -13300,7 +13197,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>coords <span class="o">&lt;-</span> get_geocode_data<span class="p">(</span>NEA<span class="o">$</span>address<span class="p">)</span>
@@ -13322,7 +13219,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>Latitude <span class="o">&lt;-</span> coords<span class="o">$</span>lat
@@ -13344,7 +13241,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>Longitude <span class="o">&lt;-</span> coords<span class="o">$</span>lon
@@ -13359,17 +13256,17 @@ Traceback:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You can view these newly added columns briefly by using the "head(NEA)" command. THe Latitude and Longitude columns are all the way to the right in this view.</p>
+<p>You can view these newly added columns briefly by using the "colnames(NEA)" command. The Latitude and Longitude columns are all the way to the right in this view.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="kp">head</span><span class="p">(</span>NEA<span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="kp">colnames</span><span class="p">(</span>NEA<span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13387,17 +13284,45 @@ Traceback:
 
 
 <div class="output_html rendered_html output_subarea ">
-<table>
-<thead><tr><th scope=col>X</th><th scope=col>ApplicationNumber</th><th scope=col>Discipline</th><th scope=col>CoName</th><th scope=col>CoAddress1</th><th scope=col>CoAddress2</th><th scope=col>CoCity</th><th scope=col>CoState</th><th scope=col>CoZip</th><th scope=col>TOTAL_AUDIENCE</th><th scope=col>⋯</th><th scope=col>Committed</th><th scope=col>FY</th><th scope=col>FdrFlag</th><th scope=col>Disposition</th><th scope=col>Individual</th><th scope=col>CT_NAMELSAD</th><th scope=col>CT_GEOID</th><th scope=col>address</th><th scope=col>Latitude</th><th scope=col>Longitude</th></tr></thead>
-<tbody>
-	<tr><td>1                                                          </td><td>10-922191                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td>100000                                                     </td><td>2011                                                       </td><td>A                                                          </td><td>Awarded                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
-	<tr><td>2                                                          </td><td>11-932113                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td>NA                                                         </td><td>⋯                                                          </td><td>     0                                                     </td><td>2012                                                       </td><td>                                                           </td><td>Rejected                                                   </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
-	<tr><td>3                                                          </td><td>13-948528                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td> 95000                                                     </td><td>2014                                                       </td><td>A                                                          </td><td>Awarded                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
-	<tr><td>4                                                          </td><td>17-980612                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td>    NA                                                     </td><td>2018                                                       </td><td>                                                           </td><td>Pending                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
-	<tr><td>5                                                          </td><td>17-980082                                                  </td><td>Research                                                   </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td> 20000                                                     </td><td>2017                                                       </td><td>                                                           </td><td>Awarded                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
-	<tr><td>6                                                          </td><td>16-969075                                                  </td><td>Music                                                      </td><td>Chorus America Association                                 </td><td>1156 15th Street, NW                                       </td><td>Suite 310                                                  </td><td>Washington                                                 </td><td>DC                                                         </td><td>20005-1747                                                 </td><td> 0                                                         </td><td>⋯                                                          </td><td> 90000                                                     </td><td>2017                                                       </td><td>                                                           </td><td>Awarded                                                    </td><td>NA                                                         </td><td>Census Tract 101                                           </td><td>11001010100                                                </td><td>1156 15th Street, NW, Suite 310, Washington, DC, 20005-1747</td><td>38.90483                                                   </td><td>-77.03465                                                  </td></tr>
-</tbody>
-</table>
+<ol class=list-inline>
+	<li>'X'</li>
+	<li>'ApplicationNumber'</li>
+	<li>'Discipline'</li>
+	<li>'CoName'</li>
+	<li>'CoAddress1'</li>
+	<li>'CoAddress2'</li>
+	<li>'CoCity'</li>
+	<li>'CoState'</li>
+	<li>'CoZip'</li>
+	<li>'TOTAL_AUDIENCE'</li>
+	<li>'CoLatitude'</li>
+	<li>'CoLongitude'</li>
+	<li>'Underserved_Disabilities'</li>
+	<li>'Underserved_Institutions'</li>
+	<li>'Underserved_LowIncome'</li>
+	<li>'Underserved_LimitedEnglish'</li>
+	<li>'Underserved_Veterans'</li>
+	<li>'Underserved_NoneOfAbove'</li>
+	<li>'Art_Works_Created'</li>
+	<li>'Fairs_Festivals'</li>
+	<li>'Concerts_Performances'</li>
+	<li>'Lectures_Workshops'</li>
+	<li>'Exhibitions_Presented'</li>
+	<li>'Artist_Residence_Hours'</li>
+	<li>'Community_Action_Plans'</li>
+	<li>'Design_Plans_Produced'</li>
+	<li>'Art_Works_Installed'</li>
+	<li>'Committed'</li>
+	<li>'FY'</li>
+	<li>'FdrFlag'</li>
+	<li>'Disposition'</li>
+	<li>'Individual'</li>
+	<li>'CT_NAMELSAD'</li>
+	<li>'CT_GEOID'</li>
+	<li>'address'</li>
+	<li>'Latitude'</li>
+	<li>'Longitude'</li>
+</ol>
 
 </div>
 
@@ -13426,7 +13351,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>help<span class="p">(</span><span class="s">&quot;get_msa_data&quot;</span><span class="p">)</span>
@@ -13448,7 +13373,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>msa <span class="o">&lt;-</span> get_msa_data<span class="p">(</span>NEA<span class="o">$</span>Latitude<span class="p">,</span> NEA<span class="o">$</span>Longitude<span class="p">)</span>
@@ -13470,7 +13395,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kp">head</span><span class="p">(</span>msa<span class="p">)</span>
@@ -13522,7 +13447,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>poverty_rate <span class="o">&lt;-</span> <span class="kc">NA</span>
@@ -13544,7 +13469,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>NEA<span class="o">$</span>poverty_rate <span class="o">&lt;-</span> append_poverty_data<span class="p">(</span>NEA<span class="o">$</span>CT_GEOID<span class="p">,</span> NEA<span class="o">$</span>poverty_rate<span class="p">)</span>
@@ -13566,7 +13491,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>write.csv<span class="p">(</span>NEA<span class="p">,</span> <span class="s">&quot;workshop_sample.csv&quot;</span><span class="p">)</span>
