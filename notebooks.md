@@ -1,7 +1,7 @@
 ---
 layout: page
 title: notebooks
-description: This page contains various Jupyter Notebooks for data science projects. 
+description: This page contains various Jupyter Notebooks and R Markdown HTML files created for use in data science projects. 
 permalink: /notebooks/
 ---
 
