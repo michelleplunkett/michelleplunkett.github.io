@@ -8,11 +8,10 @@ permalink: /notebooks/
 <ul class="post-list">
     {% for post in site.notebooks %}
       <li>
-        <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
         <p>{{ post.description }}</p>
         <br/>
-        <hr/>
       </li>
     {% endfor %}
 </ul>
