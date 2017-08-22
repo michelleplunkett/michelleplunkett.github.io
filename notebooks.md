@@ -6,7 +6,7 @@ permalink: /notebooks/
 ---
 
 <ul class="post-list">
-    {% for post in site.notebooks %}
+    {% for post in site.notebooks reversed %}
       <li>
         <h5><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
