@@ -6,7 +6,7 @@ permalink: /notebooks/
 ---
 
 <ul class="post-list">
-    {% for project in site.notebooks reversed %}
+    {% for post in paginator.notebooks %}
       <li>
         <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
