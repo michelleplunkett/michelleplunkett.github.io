@@ -23,10 +23,6 @@ I also optimized a local business's e-commerce website, [**Berdoll Pecan Candy &
 
 -----
 <br/>
-<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="michellejane"><a class="LI-simple-link" href='https://www.linkedin.com/in/michellejane?trk=profile-badge'>Michelle Plunkett</a></div>
-
------
-<br/>
 > "Everyone has the right to culture, as he has the right to education and the right to work… This is the basis and first purpose of cultural policy."
 
 – Augustin Girard in *Cultural Development: Experiences and Policies*, pp. 182-183
