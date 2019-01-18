@@ -48,7 +48,9 @@ Partially because of the rising rent.
 Regardless of the data quality issues, mapping the CAMP data reveals that creative workspaces tend to be located 
 near downtown, leaving East and Southeast Austin to fend for themselves.
 
-![CAMP Data Map - creative workspaces](/img/CAMP Data Map - creative workspaces.png){: width=100% }
+<center>
+<img src="/img/CAMP Data Map - creative workspaces.png" width="100%">
+</center>
 
 The City of Austin needs to prioritize the development of creative workspaces available for public use on the East 
 and Southeast sides of the city, specifically in city council districts 1 and 2. One solution includes adding 
