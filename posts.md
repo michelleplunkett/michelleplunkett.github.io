@@ -6,7 +6,7 @@ permalink: /posts/
 ---
 
 <ul class="post-list">
-    {% for post in site.posts reversed %}
+    {% for post in site.posts %}
       <li>
         <h5><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
