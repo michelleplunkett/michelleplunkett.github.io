@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The Displacement of Artists and Lack of Space in CodeNEXT
-date:   2017-09-11
+date:   2017-10-30
 description: An Op-Ed on artists and lack of space in Austin, Texas. 
 ---
 
@@ -48,7 +48,7 @@ Partially because of the rising rent.
 Regardless of the data quality issues, mapping the CAMP data reveals that creative workspaces tend to be located 
 near downtown, leaving East and Southeast Austin to fend for themselves.
 
-![CAMP Data Map - creative workspaces](/img/CAMP Data Map - creative workspaces.png)
+![CAMP Data Map - creative workspaces](/img/CAMP Data Map - creative workspaces.png){: width=100% }
 
 The City of Austin needs to prioritize the development of creative workspaces available for public use on the East 
 and Southeast sides of the city, specifically in city council districts 1 and 2. One solution includes adding 
